@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="/static/images/favicon.jpg" type="image/jpg" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/pages/homepage.css" />
+  <link rel="stylesheet" href="./css/shared/navbar.css" />
+  <link rel="stylesheet" href="./css/shared/footer.css" />
+
+  <title>Home</title>
+</head>
+
+<body>
+  <!-- MOBILE MENU -->
+  <div class="mob-main-menu"></div>
+  <!-- MOBILE MENU ENDS -->
+
+  <main>
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-lg navbar-dark w-100"></nav>
+    <!-- navbar ends -->
+
+    <!-- Hero Section -->
+    <section id="hero" class="container-fluid">
+      <video
+          id="v0"
+          tabindex="0"
+          autobuffer="autobuffer"
+          preload="preload"
+          loop="true"
+          type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
+          src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/videos/BGTEST_3.mp4"
+          autoplay="true"
+          muted="true"
+        ></video>
+
+      <div class="hero_wrap">
+        <div class="left_side">
+          <!-- left side -->
+          <div class="social-wrap">
+            <div class="social-icon__wrap">
+              <a target="_blank" href="https://www.instagram.com/theglimpseproject/"><img
+                  src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/insta.svg" alt="instagram" width="20"
+                  height="20" /></a>
+            </div>
+            <div class="social-icon__wrap">
+              <a target="_blank" href="https://www.facebook.com/TheGlimpseProject/"><img
+                  src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/facebook.svg" alt="facebook"
+                  width="20" height="20" /></a>
+            </div>
+            <div class="social-icon__wrap">
+              <a target="_blank" href="https://twitter.com/glimpseproject/"><img
+                  src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/twitter.svg" alt="twitter" width="20"
+                  height="20" /></a>
+            </div>
+            <div class="social-icon__wrap">
+              <a target="_blank" href="https://www.linkedin.com/company/glimpse-digital-agency"><img
+                  src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/linkedin.svg" alt="linkedin"
+                  width="20" height="20" /></a>
+            </div>
+            <div class="social-icon__wrap">
+              <a target="_blank" href="https://www.tiktok.com/@theglimpseproject/"><img
+                  src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/tiktok.svg" alt="tiktok" width="20"
+                  height="20" /></a>
+            </div>
+            <div class="social-icon__wrap" id="about-anchor">
+              <a href="#about"><img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/down_arrow.svg"
+                  alt="down_arrow" /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mid_side">
+          <!-- middle section -->
+          <div class="d-flex flex-column align-items-center" style="gap: 1.5rem">
+            <div class="hero__text d-flex flex-column align-items-start">
+              <span>WE ARE</span><h1>DIGITAL</h1><span>TRANSCENDENCE</span>
+            </div>
+            <div class="p-2">
+              <button type="button" class="btn btn-outline-light rounded-pill"
+                onclick="window.location.href = './contactus.html';">
+                Contact Us
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- right side -->
+        <div class="right_side">
+          <div class="hero-stroke__wrapper">
+            <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/strokes.svg" width="640" height="360"
+              alt="strokes" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section Ends -->
+
+    <!-- About Section -->
+    <section id="about" class="about__section page__container">
+      <div class="title__wrap">
+        <p class="title">About Us</p>
+        <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/particle.svg" alt="particle" height="8px"
+          class="ms-1" />
+        <div class="subtitle__wrap">
+          <hr style="width: 12%" />
+        </div>
+      </div>
+      <div class="about__content-wrap">
+        <div class="left_wrap">
+          <p>
+            We are an
+            <span class="text-warning">award-winning</span> digital marketing
+            agency in Dubai. With rock-solid professional experience in the
+            digital marketing and advertising realm, our teams are composed of
+            geniuses who are experts in their respective fields.
+          </p>
+          <p>
+            Our creative, holistic, end-to-end marketing approach helps
+            businesses cut through the noise and rise above the competition.
+            Embracing a customer-first mindset and building a customer-focused
+            ecosystem have become our way of life.
+          </p>
+          <p class="gradient-text">
+            We live and breathe digital on a daily basis.
+          </p>
+          <button type="button" class="btn btn-outline-light gradient rounded-pill" style="padding: 0.5rem 1.5rem"
+            onclick="window.location.href = './contactus.html';">
+            <span class="gradient-text">Contact Us</span>
+          </button>
+        </div>
+        <div class="right_wrap">
+          <div class="video_wrapper">
+            <div class="video_overlay-wrap">
+              <video id="about_video" loop autoplay
+                src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/videos/about.mp4" type="video/mp4" muted>
+                <source />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section Ends -->
+
+    <!-- Glimpse Showreel -->
+    <section id="showreel" class="showreel__section page__container">
+      <video id="showreel-video" loop autoplay muted
+        src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/videos/showreel.webm" type="video/mp4"
+        ondblclick="goFullScreen('showreel-video')"></video>
+    </section>
+    <!-- Glimpse Showreel Ends -->
+    <!-- Services Section -->
+    <section id="services" class="service__section page__container">
+      <div class="title__wrap">
+        <p class="title">Our Services</p>
+        <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/particle.svg" alt="particle" height="8px"
+          class="ms-1" />
+        <div class="subtitle__wrap">
+          <hr style="width: 12.5%" />
+        </div>
+      </div>
+      <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/services/bg.svg" alt="element"
+        class="element-ripple" />
+      <div class="cards">
+        <!-- 1 -->
+        <div class="service_card">
+          <a href="/pages/services/social-media.html">
+            <div class="card_header">
+              <lottie-player src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/lottie/services/Social-media.json"
+                background="transparent" speed="1" style="width: 40px; height: 40px" loop autoplay></lottie-player>
+              <h2>Social Media</h2>
+            </div>
+          </a>
+          <a href="/pages/services/influencer-mgmt.html">
+            <div class="card-content">
+              <lottie-player src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/lottie/services/Influencer.json"
+                background="transparent" speed="1" style="width: 40px; height: 40px" loop autoplay></lottie-player>
+              <p>Influencer</p>
+              <h2>Management</h2>
+            </div>
+          </a>
+          <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/services/gradient-box.svg" />
+        </div>
+        <!-- 2 -->
+        <div class="service_card">
+          <a href="/pages/services/digital-strategy.html">
+            <div class="card_header">
+              <lottie-player
+                src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/lottie/services/DIGITAL-Strategy.json"
+                background="transparent" speed="1" style="width: 40px; height: 40px" loop autoplay></lottie-player>
+              <h2>Digital Strategy</h2>
+            </div>
+          </a>
+          <a href="/pages/services/ar.html">
+            <div class="card-content">
+              <lottie-player src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/lottie/services/AR.json"
+                background="transparent" speed="1" style="width: 40px; height: 40px" loop autoplay></lottie-player>
+              <p>Augmented</p>
+              <h2>Reality</h2>
+            </div>
+          </a>
+          <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/services/gradient-box.svg" />
+        </div>
+        <!-- 3 -->
+        <div class="service_card">
+          <a href="/pages/services/advertising.html">
+            <div class="card_header">
+              <lottie-player src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/lottie/services/AD.json"
+                background="transparent" speed="1" style="width: 40px; height: 40px" loop autoplay></lottie-player>
+              <h2>Advertising</h2>
+            </div>
+          </a>
+          <a href="/pages/services/video-production.html">
+            <div class="card-content">
+              <lottie-player src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/lottie/services/Photography.json"
+                background="transparent" speed="1" style="width: 40px; height: 40px" loop autoplay></lottie-player>
+              <p>Multimedia</p>
+              <h2>Production</h2>
+            </div>
+          </a>
+          <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/services/gradient-box.svg" />
+        </div>
+        <!-- 4 -->
+
+        <div class="service_card">
+          <a href="/pages/services/branding.html">
+            <div class="card_header">
+              <lottie-player src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/lottie/services/Branding.json"
+                background="transparent" speed="1" style="width: 40px; height: 40px" loop autoplay></lottie-player>
+              <h2>Branding</h2>
+            </div>
+          </a>
+          <a href="/pages/services/seo.html">
+            <div class="card-content">
+              <lottie-player src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/lottie/services/SEO.json"
+                background="transparent" speed="1" style="width: 40px; height: 40px" loop autoplay></lottie-player>
+              <p>Search&nbsp;Engine</p>
+              <h2>Optimisation</h2>
+            </div>
+            <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/services/gradient-box.svg" />
+        </div>
+        </a>
+      </div>
+      <div class="button-wrap">
+        <a href="/services.html">
+          <button class="btn btn-outline-light gradient rounded-pill px-4">
+            <span class="gradient-text">See More</span>
+          </button>
+        </a>
+      </div>
+    </section>
+    <!-- Service Section Ends -->
+    <!-- Hall of Fame-->
+    <section id="awards" class="fame__section page__container">
+      <div class="title__wrap">
+        <p class="title">Hall of fame</p>
+        <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/particle.svg" alt="particle" height="8px"
+          class="ms-1" />
+        <div class="subtitle__wrap">
+          <hr style="width: 12.5%" />
+        </div>
+      </div>
+      <div class="fame_wrap">
+        <!-- <div id="canvas-awward" class="fame_wrap">
+            <canvas class="scene scene--full" id="scene"></canvas>
+          </div> -->
+       <a href="/awards.html">
+         <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/awards/award.png" alt="Award" />
+       </a>
+      </div>
+      <div class="button-wrap">
+        <a href="/awards.html">
+          <button class="btn btn-outline-light gradient rounded-pill px-4">
+            <span class="gradient-text">See More</span>
+          </button>
+        </a>
+      </div>
+    </section>
+    <!-- Hall of Fame Ends -->
+    <!-- Portfolio Section -->
+    <section class="portfolio__section page__container" id="trigger">
+      <div class="title__wrap">
+        <p class="title">Portfolio</p>
+        <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/particle.svg" alt="particle" height="8px"
+          class="ms-1" />
+        <div class="subtitle__wrap">
+          <hr style="width: 12.5%" />
+        </div>
+      </div>
+      <!-- HORIZONTAL SCROLL -->
+      <div class="parallax__slider">
+        <div class="parallax__slider-inner">
+          <!-- 1 -->
+          <div class="parallax__item">
+            <div class="parallax__item-wrap">
+              <div class="parallax__image" onclick="slideClick(1)"></div>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="parallax__item">
+            <div class="parallax__item-wrap">
+              <div class="parallax__image" onclick="slideClick(2)"></div>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="parallax__item">
+            <div class="parallax__item-wrap">
+              <div class="parallax__image" onclick="slideClick(3)"></div>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="parallax__item">
+            <div class="parallax__item-wrap">
+              <div class="parallax__image" onclick="slideClick(4)"></div>
+            </div>
+          </div>
+          <!-- 5 -->
+          <div class="parallax__item">
+            <div class="parallax__item-wrap">
+              <div class="parallax__image" onclick="slideClick(5)"></div>
+            </div>
+          </div>
+          <!-- 6 -->
+          <div class="parallax__item">
+            <div class="parallax__item-wrap">
+              <div class="parallax__image" onclick="slideClick(6)"></div>
+            </div>
+          </div>
+          <!-- 7 -->
+          <div class="parallax__item">
+            <div class="parallax__item-wrap">
+              <div class="parallax__image" onclick="slideClick(7)"></div>
+            </div>
+          </div>
+          <!-- 8 -->
+          <div class="parallax__item">
+            <div class="parallax__item-wrap">
+              <div class="parallax__image" onclick="slideClick(8)"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="fullview__section">
+      <div class="fullview__portfolio">
+        <div class="text-heading">
+          <h4 class="fullview__portfolio-title">Lorem Ipsum</h4>
+        </div>
+        <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/close.svg" alt="close-icon"
+          id="fullview__portfolio-close" />
+      </div>
+    </section>
+    <!-- SLIDER -->
+      <section class="page__container portfolio-swiper-container">
+        <div class="title__wrap">
+        <p class="title">Portfolio</p>
+        <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/particle.svg" alt="particle" height="8px"
+          class="ms-1" />
+        <div class="subtitle__wrap">
+          <hr style="width: 12.5%" />
+        </div>
+      </div>
+        <div class="swiper portfolio-swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="portfolio-swiper-slide swiper-slide"></div>
+          <div class="portfolio-swiper-slide swiper-slide"></div>
+          <div class="portfolio-swiper-slide swiper-slide"></div>
+          <div class="portfolio-swiper-slide swiper-slide"></div>
+          <div class="portfolio-swiper-slide swiper-slide"></div>
+          <div class="portfolio-swiper-slide swiper-slide"></div>
+          <div class="portfolio-swiper-slide swiper-slide"></div>
+          <div class="portfolio-swiper-slide swiper-slide"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      </section>
+    <!-- Portfolio Section Ends -->
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients__section page__container" >
+      <a href="/clients.html" style="text-decoration: none;">
+        <div class="title__wrap">
+        <p class="title">Our Cool Clients</p>
+        <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/particle.svg" alt="particle" height="8px"
+          class="ms-1" />
+        <div class="subtitle__wrap">
+          <hr style="width: 12.5%" />
+        </div>
+      </div>
+      </a>
+      <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/double_stroke.svg" alt=""
+        class="double__stroke-2" />
+
+      <div class="anim__ground">
+        <!-- COL-1 -->
+        <div class="anim_wrapper">
+         <a href="/clients.html"> <lottie-player src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/lottie/GENESIS-AGTHIA.json"
+            background="transparent" speed="1" loop autoplay></lottie-player></a>
+        </div>
+        <!-- COL-2 -->
+        <div class="anim_wrapper">
+         <a href="/clients.html"> <lottie-player src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/lottie/CHAUMET-LAMBO.json"
+            background="transparent" speed="1" loop autoplay></lottie-player></a>
+         <a href="/clients.html"> <lottie-player src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/lottie/DOLCE-HISENSE.json"
+            background="transparent" speed="1" loop autoplay></lottie-player></a>
+        </div>
+        <!-- COL-3 -->
+        <div class="anim_wrapper">
+         <a href="/clients.html"> <lottie-player src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/lottie/DUBAIHOLDING-KIA.json"
+            background="transparent" speed="1" loop autoplay></lottie-player></a>
+         <a href="/clients.html"> <lottie-player src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/lottie/EXPO-LG.json"
+            background="transparent" speed="1" loop autoplay></lottie-player></a>
+         <a href="/clients.html"> <lottie-player src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/lottie/HARLEY-GULFFILMS.json"
+            background="transparent" speed="1" loop autoplay></lottie-player></a>
+        </div>
+        <!-- COL-4 -->
+        <div class="anim_wrapper">
+         <a href="/clients.html"> <lottie-player src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/lottie/ADIDAS-MEERAS.json"
+            background="transparent" speed="1" loop autoplay></lottie-player></a>
+         <a href="/clients.html"> <lottie-player src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/lottie/MODON-JLC.json"
+            background="transparent" speed="1" loop autoplay></lottie-player></a>
+        </div>
+        <!-- COL-5 -->
+        <div class="anim_wrapper">
+         <a href="/clients.html"> <lottie-player src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/lottie/NOVO-HYUNDAI.json"
+            background="transparent" speed="1" loop autoplay></lottie-player></a>
+         <a href="/clients.html"> <lottie-player src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/lottie/ROXY-ALAIN.json"
+            background="transparent" speed="1" loop autoplay></lottie-player></a>
+         <a href="/clients.html"> <lottie-player src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/lottie/SAMSUNG-CADBURY.json"
+            background="transparent" speed="1" loop autoplay></lottie-player></a>
+        </div>
+        <!-- COL-6 -->
+        <div class="anim_wrapper">
+         <a href="/clients.html"> <lottie-player src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/lottie/SHESEIDO-YASH.json"
+            background="transparent" speed="1" loop autoplay></lottie-player></a>
+         <a href="/clients.html"> <lottie-player src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/lottie/UAE-DISNEY.json"
+            background="transparent" speed="1" loop autoplay></lottie-player></a>
+        </div>
+        <!-- COL-7 -->
+        <div class="anim_wrapper">
+         <a href="/clients.html"> <lottie-player src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/lottie/UFC-DYC.json"
+            background="transparent" speed="1" loop autoplay></lottie-player></a>
+        </div>
+      </div>
+      <p class="tagline text-center">
+        Helping new brands start up and old ones start over<span style="color: #e204f2">
+          .</span>
+      </p>
+      <div class="button-wrap">
+        <a href="/clients.html">
+          <button class="btn btn-outline-light gradient rounded-pill px-4">
+            <span class="gradient-text">See More</span>
+          </button>
+        </a>
+      </div>
+    </section>
+    <!-- Client Section Ends -->
+
+    <!-- Experts Section -->
+    <section id="experts" class="page__container experts__section">
+      <div class="title__wrap">
+        <p class="title">Our Experts</p>
+        <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/particle.svg" alt="particle" height="8px"
+          class="ms-1" />
+        <div class="subtitle__wrap">
+          <hr style="width: 13%" />
+          <small>THE SQUAD</small>
+        </div>
+      </div>
+      <div class="experts__container">
+        <div class="experts__wrap">
+          <div class="expert__item">
+            <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/experts/1.svg" alt="expert"
+              class="img-fluid" width="640" height="360" />
+          </div>
+          <div class="expert__item">
+            <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/experts/2.png" alt="expert"
+              class="img-fluid" width="640" height="360" />
+          </div>
+          <div class="expert__item">
+            <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/experts/3.svg" alt="expert"
+              class="img-fluid" width="640" height="360" />
+          </div>
+        </div>
+        <!-- <div class="col-12 mt-5">
+            <div
+              class="d-flex flex-column align-items-center justify-content-center"
+            >
+              <button class="btn btn-outline-light gradient rounded-pill px-4">
+                <span class="gradient-text">The Team</span>
+              </button>
+            </div>
+          </div> -->
+      </div>
+    </section>
+    <!-- Expert Section Ends -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="page__container testimonial__section">
+      <div class="title__wrap">
+        <p class="title">What Clients Say</p>
+        <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/particle.svg" alt="particle" height="8px"
+          class="ms-1" />
+        <div class="subtitle__wrap">
+          <hr style="width: 13%" />
+          <small>Testimonials</small>
+        </div>
+      </div>
+      <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/wave_stroke.svg" class="wave__stroke" />
+      <div class="swiper test-swiper">
+        <div class="swiper-wrapper">
+          <div class="test-swiper-slide swiper-slide">
+            <div class="test-content-group">
+              <div class="test-profile-wrapper">
+                <div class="picture-wrap">
+                  <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/testimonials/001_Debie_pfp@2x.png" alt="avatar" />
+                </div>
+                <div class="profile-desc-wrap">
+                  <div class="name">Dr. Debbie Stanford-Kristiansen</div>
+                  <div class="desig">
+                    General Manager - Exhibition World Bahrain
+                  </div>
+                </div>
+              </div>
+
+              <p class="testify">
+                Working with Glimpse has been an incredible experience. They know the film and entertainment industry by heart. I can confidently say they made an impact in the field and change how entertainment marketing is perceived. They are fast, organised, and precise.
+              </p>
+            </div>
+            <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/testimonials/03-5_stars.svg" class="ratings" />
+          </div>
+          <div class="test-swiper-slide swiper-slide">
+            <div class="test-content-group">
+              <div class="test-profile-wrapper">
+                <div class="picture-wrap">
+                  <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/testimonials/002_Angella_pfp@2x.png" alt="avatar" />
+                </div>
+                <div class="profile-desc-wrap">
+                  <div class="name">Angella Jack Tchilinguirian</div>
+                  <div class="desig">Director of Marketing - Modon</div>
+                </div>
+              </div>
+
+              <p class="testify">
+                Never disappointed, always surprised. That’s how I would describe Glimpse. This is not a normal agency, more like a lab with young scientists. This is our 4th year together, hopefully, many more to come.
+              </p>
+            </div>
+
+            <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/testimonials/03-5_stars.svg" class="ratings" />
+          </div>
+          <div class="test-swiper-slide swiper-slide">
+            <div class="test-content-group">
+              <div class="test-profile-wrapper">
+                <div class="picture-wrap">
+                  <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/testimonials/003_Sonal_pfp@2x.png" alt="avatar" />
+                </div>
+                <div class="profile-desc-wrap">
+                  <div class="name">Sonal Salvi</div>
+                  <div class="desig">
+                    Marketing Manager - Hisense Middle East
+                  </div>
+                </div>
+              </div>
+              <p class="testify">
+                Working with Glimpse has been a great experience. Our social and digital performance have become much better, the visibility has increased; most importantly, the expertise on strategies have helped us improve our social platforms. The team has been supportive and on-call with best service.
+              </p>
+            </div>
+            <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/testimonials/03-5_stars.svg" class="ratings" />
+          </div>
+          <div class="test-swiper-slide swiper-slide">
+            <div class="test-content-group">
+              <div class="test-profile-wrapper">
+                <div class="picture-wrap">
+                  <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/testimonials/004_Sari_pfp@2x.png" alt="avatar" />
+                </div>
+                <div class="profile-desc-wrap">
+                  <div class="name">Sari Bou Karroum</div>
+                  <div class="desig">
+                    Media Director - Innocean - Hyundai - Genesis
+                  </div>
+                </div>
+              </div>
+              <p class="qoute">
+                "Glimpse is Dubai’s best hidden gem…"
+              </p>
+              <p class="testify">
+                Pretty much every award-winning Korean project had Glimpse involved in it. Glimpse is our go-to agency when it comes to quality, on-time delivery, and creativity. Big team, big experience, and a great school. We have been working together for six years and counting.
+              </p>
+            </div>
+            <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/testimonials/03-5_stars.svg" class="ratings" />
+          </div>
+          <div class="test-swiper-slide swiper-slide">
+            <div class="test-content-group">
+              <div class="test-profile-wrapper">
+                <div class="picture-wrap">
+                  <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/testimonials/004-Khaldoun.webp" alt="avatar" />
+                </div>
+                <div class="profile-desc-wrap">
+                  <div class="name">Khaldoun Quadoura</div>
+                  <div class="desig">
+                    Managing Director/Editor-in-Chief Empire Magazine
+                  </div>
+                </div>
+              </div>
+              <p class="qoute">
+                "Splendidly turned the digital odds in our favour."
+              </p>
+              <p class="testify">
+                Their work is so simple yet so genius. I can’t emphasize enough how creative and efficient their methods are.
+              </p>
+            </div>
+            <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/testimonials/03-5_stars.svg" class="ratings" />
+          </div>
+          <div class="test-swiper-slide swiper-slide">
+            <div class="test-content-group">
+              <div class="test-profile-wrapper">
+                <div class="picture-wrap">
+                  <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/testimonials/005-Nathaline.webp" alt="avatar" />
+                </div>
+                <div class="profile-desc-wrap">
+                  <div class="name">Nathaline Deuvletian</div>
+                  <div class="desig">
+                    Marketing Director - Harley Davidson
+                  </div>
+                </div>
+              </div>
+              <p class="qoute">
+                "Very creative and dynamic out-of-the-box thinkers."
+              </p>
+              <p class="testify">
+                Glimpse is the agency with unbelievable passion and commitment in everything they do.
+              </p>
+            </div>
+            <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/testimonials/03-5_stars.svg" class="ratings" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- Testimonial Section Ends -->
+
+    <!-- Testimonials Section -->
+    <section id="blog" class="page__container updates__section">
+      <div class="title__wrap">
+        <p class="title">Latest Updates</p>
+        <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/particle.svg" alt="particle" height="8px"
+          class="ms-1" />
+        <div class="subtitle__wrap">
+          <hr style="width: 13%" />
+          <small>know more</small>
+        </div>
+      </div>
+      <!-- DESKTOP -->
+      <div class="updates__wrapper">
+        <div class="updates__grid-wrap">
+          <figure class="fig-one" data-id="1">
+            <a href="/pages/blogs/why-you-should-do-tiktok-for-your-business-right-here-right-now.html">
+              <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/blog/BLOG-1.webp" alt="blog-1" />
+              <div class="blog-body">
+                <p class="blog-para">
+                  Why You Should Do TikTok For Your Business Right Here Right
+                  Now
+                </p>
+                <h5 class="blog-title">
+                  The popularity of TikTok spread like wildfire with 1 billion
+                  monthly active users to date.
+                </h5>
+              </div>
+            </a>
+          </figure>
+          <figure class="fig-two" data-id="2">
+            <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/blog/BLOG-2.webp" alt="blog-2" />
+          </figure>
+          <figure class="fig-three" data-id="3">
+            <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/blog/BLOG-3.webp" alt="blog-3" />
+          </figure>
+        </div>
+      </div>
+      <!-- SWIPER -->
+      <div class="swiper blog-swiper">
+        <div class="swiper-wrapper">
+          <div class="blog-swiper-slide swiper-slide">
+            <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/blog/BLOG-1.webp" alt="blog-1" />
+            <div class="blog-body">
+              <p class="blog-para">
+                Why You Should Do TikTok For Your Business Right Here Right
+                Now
+              </p>
+            </div>
+          </div>
+          <div class="blog-swiper-slide swiper-slide">
+            <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/blog/BLOG-2.webp" alt="blog-1" />
+            <div class="blog-body">
+              <p class="blog-para">
+                Social Media Trends To Watch Out For In 2022
+              </p>
+            </div>
+          </div>
+          <div class="blog-swiper-slide swiper-slide">
+            <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/blog/BLOG-3.webp" alt="blog-1" />
+            <div class="blog-body">
+              <p class="blog-para">
+                Twitter has finally launched its reply-limiting feature.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- Updates Section Ends -->
+
+    <!-- Contact -->
+    <section id="contact" class="container-fluid section mt-5">
+      <div class="row p-2 pb-md-3">
+        <div class="col-12 p-md-1 align-self-center text-center">
+          <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/contact.svg" alt="clients"
+            class="img-fluid contact-img" style="max-height: 70vh" width="640" height="360" />
+        </div>
+      </div>
+      <div class="row p-2 gap-3">
+        <div class="col-12">
+          <p class="text-center text-white contact-tagline">
+            We’re here to listen, we’re here to help. Drop us a message and
+            <br />
+            we will get back to you almost instantly! Talk soon...
+          </p>
+        </div>
+        <div class="col-12">
+          <div class="d-flex flex-row justify-content-center gap-2 mt-2 mb-2">
+            <a href="https://www.instagram.com/theglimpseproject/" class="text-white mx-2">
+              <i class="fab fa-instagram fa-lg"></i>
+            </a>
+            <a href="https://www.facebook.com/TheGlimpseProject/" class="text-white mx-2">
+              <i class="fab fa-facebook-f fa-lg"></i>
+            </a>
+            <a href="https://twitter.com/glimpseproject/" class="text-white mx-2">
+              <i class="fab fa-twitter fa-lg"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/glimpse-digital-agency" class="text-white mx-2">
+              <i class="fab fa-linkedin-in fa-lg"></i>
+            </a>
+            <a href="https://www.tiktok.com/@theglimpseproject/" class="text-white mx-2">
+              <i class="fab fa-tiktok fa-lg"></i>
+            </a>
+          </div>
+        </div>
+        <!-- <div class="col-8 mx-auto mt-5 mb-5">
+            <div
+              class="d-flex flex-column flex-md-row justify-content-center gap-5"
+            >
+              <button
+                type="button"
+                class="btn btn-outline-light gradient rounded-pill"
+                style="padding: 0.5rem 1.5rem"
+              >
+                <span class="gradient-text">Make an enquiry</span>
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-light gradient rounded-pill"
+                style="padding: 0.5rem 1.5rem"
+              >
+                <span class="gradient-text">Join our team</span>
+              </button>
+            </div>
+          </div> -->
+      </div>
+    </section>
+    <!-- Contact Section Ends -->
+
+    <section id="footer" class="page__container mt-5 mx-auto">
+      <!-- Footer -->
+
+      <!-- Footer -->
+    </section>
+  </main>
+
+  <!-- BOOTSTRAP -->
+  <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JQUERY -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- LOTTIE -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <!-- HAMMER -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"
+    integrity="sha512-UXumZrZNiOwnTcZSHLOfcTs0aos2MzBWHXOHOuB0J/R44QB0dwY5JgfbvljXcklVf65Gc4El6RjZ+lnwd2az2g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+    integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"
+    integrity="sha512-tHvUcUQYi35zApvAa5TNR3fNhBQkVtkmWKfacnpxmix4/VTGz1lGjIVyLMp7gLgAvg+aKJjnVKokXJNS5GZ+/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>>
+  <!-- SWIPER -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <!-- CUSTOM JS COMPONENTS -->
+  <script src="/js/parallax-slider.js"></script>
+  <script src="/js/sliders.js"></script>
+  <script src="/js/nav.js"></script>
+  <script src="/js/mobile-nav.js"></script>
+  <script src="/js/blogs.js"></script>
+  <script src="/js/footer.js"></script>
+</body>
+
+</html>

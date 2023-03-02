@@ -1,0 +1,142 @@
+.banner__section {
+  height: 100%;
+  width: 100%;
+}
+
+.intro_section {
+  height: 100%;
+  width: 100%;
+  padding-top: var(--r120);
+}
+
+.intro_section p {
+  font-size: 18px;
+  letter-spacing: 0.01rem;
+  line-height: 2.5;
+  padding-bottom: var(--r16);
+}
+
+.clients__container {
+  padding-top: var(--r56);
+  position: relative;
+}
+
+.title__wrap {
+  margin-left: var(--r30);
+}
+
+.clients_wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients__wrap {
+  width: 85%;
+  /* height: 100%; */
+  padding-top: var(--r48);
+  padding-bottom: var(--r200);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  gap: 5px;
+}
+
+.clients__wrap-mob {
+  display: none;
+}
+
+.client_col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.client_col img {
+  width: 100%;
+  height: 100%;
+  /* max-width: 50%; */
+}
+
+.top-accent {
+  position: absolute;
+  top: -42%;
+  right: 10%;
+  width: 100%;
+  height: 100%;
+  max-width: 8%;
+}
+
+.bottom-accent {
+  position: absolute;
+  bottom: -42%;
+  left: 10%;
+  width: 100%;
+  height: 100%;
+  max-width: 8%;
+}
+
+/* MEDIA QUERY */
+@media screen and (min-width: 2560px) {
+  .intro_section p {
+    font-size: 34px;
+  }
+
+}
+
+@media screen and (max-width: 860px) {
+  .clients__wrap {
+    padding-top: var(--r100);
+  }
+
+  .top-accent {
+    top: -42%;
+    right: 8%;
+  }
+
+  .bottom-accent {
+    bottom: -45%;
+    left: 8%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .banner__section {
+    padding-top: var(--r30);
+  }
+
+  .title__wrap {
+    margin-left: 0;
+  }
+
+  .clients__wrap {
+    display: none;
+  }
+
+  .clients__wrap-mob {
+    width: 100%;
+    padding-top: var(--r48);
+    padding-bottom: var(--r200);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .top-accent {
+    top: -44%;
+    right: 5%;
+  }
+
+  .bottom-accent {
+    bottom: -42%;
+    left: 5%;
+  }
+}
