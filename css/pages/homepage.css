@@ -931,7 +931,52 @@ figure img {
 }
 
 /* MEDIA QUERY */
-@media screen and (min-width: 2560px) {}
+@media screen and (min-width: 2560px) {
+  /* SERVICES */
+  .service__section {
+    height: 100%;
+    padding-bottom: var(--r100);
+    margin-top: var(--r30);
+  }
+
+  .service__section .cards {
+    padding: var(--r30) 0 0;
+    /* column-gap: 0; */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-content: center;
+    place-items: center;
+  }
+
+  .service__section .cards .service_card {
+    width: 400px;
+    height: 720px;
+  }
+
+  .card_header {
+    top: 5%;
+    left: 15%;
+  }
+
+  .card-content {
+    top: 42%;
+    left: 15%;
+  }
+  .card-content h2, .card_header h2{
+    font-size: 2rem;
+  }
+  .card_header h2{
+    margin-top: 0.8em;
+  }
+  .card-content p {
+    font-size: 2rem;
+  }
+
+  .element-ripple {
+    width: 180%;
+    transform: translate(0, -30%);
+  }
+}
 /* 
 @media (min-width: 1440px) {
 
