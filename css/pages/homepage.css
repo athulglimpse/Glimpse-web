@@ -88,9 +88,9 @@
   flex-direction: column;
 }
 
-.social-wrap .social-icon__wrap img {
-  width: 100%;
-  height: 100%;
+.social-wrap .social-icon__wrap:not(#about-anchor) img {
+  width: clamp(10px,2vw,40px);
+  height: clamp(10px,2vw,40px);
 }
 
 #about-anchor {
@@ -1260,7 +1260,7 @@ figure img {
     left: 0%;
     gap: 1.5rem;
   }
-
+  
   .hero-stroke__wrapper {
     top: -30%;
     right: -8%;
