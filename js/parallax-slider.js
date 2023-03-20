@@ -68,8 +68,7 @@ gsap.to(sections, {
 
 images.forEach(
   (image, i) =>
-    (image.style.backgroundImage = `url(https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/portfolio/${
-      i + 1
+  (image.style.backgroundImage = `url(https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/portfolio/${i + 1
     }.webp)`)
 );
 
@@ -143,3 +142,25 @@ window.addEventListener("scroll", () => {
     });
   }
 });
+
+function slideClose() {
+  if (overlay.style.display === "block") {
+    // gsap
+    //   .from(".fullview__portfolio-title", {
+    //     duration: 1.5,
+    //     yPercent: -200,
+    //     ease: "power4",
+    //     stagger: 0.1,
+    //   })
+    //   .revert();
+
+    gsap.to(overlay, {
+      transform: "scale(0)",
+      display: "none",
+      opacity: 0,
+      ease: "power4",
+      duration: 0.6,
+      delay: 0,
+    });
+  }
+};
