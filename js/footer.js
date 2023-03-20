@@ -213,3 +213,14 @@ footer.innerHTML = `
           </div>
         </footer>
     `;
+
+let count = 0;
+document.getElementsByClassName("footer-logo")[0].addEventListener("click", function (e) {
+  e.preventDefault();
+  count++;
+
+  if (count == 6) {
+    window.open("https://youtu.be/xvFZjo5PgG0");
+    count = 0;
+  }
+}, false);
