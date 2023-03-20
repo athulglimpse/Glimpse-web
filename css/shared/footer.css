@@ -169,14 +169,19 @@
 
 @media screen and (max-width: 990px) {
   .footer-links__grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .footer-links__grid div:first-of-type {
+    grid-column: 1 / -1;
+    margin-bottom: 2rem;
   }
 
   .footer-links__grid div {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     flex-direction: column;
   }
 
