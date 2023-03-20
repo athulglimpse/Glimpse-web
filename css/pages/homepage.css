@@ -10,6 +10,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 65%; */
+  padding-left: var(--r-container);
+  padding-right: var(--r-container);
 }
 
 #v0 {
@@ -26,10 +28,9 @@
   position: relative;
   width: 100%;
   height: 100%;
-  display: flex;
+  display: grid;
   align-items: center;
-  justify-content: space-around;
-
+  grid-template: "a a a";
 }
 
 /* .hero_wrap::before {
@@ -42,6 +43,13 @@
   background-size: 65%;
 } */
 
+.left_side {
+  justify-self: start;
+}
+
+.right_side {
+  justify-self: end;
+}
 
 .hero__text {
   color: #fff;
@@ -72,7 +80,7 @@
 }
 
 .social-wrap {
-  row-gap: 3vw;
+  row-gap: 2.5vw;
   /* gap: 4rem; */
   display: flex;
   align-items: center;
@@ -99,6 +107,7 @@
 .hero-stroke__wrapper img {
   width: 35%;
   height: auto;
+  float: right;
 }
 
 .mid_side button {
@@ -1222,6 +1231,7 @@ figure img {
   }
 
   .hero_wrap {
+    display: flex;
     flex-direction: column;
     row-gap: 3rem;
     height: 100%;
