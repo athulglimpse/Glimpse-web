@@ -38,11 +38,6 @@ footer.innerHTML = `
                   >
                 </p>
                 <p>
-                  <a href="/#experts" class="text-decoration-none text-white"
-                    >Team</a
-                  >
-                </p>
-                <p>
                   <a href="/blog.html" class="text-decoration-none text-white"
                     >Blogs</a
                   >
