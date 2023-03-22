@@ -89,8 +89,8 @@
 }
 
 .social-wrap .social-icon__wrap:not(#about-anchor) img {
-  width: clamp(10px,2vw,40px);
-  height: clamp(10px,2vw,40px);
+  width: clamp(10px, 2vw, 40px);
+  height: clamp(10px, 2vw, 40px);
 }
 
 #about-anchor {
@@ -221,7 +221,7 @@
 
 /* FAME */
 .fame__section {
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
   position: relative;
   margin-top: var(--r80);
@@ -339,11 +339,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 1.5rem;
 }
 
-.service__section .cards .service_card {
+.cards .service_card {
   width: 200px;
   height: 300px;
   position: relative;
@@ -1221,6 +1221,43 @@ figure img {
 /* ------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------ */
+@media screen and (max-width: 1060px) {
+  .service__section .cards {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 240px 240px;
+    gap: 1rem;
+  }
+
+  .service__section .cards .service_card {
+    width: 160px;
+    height: 200px;
+  }
+
+  .card_header lottie-player,
+  .card-content lottie-player {
+    width: 20% !important;
+  }
+
+  .card_header {
+    top: 10%;
+    left: 15%;
+  }
+
+  .card-content {
+    top: 60%;
+    left: 15%;
+  }
+
+  .service__section .button-wrap {
+    justify-content: center;
+    padding-top: var(--r30);
+  }
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
 @media screen and (max-width: 860px) {
 
   /* HERO */
@@ -1260,7 +1297,7 @@ figure img {
     left: 0%;
     gap: 1.5rem;
   }
-  
+
   .hero-stroke__wrapper {
     top: -30%;
     right: -8%;
@@ -1281,7 +1318,8 @@ figure img {
 
   /* FAME */
   .fame__section {
-    height: 90vh;
+    height: 65vw;
+    margin-bottom: 20vw;
     overflow: hidden;
   }
 
@@ -1301,9 +1339,14 @@ figure img {
 
   .service__section .cards {
     display: grid;
-    grid-template-columns: 180px 180px;
+    grid-template-columns: 200px 200px;
     grid-template-rows: 240px 240px;
     gap: 1rem;
+  }
+
+  .service__section .cards .service_card {
+    width: 160px;
+    height: 200px;
   }
 
   .element-ripple {
@@ -1317,11 +1360,6 @@ figure img {
   .element-ripple {
     width: 180%;
     transform: translate(0, -70%);
-  }
-
-  .service__section .cards .service_card {
-    width: 160px;
-    height: 200px;
   }
 
   .card_header lottie-player,
@@ -1621,15 +1659,14 @@ figure img {
 
   /* FAME */
   .fame__section {
-    /* height: 90vh; */
+    height: 80vw;
     /* height: 100%; */
-    height: 50vmax;
+    /* height: 50vmax; */
     overflow: hidden;
   }
 
   .fame__section .fame_wrap {
-    /* height: 95vh;
-    overflow: hidden; */
+    height: 80%;
   }
 
   .fame_wrap::before {
@@ -1646,7 +1683,7 @@ figure img {
   } */
 
   .fame__section .button-wrap {
-    bottom: 10%;
+    /* bottom: 10%; */
   }
 
   /* SERVICES */
@@ -1658,16 +1695,17 @@ figure img {
 
   .service__section .cards {
     padding: var(--r30) 0 0;
-    column-gap: 0;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    /* column-gap: 0.5rem; */
+    grid-template-columns: 140px 140px;
+    grid-template-rows: 180px 180px;
+    /* gap: 0.5rem; */
     place-content: center;
     place-items: center;
   }
 
   .service__section .cards .service_card {
     width: 130px;
-    height: 220px;
+    height: 180px;
   }
 
   .card_header {
