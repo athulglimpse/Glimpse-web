@@ -40,6 +40,7 @@ container.innerHTML = `
 
 const copyToClipboard = async () => {
   const { ClipboardItem } = window;
+  const linkCopiedText = document.getElementById("link-copied")
   const type = "text/plain";
   const blob = new Blob([`${window.location.href}`], {
     type,
@@ -48,6 +49,10 @@ const copyToClipboard = async () => {
   await navigator.clipboard.write(data).then(
     function () {
       console.log("copied");
+      linkCopiedText.style.opacity = "1"
+      setTimeout(()=>{
+        linkCopiedText.style.opacity = "0"
+      },2000)
     },
     function () {
       console.log("failed");

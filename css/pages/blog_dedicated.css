@@ -36,13 +36,13 @@
 .main__body p {
   padding-bottom: var(--r16);
   font-size: 18px;
-  
+
 }
 
 .list_block {
   padding-top: var(--r30);
   letter-spacing: 0.01rem;
-    line-height: 2.5;
+  line-height: 2.5;
 }
 
 .sources_wrap {
@@ -61,11 +61,19 @@
   max-width: 90%;
 }
 
+.sources_links ul {
+  list-style: disc outside;
+}
+
+.sources_links ul li::marker {
+  font-size: 1.5rem;
+}
+
 .sources_links a {
   color: #216fec;
   text-decoration: none;
   letter-spacing: 0.01rem;
-    line-height: 2.5;
+  line-height: 2.5;
 }
 
 .bottom__section {
@@ -80,7 +88,7 @@
 .bottom__section h6 {
   font-family: "Cera Pro Black", sans-serif;
   letter-spacing: 0.01rem;
-    line-height: 2.5;
+  line-height: 2.5;
   font-size: 1.2rem;
   background: -webkit-linear-gradient(left,
       #fbc519 0%,
@@ -127,6 +135,18 @@
   max-width: 14px;
 }
 
+#link-copied {
+  /* margin-top: 8px; */
+  opacity: 0;
+  transition: 500ms;
+  font-family: 'Cera Pro Regular', sans-serif !important;
+  color: white;
+  background: none;
+  -webkit-text-fill-color: white;
+  font-size: 15px;
+  margin-left: 23px;
+}
+
 .related_wrap {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -152,7 +172,7 @@
   font-size: 1rem;
   text-align: center;
   letter-spacing: 0.01rem;
-    line-height: 1.5;
+  line-height: 1.5;
   font-weight: 700;
   padding-top: 15px;
   max-width: 250px;
@@ -181,18 +201,28 @@
     font-size: 30px;
   }
 
+  .sources_links ul li::marker {
+    font-size: 2.5rem;
+  }
+  
+
   .bottom__section h6 {
     font-size: 40px;
   }
 
   .share_link-x {
-    max-width: 20px;
+    max-width: 10px;
   }
 
   .share_link {
-    max-width: 34px;
+    max-width: 20px;
   }
 
+  #link-copied {
+    margin-left: 30px;
+    font-size: 25px;
+  }
+  
   .related_post h5 {
     font-size: 34px;
     max-width: 400px;
