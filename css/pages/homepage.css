@@ -509,6 +509,7 @@
   width: 100%;
   position: relative;
   padding-top: var(--r100);
+  margin-bottom: 100px;
 }
 
 .double__stroke-2 {
