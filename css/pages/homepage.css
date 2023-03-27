@@ -362,6 +362,10 @@
   z-index: 3;
 }
 
+.card_header lottie-player {
+  margin-bottom: 3px;
+}
+
 .card_header lottie-player,
 .card-content lottie-player {
   width: 30% !important;
@@ -1365,7 +1369,7 @@ figure img {
 
   .card_header lottie-player,
   .card-content lottie-player {
-    width: 20% !important;
+    width: 26% !important;
   }
 
   .card_header {
@@ -1377,6 +1381,12 @@ figure img {
     top: 60%;
     left: 15%;
   }
+
+  .card-content h2,
+  .card_header h2 {
+    font-size: 1rem;
+  }
+
 
   .service__section .button-wrap {
     justify-content: center;
@@ -1715,7 +1725,7 @@ figure img {
   }
 
   .card-content {
-    top: 45%;
+    top: 55%;
     left: 15%;
   }
 
