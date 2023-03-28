@@ -458,6 +458,17 @@
   transition: transform ease-out 2s;
 }
 
+.parallax__logo {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+  object-position: bottom right;
+  z-index: 0;
+  position: fixed;
+  bottom: -3%;
+  right: 0%;
+}
+
 .fullview__section {
   display: none;
   opacity: 0;
