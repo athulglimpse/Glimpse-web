@@ -92,7 +92,20 @@ function animateImage() {
 
   images.forEach((image, id) => {
     intRatioValue = ratio - id * 0.5;
-    setTransform(image, `translateX(-${intRatioValue * 10}%)`);
+    // less is right more is left
+    switch (id) {
+      case 1:
+        setTransform(image, `translateX(-${intRatioValue * 7.5}%)`);
+        break;
+
+      case 3:
+        setTransform(image, `translateX(-${intRatioValue * 14}%)`);
+        break;
+
+      default:
+        setTransform(image, `translateX(-${intRatioValue * 10}%)`);
+        break;
+    }
   });
 }
 animate();
