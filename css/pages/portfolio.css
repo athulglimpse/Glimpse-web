@@ -1,0 +1,62 @@
+.banner_section img {
+    width: 100%;
+}
+
+#portfolio_text {
+    margin-top: 4%;
+}
+
+#paragraph__wrap {
+    margin-top: 1%;
+    margin-bottom: 7%;
+    font-size: clamp(13px, 1.2vw, 30px);
+}
+
+#clients_wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+
+#clients_wrap .three-row,
+#clients_wrap .two-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+
+#clients_wrap img {
+    width: clamp(50px, 24vw, 600px);
+}
+
+/* Overlay of images */
+
+.image-wrap {
+    position: relative;
+}
+
+.bkg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo-img {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(13, 11, 23, 0.85);
+    transition: 0.4s;
+}
+
+.logo-img:hover {
+    opacity: 0;
+    transition: 0.4s;
+    cursor: pointer;
+}
