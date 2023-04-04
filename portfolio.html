@@ -201,16 +201,20 @@
             
             currLogo.addEventListener("mouseover", (event) => {
                 currBkg.className = ""
+                currLogo.className = "logo-img logo-img-focused"
             });
             currLogo.addEventListener("touchstart", (event) => {
                 currBkg.className = ""
+                currLogo.className = "logo-img logo-img-focused"
             });
             
             currLogo.addEventListener("mouseout", (event) => {
                 currBkg.className = "bkg-img"
+                currLogo.className = "logo-img"
             });
             currLogo.addEventListener("touchend", (event) => {
                 currBkg.className = "bkg-img"
+                currLogo.className = "logo-img"
             });
         }
     </script>

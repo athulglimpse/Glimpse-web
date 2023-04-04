@@ -54,7 +54,7 @@
     transition: ease 0.4s;
 }
 
-.logo-img:hover, .logo-img:active, .logo-img:focus {
+.logo-img-focused {
     opacity: 0;
     transition: ease 0.4s;
     cursor: pointer;
