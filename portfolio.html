@@ -125,18 +125,18 @@
                         <img class="logo-img" src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/portfolio_page/Logo_YashRaj.png" alt="Yash Raj Films">
                      </div>
                     <div class="image-wrap">
-                        <img class="bkg-img" src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/portfolio_page/Background_MOTN.png" alt="Mother of the Nation festival">
-                        <img class="logo-img" src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/portfolio_page/Logo_MOTN.png" alt="Mother of the Nation festival">
-                     </div>
+                        <img class="bkg-img" src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/portfolio_page/Background_Balade.png" alt="Balade">
+                        <img class="logo-img" src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/portfolio_page/Logo_Balade.png" alt="Balade">
+                    </div>
                     <div class="image-wrap">
                         <img class="bkg-img" src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/portfolio_page/Background_Jaeger.png" alt="Jaeger Le Coultre">
                         <img class="logo-img" src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/portfolio_page/Logo_Jaeger.png" alt="Jaeger Le Coultre">
-                     </div>
+                    </div>
                 </div>
                 <div class="two-row">
                     <div class="image-wrap">
-                        <img class="bkg-img" src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/portfolio_page/Background_Balade.png" alt="Balade">
-                        <img class="logo-img" src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/portfolio_page/Logo_Balade.png" alt="Balade">
+                        <img class="bkg-img" src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/portfolio_page/Background_MOTN.png" alt="Mother of the Nation festival">
+                        <img class="logo-img" src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/portfolio_page/Logo_MOTN.png" alt="Mother of the Nation festival">
                      </div>
                     <div class="image-wrap">
                         <img class="bkg-img" src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/portfolio_page/Background_FR.png" alt="FR">
@@ -187,6 +187,26 @@
     </main>
 
     <!-- SCRIPTS -->
+    <script>
+        const logos = document.getElementsByClassName("logo-img")
+        const bkgs = document.getElementsByClassName("bkg-img")
+
+        for (let i = 0; i < logos.length; i++) {
+            const currLogo = logos[i];
+            const currBkg = bkgs[i];
+            
+            currLogo.addEventListener("mouseover", (event) => {
+                currBkg.className = ""
+            });
+            
+            currLogo.addEventListener("mouseout", (event) => {
+                currBkg.className = "bkg-img"
+            });
+        }
+
+
+    </script>
+
     <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- LOTTIE -->
