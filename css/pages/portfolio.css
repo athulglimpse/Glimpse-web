@@ -54,7 +54,7 @@
     transition: ease 0.4s;
 }
 
-.logo-img:hover {
+.logo-img:hover, .logo-img:active {
     opacity: 0;
     transition: ease 0.4s;
     cursor: pointer;
