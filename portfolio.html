@@ -202,8 +202,14 @@
             currLogo.addEventListener("mouseover", (event) => {
                 currBkg.className = ""
             });
+            currLogo.addEventListener("touchstart", (event) => {
+                currBkg.className = ""
+            });
             
             currLogo.addEventListener("mouseout", (event) => {
+                currBkg.className = "bkg-img"
+            });
+            currLogo.addEventListener("touchend", (event) => {
                 currBkg.className = "bkg-img"
             });
         }
