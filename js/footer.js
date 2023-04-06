@@ -230,7 +230,7 @@ document.getElementsByClassName("footer-logo")[0].addEventListener("click", func
   s.parentNode.insertBefore(g, s);
   g.onload = function () {
     window.chatwootSDK.run({
-      websiteToken: 'HcF3HQKWcxGTtNbvf9XBRyrn',
+      websiteToken: process.env.chatWootToken,
       baseUrl: BASE_URL
     })
   }
