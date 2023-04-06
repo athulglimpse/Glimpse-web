@@ -52,7 +52,7 @@ nav.innerHTML = `
 const navLinks = document.querySelectorAll(".nav-link");
 
 navLinks.forEach((ele) => {
-  if (ele.getAttribute("href") == window.location.pathname) {
+  if (ele.getAttribute("href") == window.location.pathname || ele.getAttribute("href") == window.location.pathname.replace(".html","")) {
     ele.classList.add("active");
   } else if (window.location.pathname.includes("/pages/services")) {
     if (ele.getAttribute("href") === "/services.html") {
