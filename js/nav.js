@@ -44,7 +44,7 @@ nav.innerHTML = `
 const navLinks = document.querySelectorAll(".nav-link");
 
 navLinks.forEach((ele) => {
-  if (ele.getAttribute("href") == window.location.pathname || ele.getAttribute("href") == window.location.pathname.replace(".html","")) {
+  if (ele.getAttribute("href") == window.location.pathname || ele.getAttribute("href").replace(".html","") == window.location.pathname) {
     ele.classList.add("active");
   } else if (window.location.pathname.includes("/pages/services")) {
     if (ele.getAttribute("href") === "/services.html") {
