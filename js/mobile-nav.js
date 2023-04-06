@@ -9,10 +9,11 @@ const menu = document.querySelector(".mob-main-menu");
 menu.innerHTML = `
 <ul>
         <li><a class="nav-link-mob" href="/">Home</a></li>
-        <li><a class="nav-link-mob" href="/awards.html">Awards</a></li>
         <li><a class="nav-link-mob" href="/services.html">Services</a></li>
-        <li><a class="nav-link-mob" href="/blog.html">Blog</a></li>
+        <li><a class="nav-link-mob" href="/awards.html">Awards</a></li>
+        <li><a class="nav-link-mob" href="/portfolio.html">Portfolio</a></li>
         <li><a class="nav-link-mob" href="/clients.html">Clients</a></li>
+        <li><a class="nav-link-mob" href="/blog.html">Blog</a></li>
         <li><a class="nav-link-mob" href="/contactus.html">Contact Us</a></li>
       </ul>
       <ul class="mob-social-wrap">
