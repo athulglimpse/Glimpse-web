@@ -419,6 +419,16 @@
   display: none;
 }
 
+.portfolio__section .button-wrap {
+  float: right;
+}
+
+.portfolio-swiper-container .button-wrap {
+  float: right;
+  padding-top: var(--r30);
+}
+
+
 .parallax__slider {
   height: 70vh;
   width: 100%;
@@ -1438,6 +1448,7 @@ figure img {
     width: 100%;
     position: relative;
     padding: var(--r120) var(--r30);
+    margin-top: 20px;
   }
 
   .anim__ground {
@@ -1780,6 +1791,7 @@ figure img {
   .clients__section {
     height: 100%;
     padding: var(--r30);
+    margin-top: 80px;
   }
 
   .double__stroke-2 {

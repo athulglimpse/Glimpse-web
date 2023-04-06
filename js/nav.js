@@ -16,33 +16,25 @@ nav.innerHTML = `
           >
             <ul class="navbar-nav gap-0 gap-md-3">
               <li class="nav-item">
-                <a class="nav-link text-uppercase" aria-current="page" href="/"
-                  >Home</a
-                >
+                <a class="nav-link text-uppercase" aria-current="page" href="/">Home</a>
               </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link text-uppercase" href="#about">About Us</a>
-              </li> -->
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="/services.html">Services</a>
+              </li>
               <li class="nav-item">
                 <a class="nav-link text-uppercase" href="/awards.html">Awards</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-uppercase" href="/services.html"
-                  >Services</a
-                >
+                <a class="nav-link text-uppercase" href="/portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="/clients.html">Clients</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-uppercase" href="/blog.html">Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-uppercase" href="/clients.html"
-                  >Clients</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-uppercase" href="/contactus.html"
-                  >Contact us</a
-                >
+                <a class="nav-link text-uppercase" href="/contactus.html">Contact us</a>
               </li>
             </ul>
           </div>
