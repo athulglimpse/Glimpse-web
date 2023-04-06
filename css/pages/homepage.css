@@ -1448,6 +1448,7 @@ figure img {
     width: 100%;
     position: relative;
     padding: var(--r120) var(--r30);
+    margin-top: 20px;
   }
 
   .anim__ground {
@@ -1790,6 +1791,7 @@ figure img {
   .clients__section {
     height: 100%;
     padding: var(--r30);
+    margin-top: 80px;
   }
 
   .double__stroke-2 {
