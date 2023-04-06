@@ -419,6 +419,16 @@
   display: none;
 }
 
+.portfolio__section .button-wrap {
+  float: right;
+}
+
+.portfolio-swiper-container .button-wrap {
+  float: right;
+  padding-top: var(--r30);
+}
+
+
 .parallax__slider {
   height: 70vh;
   width: 100%;
