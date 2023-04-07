@@ -196,9 +196,17 @@
     </main>
 
     <!-- SCRIPTS -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".image-wrap"), {
+            reverse: true,
+            max: 7,
+            speed: 800
+        });
+    </script>
     <script>
-        const logos = document.getElementsByClassName("logo-img")
-        const bkgs = document.getElementsByClassName("bkg-img")
+        const logos = document.getElementsByClassName("logo-img");
+        const bkgs = document.getElementsByClassName("bkg-img");
 
         for (let i = 0; i < logos.length; i++) {
             const currLogo = logos[i];
