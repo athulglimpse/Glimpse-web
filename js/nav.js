@@ -2,7 +2,7 @@ const nav = document.querySelector("nav");
 
 nav.innerHTML = `
 <div class="nav-wrap">
-          <a class="navbar-brand" href="/"
+          <a class="navbar-brand" ondrop="drop(event)" ondragover="allowDrop(event)" href="/"
             ><img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/logo.svg" alt="logo"
           /></a>
           <div class="navbar-toggler">
