@@ -6,10 +6,10 @@
   position: relative;
   height: 90vh;
   /* max-height: 780px; */
-  /* background-image: url(https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/Cloud-Static.png);
+  background-image: url(https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/Cloud-Static.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 65%; */
+  background-size: contain;
   padding-left: var(--r-container);
   padding-right: var(--r-container);
 }
@@ -82,6 +82,10 @@
   animation: turnonlights 6.0s forwards;
   /* -webkit-animation: turnonlights 5.0s both steps(2, start); */
   /* -moz-animation: turnonlights 5.0s both steps(2, start);   */
+}
+
+#orbit-button {
+  animation: turnonlights 6.0s forwards;
 }
 
 .mid_side button {
@@ -1532,7 +1536,7 @@ figure img {
   /* HERO SECTION */
   #hero {
     height: 100%;
-    padding-top: var(--r100);
+    /* padding-top: var(--r100); */
   }
 
   .hero_wrap {
@@ -1792,7 +1796,7 @@ figure img {
     }
 
     50% {
-      transform: rotate(180deg) translateX(200px) scale(0.6);
+      transform: rotate(180deg) translateX(250px) scale(0.6);
       z-index: 0;
     }
 
@@ -1817,25 +1821,21 @@ figure img {
 }
 
 @keyframes turnonlights {
-  0%          { color: #1e1935; text-shadow: 0 0 0; }
-  10%         { color: #1e1935; text-shadow: 0 0 0; }
-
-  13%        { color: #FFFFFF; text-shadow: 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 15px #ff99de, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de; }
-  18%        { color: #1e1935; text-shadow: 0 0 0; }
-  
-  32%        { color: #1e1935; text-shadow: 0 0 0; }
-  33%        { color: #FFFFFF; text-shadow: 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 15px #ff99de, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de; }
-  33.5%      { color: #1e1935; text-shadow: 0 0 0; }
-  34%        { color: #FFFFFF; text-shadow: 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 15px #ff99de, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de; }
-  34.5%      { color: #1e1935; text-shadow: 0 0 0; }
-  35%        { color: #FFFFFF; text-shadow: 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 15px #ff99de, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de; }
-  
-  80%       { color: #1e1935;; text-shadow: 0 0 0; }
-  81%       { color: #FFFFFF; text-shadow: 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 15px #ff99de, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de; }
-  81.5%      { color: #FFFFFF; text-shadow: 0 0 0; }
-  82%       { color: #FFFFFF; text-shadow: 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 15px #ff99de, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de; }
-  82.5%      { color: #FFFFFF; text-shadow: 0 0 0; }
-  83%       { color: #FFFFFF; text-shadow: 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 15px #ff99de, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de; }
-  
-  100%       { color: #ffffff; text-shadow: 0 0 0;}
+  0%         {border-color: #1e1935; color: #1e1935; text-shadow: 0 0 0; }
+  10%        {border-color: #1e1935; color: #1e1935; text-shadow: 0 0 0; }
+  13%        {border-color: #FFFFFF; color: #FFFFFF; text-shadow: 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 15px #ff99de, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de; }
+  18%        {border-color: #1e1935; color: #1e1935; text-shadow: 0 0 0; }
+  32%        {border-color: #1e1935; color: #1e1935; text-shadow: 0 0 0; }
+  33%        {border-color: #FFFFFF; color: #FFFFFF; text-shadow: 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 15px #ff99de, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de; }
+  33.5%      {border-color: #1e1935; color: #1e1935; text-shadow: 0 0 0; }
+  34%        {border-color: #FFFFFF; color: #FFFFFF; text-shadow: 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 15px #ff99de, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de; }
+  34.5%      {border-color: #1e1935; color: #1e1935; text-shadow: 0 0 0; }
+  35%        {border-color: #FFFFFF; color: #FFFFFF; text-shadow: 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 15px #ff99de, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de; }
+  80%        {border-color: #1e1935; color: #1e1935; text-shadow: 0 0 0; }
+  81%        {border-color: #FFFFFF; color: #FFFFFF; text-shadow: 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 15px #ff99de, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de; }
+  81.5%      {border-color: #FFFFFF; color: #FFFFFF; text-shadow: 0 0 0; }
+  82%        {border-color: #FFFFFF; color: #FFFFFF; text-shadow: 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 15px #ff99de, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de; }
+  82.5%      {border-color: #FFFFFF; color: #FFFFFF; text-shadow: 0 0 0; }
+  83%        {border-color: #FFFFFF; color: #FFFFFF; text-shadow: 0 0 5px #ff99de, 0 0 10px #ff99de, 0 0 15px #ff99de, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de; }
+  100%       {border-color: #ffffff; color: #ffffff; text-shadow: 0 0 0;}
 }
