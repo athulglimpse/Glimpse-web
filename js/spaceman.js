@@ -123,5 +123,10 @@ function allowDrop(event) {
 }
 
 function dragStart(event) {
+    window.oncontextmenu = (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        return false;
+    }
     event.dataTransfer.setData("orbit-astronaut", event.target.id)
 }
