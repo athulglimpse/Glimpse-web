@@ -16,6 +16,50 @@
   justify-content: space-between;
 }
 
+/* Menu underline */
+.nav-item {
+  position: relative;
+}
+
+.nav-item .menu-hover-line {
+  background-image: linear-gradient(to right, #FCDC00, #FBC519, #FA954E, #F96E79, #F95397, #FD0988);
+  position: absolute;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  top: 100%;
+  right: 50%;
+  width: 90%;
+  height: 0.3vw;
+  transform-origin: center;
+  transform: scaleX(0) translateX(50%);
+  -webkit-transform: scaleX(0) translateX(50%);
+  -moz-transform: scaleX(0) translateX(50%);
+  -ms-transform: scaleX(0) translateX(50%);
+  -o-transform: scaleX(0) translateX(50%);
+  transition: transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  -moz-transition: transform 0.1s linear;
+  -ms-transition: transform 0.1s linear;
+  -o-transition: transform 0.1s linear;
+}
+
+.nav-item:hover .menu-hover-line {
+  transition: transform 0.5s cubic-bezier(0, 0, .63, 1.46);
+  -webkit-transition: transform 0.5s cubic-bezier(0, 0, .63, 1.46);
+  -moz-transition: transform 0.5s cubic-bezier(0, 0, .63, 1.46);
+  -ms-transition: transform 0.5s cubic-bezier(0, 0, .63, 1.46);
+  -o-transition: transform 0.5s cubic-bezier(0, 0, .63, 1.46);
+  transform: scaleX(1) translateX(50%);
+  -webkit-transform: scaleX(1) translateX(50%);
+  -moz-transform: scaleX(1) translateX(50%);
+  -ms-transform: scaleX(1) translateX(50%);
+  -o-transform: scaleX(1) translateX(50%);
+}
+
+
 .nav-link {
   font-family: "Cera Pro Medium";
 }

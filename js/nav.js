@@ -16,24 +16,31 @@ nav.innerHTML = `
           >
             <ul class="navbar-nav gap-0 gap-md-3">
               <li class="nav-item">
+                <div class="menu-hover-line"></div>
                 <a class="nav-link text-uppercase" aria-current="page" href="/">Home</a>
               </li>
               <li class="nav-item">
+                <div class="menu-hover-line"></div>
                 <a class="nav-link text-uppercase" href="/services.html">Services</a>
               </li>
               <li class="nav-item">
+                <div class="menu-hover-line"></div>
                 <a class="nav-link text-uppercase" href="/awards.html">Awards</a>
               </li>
               <li class="nav-item">
+                <div class="menu-hover-line"></div>
                 <a class="nav-link text-uppercase" href="/portfolio.html">Portfolio</a>
               </li>
               <li class="nav-item">
+                <div class="menu-hover-line"></div>
                 <a class="nav-link text-uppercase" href="/clients.html">Clients</a>
               </li>
               <li class="nav-item">
+                <div class="menu-hover-line"></div>
                 <a class="nav-link text-uppercase" href="/blog.html">Blog</a>
               </li>
               <li class="nav-item">
+                <div class="menu-hover-line"></div>
                 <a class="nav-link text-uppercase" href="/contactus.html">Contact us</a>
               </li>
             </ul>
@@ -44,7 +51,7 @@ nav.innerHTML = `
 const navLinks = document.querySelectorAll(".nav-link");
 
 navLinks.forEach((ele) => {
-  if (ele.getAttribute("href") == window.location.pathname || ele.getAttribute("href").replace(".html","") == window.location.pathname) {
+  if (ele.getAttribute("href") == window.location.pathname || ele.getAttribute("href").replace(".html","") == window.location.pathname || ele.getAttribute("href").replace("/","/index.html") == window.location.pathname) {
     ele.classList.add("active");
   } else if (window.location.pathname.includes("/pages/services")) {
     if (ele.getAttribute("href") === "/services.html") {

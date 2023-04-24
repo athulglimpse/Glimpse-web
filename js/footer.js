@@ -1,6 +1,7 @@
 const footer = document.getElementById("footer");
 
 footer.innerHTML = `
+    <script> </script>
     <footer class="text-center text-lg-start mx-auto">
           <div class="container-fluid text-center text-md-start mt-5 mx-auto">
             <!-- Grid row -->
