@@ -69,6 +69,7 @@
   position: absolute;
   width: 20vmin;
   animation: orbit 16s linear infinite;
+  -webkit-animation: orbit 16s linear infinite;
 }
 
 #orbit-sun {
