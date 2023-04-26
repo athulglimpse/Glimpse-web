@@ -68,8 +68,8 @@
   top: -25%;
   right: -25%;
   width: 20vmin;
-  animation: astronautSuck 6s linear forwards 6.5s;
-  -webkit-animation: astronautSuck 6s linear forwards 6.5s;
+  animation: astronautSuck 6s linear forwards 5.5s;
+  -webkit-animation: astronautSuck 6s linear forwards 5.5s;
 }
 
 #orbit-sun {
@@ -1794,6 +1794,10 @@ figure img {
   70% {
     z-index: 0;
     opacity: 1;
+  }
+
+  80% {
+    opacity: 0;
   }
 
   100% {
