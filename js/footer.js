@@ -163,23 +163,19 @@ footer.innerHTML = `
           >
             <div class="footer__input-wrapper">
               <h4 class="gradient-text-small fw-bold text-nowrap">
-                Subscribe to our newsletter:
+                Get Social Media Updates on Whatsapp:
               </h4>
               <div
-                class="footer__gradient-box__input rounded input-group d-flex align-items-center justify-content-evenly"
+                class="footer__gradient-box__input-rev rounded input-group d-flex align-items-center justify-content-evenly"
               >
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Email*"
-                  aria-label="Recipient's email"
-                  aria-describedby="newsletter form"
-                  required
-                />
+                <a>
+                SM News by Myndful Social
+                </a>
+                <hr />
                 <div class="input-group-append d-flex">
-                  <button class="btn text-white px-4" type="button">
-                    Subscribe
-                  </button>
+                  <a href="https://chat.whatsapp.com/B5wXiR1rAJEHMDoXJMnyTs" class="btn text-white px-4">
+                    Join
+                  </a>
                 </div>
               </div>
             </div>
@@ -203,8 +199,7 @@ footer.innerHTML = `
           >
             <p>All rights reserved 2022 © Glimpse Digital Agency</p>
             <p>
-              International Media Production Zone (IMPZ), Dubai, United Arab
-              Emirates
+            Unit 403/404/503 Makateb 2, Dubai Production City, Dubai, UAE.
             </p>
           </div>
         </footer>
