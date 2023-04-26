@@ -6,7 +6,7 @@
   position: relative;
   height: 90vh;
   /* max-height: 780px; */
-  background-image: url(https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/Cloud-Static-min.png);
+  /* background-image: url(https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/Cloud-Static-min.png); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -14,16 +14,14 @@
   padding-right: var(--r-container);
 }
 
-#hero>.stars-bkg {
+#hero>#hero-bkg {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
-  /* max-height: 780px; */
-  width: 100vw;
-  object-fit: cover;
-  mix-blend-mode: screen;
-  object-position: bottom;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
 }
 
 #hero>#static-stars-bkg {
@@ -67,26 +65,26 @@
 #orbit-astronaut {
   z-index: 2;
   position: absolute;
+  top: -25%;
+  right: -25%;
   width: 20vmin;
-  animation: orbit 16s linear infinite;
-  -webkit-animation: orbit 16s linear infinite;
+  animation: astronautSuck 6s linear forwards 5.5s;
+  -webkit-animation: astronautSuck 6s linear forwards 5.5s;
 }
 
 #orbit-sun {
   z-index: 1;
-  /* text-shadow: 0px 0px 10px yellow; */
-  /* animation: neonFlicker 2s linear infinite; */
-  /* animation: turnonlights 5s linear infinite; */
-
-  /* text-shadow: 0 0 3px #635861, 0 0 5px #635861;    */
-  /* text-shadow: 0 0 3px #FFFFFF;    */
   animation: turnonlights 6.0s forwards;
-  /* -webkit-animation: turnonlights 5.0s both steps(2, start); */
-  /* -moz-animation: turnonlights 5.0s both steps(2, start);   */
+  -webkit-animation: turnonlights 6.0s forwards;
 }
 
 #orbit-button {
   animation: turnonlights 6.0s forwards;
+  -webkit-animation: turnonlights 6.0s forwards;
+}
+
+#orbit-button:hover {
+  color: var(--bg-color) !important;
 }
 
 .mid_side button {
@@ -104,7 +102,8 @@
   box-sizing: border-box;
 }
 
-.hero__text span {
+.hero__text .we-are,
+.trans {
   font-family: "Cera Pro Regular";
   font-size: clamp(1.438rem, 5.5vw, 7.3rem);
   letter-spacing: 0rem;
@@ -112,7 +111,7 @@
   font-weight: 600;
 }
 
-.hero__text h1 {
+.hero__text .digital {
   font-family: "Cera Pro Bold";
   font-size: clamp(3.75rem, 12.1vw, 16.5rem);
   letter-spacing: 0.2rem;
@@ -1484,49 +1483,6 @@ figure img {
   .blog-swiper .swiper-pagination-bullet-active {
     background-color: #fb0988;
   }
-
-  @keyframes orbit {
-    0% {
-      transform: rotate(0deg) translateX(100%) scale(1.5);
-      z-index: 2;
-    }
-
-    10% {
-      transform: rotate(36deg) translateX(100%) scale(1.3);
-      z-index: 2;
-    }
-
-    30% {
-      z-index: 2;
-    }
-
-    35% {
-      z-index: 0;
-    }
-
-    50% {
-      transform: rotate(180deg) translateX(100%) scale(0.6);
-      z-index: 0;
-    }
-
-    70% {
-      transform: rotate(252deg) translateX(100%) scale(0.9);
-      z-index: 0;
-    }
-
-    75% {
-      z-index: 2;
-    }
-
-    90% {
-      z-index: 2;
-    }
-
-    100% {
-      transform: rotate(360deg) translateX(100%) scale(1.5);
-      z-index: 2;
-    }
-  }
 }
 
 /* ------------------------------------------------------------------------------------------- */
@@ -1820,50 +1776,43 @@ figure img {
     -o-transform: scaleY(1) translateY(50%);
   }
 
+}
 
-  @keyframes orbit {
-    0% {
-      transform: rotate(0deg) translateX(250px) scale(1.5);
-      z-index: 2;
-    }
+@keyframes astronautSuck {
+  0% {
+    z-index: 2;
+    opacity: 1;
+    top: -20%;
+    right: -20%;
+    transform: rotate3d(0, 0, 0) scale(1) translate(-50%, -50%);
+    -webkit-transform: rotate3d(0, 0, 0) scale(1) translate(-50%, -50%);
+    -moz-transform: rotate3d(0, 0, 0) scale(1) translate(-50%, -50%);
+    -ms-transform: rotate3d(0, 0, 0) scale(1) translate(-50%, -50%);
+    -o-transform: rotate3d(0, 0, 0) scale(1) translate(-50%, -50%);
+  }
 
-    10% {
-      transform: rotate(36deg) translateX(250px) scale(1.3);
-      z-index: 2;
-    }
+  70% {
+    z-index: 0;
+    opacity: 1;
+  }
 
-    30% {
-      z-index: 2;
-    }
+  80% {
+    opacity: 0;
+  }
 
-    35% {
-      z-index: 0;
-    }
-
-    50% {
-      transform: rotate(180deg) translateX(250px) scale(0.6);
-      z-index: 0;
-    }
-
-    70% {
-      transform: rotate(252deg) translateX(250px) scale(0.9);
-      z-index: 0;
-    }
-
-    75% {
-      z-index: 2;
-    }
-
-    90% {
-      z-index: 2;
-    }
-
-    100% {
-      transform: rotate(360deg) translateX(250px) scale(1.5);
-      z-index: 2;
-    }
+  100% {
+    z-index: 0;
+    opacity: 0;
+    right: 45%;
+    top: 45%;
+    transform: rotate3d(0, 0, 1, 200deg) scale(0) translate(-50%, -50%);
+    -webkit-transform: rotate3d(0, 0, 1, 200deg) scale(0) translate(-50%, -50%);
+    -moz-transform: rotate3d(0, 0, 1, 200deg) scale(0) translate(-50%, -50%);
+    -ms-transform: rotate3d(0, 0, 1, 200deg) scale(0) translate(-50%, -50%);
+    -o-transform: rotate3d(0, 0, 1, 200deg) scale(0) translate(-50%, -50%);
   }
 }
+
 
 @keyframes turnonlights {
   0% {
