@@ -163,19 +163,19 @@ footer.innerHTML = `
           >
             <div class="footer__input-wrapper">
               <h4 class="gradient-text-small fw-bold text-nowrap">
-                Get Social Media Updates on Whatsapp:
+                Stay in touch:
               </h4>
               <div
                 class="footer__gradient-box__input-rev rounded input-group d-flex align-items-center justify-content-evenly"
               >
+                <a href="https://chat.whatsapp.com/B5wXiR1rAJEHMDoXJMnyTs" class="btn text-white px-4">
+                Join Now
+                </a>
+                <hr />
                 <a>
                 SM News by Myndful Social
                 </a>
-                <hr />
                 <div class="input-group-append d-flex">
-                  <a href="https://chat.whatsapp.com/B5wXiR1rAJEHMDoXJMnyTs" class="btn text-white px-4">
-                    Join
-                  </a>
                 </div>
               </div>
             </div>
