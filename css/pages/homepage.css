@@ -22,6 +22,7 @@
   width: 100%;
   object-fit: contain;
   object-position: center;
+  mix-blend-mode: screen;
 }
 
 #hero>#static-stars-bkg {
