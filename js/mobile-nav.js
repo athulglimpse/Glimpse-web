@@ -9,46 +9,62 @@ const menu = document.querySelector(".mob-main-menu");
 menu.innerHTML = `
 <ul>
         <li><a class="nav-link-mob" href="/">Home</a></li>
-        <li><a class="nav-link-mob" href="/services.html">Services</a></li>
+        <li class="mob-services-dropdown-wrap" >
+          <a class="nav-link-mob services-link" href="/services.html">Services</a>  <span id="arrow"></span>
+          <div class="mob-services-dropdown">
+            <a class="sub-nav-link" href="/pages/services/seo.html">SEO</a>
+            <a class="sub-nav-link" href="/pages/services/sem.html">SEM</a>
+            <a class="sub-nav-link" href="/pages/services/branding.html">Branding</a>
+            <a class="sub-nav-link" href="/pages/services/advertising.html">Advertising</a>
+            <a class="sub-nav-link" href="/pages/services/social-media.html">Social Media</a>
+            <a class="sub-nav-link" href="/pages/services/photography.html">Photography</a>
+            <a class="sub-nav-link" href="/pages/services/digital-strategy.html">Digital Strategy</a>
+            <a class="sub-nav-link" href="/pages/services/video-production.html">Video Production</a>
+            <a class="sub-nav-link" href="/pages/services/ar.html">Augmented Reality</a>
+            <a class="sub-nav-link" href="/pages/services/influencer-mgmt.html">Influencer Management</a>
+            <a class="sub-nav-link" href="/pages/services/reputation-mgmt.html">Reputation Management</a>
+            <a class="sub-nav-link" href="/pages/services/community-mgmt.html">Community Management</a>
+          </div>
+        </li>
         <li><a class="nav-link-mob" href="/awards.html">Awards</a></li>
         <li><a class="nav-link-mob" href="/portfolio.html">Portfolio</a></li>
         <li><a class="nav-link-mob" href="/clients.html">Clients</a></li>
         <li><a class="nav-link-mob" href="/blog.html">Blog</a></li>
         <li><a class="nav-link-mob" href="/contactus.html">Contact Us</a></li>
       </ul>
-      <ul class="mob-social-wrap">
-        <li>
-          <a target="_blank" href="https://www.instagram.com/theglimpseproject/"
-            ><i class="fab fa-instagram"></i
-          ></a>
-        </li>
-        <li>
-          <a target="_blank" href="https://www.facebook.com/TheGlimpseProject/"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-        </li>
-        <li>
-          <a target="_blank" href="https://twitter.com/glimpseproject/"
-            ><i class="fab fa-twitter"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/company/glimpse-digital-agency"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-        </li>
-        <li>
-          <a target="_blank" href="https://www.tiktok.com/@theglimpseproject/"
-            ><i class="fab fa-tiktok"></i
-          ></a>
-        </li>
-      </ul>
-`;
+      `;
+      // <ul class="mob-social-wrap">
+      //   <li>
+      //     <a target="_blank" href="https://www.instagram.com/theglimpseproject/"
+      //       ><i class="fab fa-instagram"></i
+      //     ></a>
+      //   </li>
+      //   <li>
+      //     <a target="_blank" href="https://www.facebook.com/TheGlimpseProject/"
+      //       ><i class="fab fa-facebook-f"></i
+      //     ></a>
+      //   </li>
+      //   <li>
+      //     <a target="_blank" href="https://twitter.com/glimpseproject/"
+      //       ><i class="fab fa-twitter"></i
+      //     ></a>
+      //   </li>
+      //   <li>
+      //     <a
+      //       target="_blank"
+      //       href="https://www.linkedin.com/company/glimpse-digital-agency"
+      //       ><i class="fab fa-linkedin-in"></i
+      //     ></a>
+      //   </li>
+      //   <li>
+      //     <a target="_blank" href="https://www.tiktok.com/@theglimpseproject/"
+      //       ><i class="fab fa-tiktok"></i
+      //     ></a>
+      //   </li>
+      // </ul>
 const links = menu.querySelectorAll("li");
 
-const navLinksMob = document.querySelectorAll(".nav-link-mob");
+const navLinksMob = document.querySelectorAll(".nav-link-mob, .sub-nav-link");
 
 navLinksMob.forEach((ele) => {
   if (ele.getAttribute("href") == window.location.pathname) {
@@ -63,6 +79,20 @@ navLinksMob.forEach((ele) => {
     }
   }
 });
+
+// Services Dropdown
+const arrow = document.getElementById("arrow");
+const dropdown = document.getElementsByClassName("mob-services-dropdown")[0];
+
+arrow.onclick = () => {
+  if(arrow.classList.contains("active-arrow")) {
+    arrow.classList.remove("active-arrow");
+    dropdown.style.height = "0px";
+  } else if (!arrow.classList.contains("active-arrow")) {
+    arrow.classList.add("active-arrow");
+    dropdown.style.height = "375px";
+  }
+}
 
 const tl = gsap.timeline({ paused: true });
 // const tlBtn = gsap.timeline({ duration: 0.5, paused: true });
