@@ -19,9 +19,23 @@ nav.innerHTML = `
                 <div class="menu-hover-line"></div>
                 <a class="nav-link text-uppercase" aria-current="page" href="/">Home</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item services-nav-item">
                 <div class="menu-hover-line"></div>
-                <a class="nav-link text-uppercase" href="/services.html">Services</a>
+                <a class="nav-link  text-uppercase" href="/services.html">Services</a>
+                <div class="services-dropdown">
+                  <a class="sub-nav-link" href="/pages/services/seo.html">SEO</a>
+                  <a class="sub-nav-link" href="/pages/services/sem.html">SEM</a>
+                  <a class="sub-nav-link" href="/pages/services/branding.html">Branding</a>
+                  <a class="sub-nav-link" href="/pages/services/advertising.html">Advertising</a>
+                  <a class="sub-nav-link" href="/pages/services/photography.html">Photography</a>
+                  <a class="sub-nav-link" href="/pages/services/social-media.html">Social Media</a>
+                  <a class="sub-nav-link" href="/pages/services/digital-strategy.html">Digital Strategy</a>
+                  <a class="sub-nav-link" href="/pages/services/video-production.html">Video Production</a>
+                  <a class="sub-nav-link" href="/pages/services/ar.html">Augmented Reality</a>
+                  <a class="sub-nav-link" href="/pages/services/influencer-mgmt.html">Influencer Management</a>
+                  <a class="sub-nav-link" href="/pages/services/reputation-mgmt.html">Reputation Management</a>
+                  <a class="sub-nav-link" href="/pages/services/community-mgmt.html">Community Management</a>
+                </div>
               </li>
               <li class="nav-item">
                 <div class="menu-hover-line"></div>
@@ -48,10 +62,10 @@ nav.innerHTML = `
         </div>
 `;
 
-const navLinks = document.querySelectorAll(".nav-link");
+const navLinks = document.querySelectorAll(".nav-link, .sub-nav-link");
 
 navLinks.forEach((ele) => {
-  if (ele.getAttribute("href") == window.location.pathname || ele.getAttribute("href").replace(".html","") == window.location.pathname || ele.getAttribute("href").replace("/","/index.html") == window.location.pathname) {
+  if (ele.getAttribute("href") == window.location.pathname || ele.getAttribute("href").replace(".html", "") == window.location.pathname || ele.getAttribute("href").replace("/", "/index.html") == window.location.pathname) {
     ele.classList.add("active");
   } else if (window.location.pathname.includes("/pages/services")) {
     if (ele.getAttribute("href") === "/services.html") {

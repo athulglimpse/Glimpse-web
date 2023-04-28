@@ -44,7 +44,9 @@
 
     <!-- Hero Section -->
     <section id="hero" class="container-fluid">
-      <video id="hero-bkg" src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/videos/Cloud+animation_V2.mp4" autoplay muted loop></video>
+      <video id="cloud-bkg" src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/videos/Cloud+animation_V2.mp4"
+        autoplay muted loop playsinline></video>
+      <video id="planet-horizon-bkg" src="/static/images/planet horizon.mp4" autoplay muted loop playsinline></video>
       <div class="hero_wrap">
         <div class="left_side">
           <!-- left side -->
@@ -155,8 +157,8 @@
         <div class="right_wrap">
           <div class="video_wrapper">
             <div class="video_overlay-wrap">
-              <video id="about_video" loop autoplay
-                src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/videos/about.mp4" type="video/mp4" muted>
+              <video id="about_video" loop autoplay muted playsinline
+                src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/videos/about.mp4" type="video/mp4" >
                 <source />
               </video>
             </div>
@@ -168,7 +170,7 @@
 
     <!-- Glimpse Showreel -->
     <section id="showreel" class="showreel__section page__container">
-      <video id="showreel-video" loop autoplay muted
+      <video id="showreel-video" autoplay loop muted playsinline controls
         src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/videos/showreel.mp4" type="video/mp4"
         ondblclick="goFullScreen('showreel-video')"></video>
     </section>
