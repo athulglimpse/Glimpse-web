@@ -1490,19 +1490,14 @@ figure img {
 @media screen and (max-width: 560px) {
 
   /* HERO SECTION */
-  #hero {
-    /* height: 100%;
-    padding-top: var(--r100); */
+  #planet-horizon-bkg {
+    top: 60vmin;
   }
 
   .hero-stroke__wrapper {
     top: 0%;
     right: 0%;
   }
-
-  /* .hero-stroke__wrapper img {
-    width: 15%;
-  } */
 
   .social-wrap {
     gap: 2rem;
