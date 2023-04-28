@@ -32,36 +32,36 @@ menu.innerHTML = `
         <li><a class="nav-link-mob" href="/blog.html">Blog</a></li>
         <li><a class="nav-link-mob" href="/contactus.html">Contact Us</a></li>
       </ul>
-      <ul class="mob-social-wrap">
-        <li>
-          <a target="_blank" href="https://www.instagram.com/theglimpseproject/"
-            ><i class="fab fa-instagram"></i
-          ></a>
-        </li>
-        <li>
-          <a target="_blank" href="https://www.facebook.com/TheGlimpseProject/"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-        </li>
-        <li>
-          <a target="_blank" href="https://twitter.com/glimpseproject/"
-            ><i class="fab fa-twitter"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/company/glimpse-digital-agency"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-        </li>
-        <li>
-          <a target="_blank" href="https://www.tiktok.com/@theglimpseproject/"
-            ><i class="fab fa-tiktok"></i
-          ></a>
-        </li>
-      </ul>
-`;
+      `;
+      // <ul class="mob-social-wrap">
+      //   <li>
+      //     <a target="_blank" href="https://www.instagram.com/theglimpseproject/"
+      //       ><i class="fab fa-instagram"></i
+      //     ></a>
+      //   </li>
+      //   <li>
+      //     <a target="_blank" href="https://www.facebook.com/TheGlimpseProject/"
+      //       ><i class="fab fa-facebook-f"></i
+      //     ></a>
+      //   </li>
+      //   <li>
+      //     <a target="_blank" href="https://twitter.com/glimpseproject/"
+      //       ><i class="fab fa-twitter"></i
+      //     ></a>
+      //   </li>
+      //   <li>
+      //     <a
+      //       target="_blank"
+      //       href="https://www.linkedin.com/company/glimpse-digital-agency"
+      //       ><i class="fab fa-linkedin-in"></i
+      //     ></a>
+      //   </li>
+      //   <li>
+      //     <a target="_blank" href="https://www.tiktok.com/@theglimpseproject/"
+      //       ><i class="fab fa-tiktok"></i
+      //     ></a>
+      //   </li>
+      // </ul>
 const links = menu.querySelectorAll("li");
 
 const navLinksMob = document.querySelectorAll(".nav-link-mob, .sub-nav-link");
