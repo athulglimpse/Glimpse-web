@@ -40,7 +40,7 @@ footer.innerHTML = `
                 </p>
                 <p>
                   <a href="/blog.html" class="text-decoration-none text-white"
-                    >Blogs</a
+                    >Blog</a
                   >
                 </p>
                 <p>

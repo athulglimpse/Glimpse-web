@@ -18,7 +18,7 @@ var swiper = new Swiper(".test-swiper", {
     },
   },
 });
-var blogsWiper = new Swiper(".blog-swiper", {
+var blogWiper = new Swiper(".blog-swiper", {
   slidesPerView: 1,
   spaceBetween: 100,
   autoplay: {

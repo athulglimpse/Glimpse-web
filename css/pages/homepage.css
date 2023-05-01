@@ -1189,8 +1189,12 @@ figure img {
     padding-bottom: 2rem;
   }
 
+  #cloud-bkg {
+    top: -2%;
+  }
+
   #planet-horizon-bkg {
-    top: 55vmin;
+    top: 58vmin;
   }
 
   .hero__text h1 {
@@ -1466,6 +1470,8 @@ figure img {
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     padding: var(--r16);
+    color: white;
+    text-decoration: none;
   }
 
   .blog-swiper>.swiper-pagination {
@@ -1489,8 +1495,12 @@ figure img {
 @media screen and (max-width: 560px) {
 
   /* HERO SECTION */
+  #cloud-bkg {
+    top: -6%;
+  }
+
   #planet-horizon-bkg {
-    top: 60vmin;
+    top: 62vmin;
   }
 
   .hero-stroke__wrapper {
