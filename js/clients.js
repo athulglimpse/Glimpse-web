@@ -13,4 +13,10 @@ clients.forEach(client => {
             client.classList.remove("fluid-dragon-piece");
         }, 1000);
     });
+    client.addEventListener("touchmove", () => {
+        client.classList.add("fluid-dragon-piece");
+        setTimeout(() => {
+            client.classList.remove("fluid-dragon-piece");
+        }, 1000);
+    });
 });
