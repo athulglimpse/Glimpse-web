@@ -16,7 +16,7 @@
   line-height: 2.5;
 }
 
-/* BLOGS COLLECTION */
+/* BLOG COLLECTION */
 .blog-collections {
   display: flex;
   flex-direction: column;
@@ -85,7 +85,8 @@
 
 .topic_desc {
   font-size: 1rem;
-  color: #7a7a7a;
+  /* color: #7a7a7a; */
+  color: #fff;
 }
 
 .menu-icon {

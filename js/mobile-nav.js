@@ -73,7 +73,7 @@ navLinksMob.forEach((ele) => {
     if (ele.getAttribute("href") === "/services.html") {
       ele.classList.add("active");
     }
-  } else if (window.location.pathname.includes("/pages/blogs")) {
+  } else if (window.location.pathname.includes("/pages/blog")) {
     if (ele.getAttribute("href") === "/blog.html") {
       ele.classList.add("active");
     }
