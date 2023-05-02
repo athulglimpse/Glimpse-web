@@ -61,7 +61,20 @@
 .client_col img {
   width: 100%;
   height: 100%;
-  /* max-width: 50%; */
+  z-index: 100;
+  border-radius: 12%;
+  -webkit-border-radius: 12%;
+  -moz-border-radius: 12%;
+  -ms-border-radius: 12%;
+  -o-border-radius: 12%;
+}
+
+.fluid-dragon-piece {
+  animation-name: fluid-dragon;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  z-index: 0;
 }
 
 .top-accent {
@@ -138,5 +151,37 @@
   .bottom-accent {
     bottom: -42%;
     left: 5%;
+  }
+}
+
+@keyframes fluid-dragon {
+  0% {
+    box-shadow: 0px 0px 15px 5px rgba(255, 0, 0, 0);
+    z-index: 0;
+}
+
+  14% {
+    box-shadow: 0px 0px 15px 5px #FCDC00;
+}
+
+  28% {
+    box-shadow: 0px 0px 15px 5px #FBC519;
+  }
+
+  42% {
+    box-shadow: 0px 0px 15px 5px #F96E79;
+  }
+
+  54% {
+    box-shadow: 0px 0px 15px 5px #F83CB0;
+  }
+
+  66% {
+    box-shadow: 0px 0px 15px 5px #7237BD;
+    z-index: 0;
+  }
+
+  100% {
+    box-shadow: 0px 0px 15px 5px #7137bd00;
   }
 }
