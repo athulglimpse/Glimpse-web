@@ -7,7 +7,7 @@ container.innerHTML = `
     <img
         class="share_link-x"
         src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/share/fb.svg"
-        alt="fb-link"
+        alt="Facebook icon"
     />
     </a>
     <a href="https://twitter.com/share?url=${encodeURIComponent(
@@ -16,7 +16,7 @@ container.innerHTML = `
     <img
         class="share_link"
         src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/share/Twitter.svg"
-        alt="twitter-link"
+        alt="Twitter icon"
     />
     </a>
     <a href="https://www.linkedin.com/sharing/share-offsite/?url=${
@@ -25,14 +25,14 @@ container.innerHTML = `
     <img
         class="share_link"
         src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/share/linkedin.svg"
-        alt="linkedin-link"
+        alt="LinkedIn icon"
     />
     </a>
     <a onclick="copyToClipboard()" href="javascript:void(0)">
     <img
         class="share_link"
         src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/share/links.svg"
-        alt="links-link"
+        alt="links icon"
     />
     </a>
 </div>
