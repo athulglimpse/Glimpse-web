@@ -23,6 +23,50 @@ footer.innerHTML = `
   <!-- Grid row -->
   <div class="footer-links__grid">
     <!-- Grid column -->
+    <div>
+      <!-- Links -->
+      <h6 class="fw-bold mb-4 gradient-text-small">Locations</h6>
+      <div class="loc-col-item">
+        <a href="#!" class="text-decoration-none text-white">United Arab Emirates</a>
+        <p class="sub-location">Unit 403, Makateb 2 Building Dubai Media Production City PO Box 503417 Dubai, UAE
+        </p>
+      </div>
+      <div class="loc-col-item">
+        <a href="#!" class="text-decoration-none text-white">Saudi Arabia</a>
+        <p class="sub-location">3784 street no 288 Alyasmin, Riyadh PO Box 13325 Riyadh, KSA</p>
+      </div>
+      <div class="loc-col-item">
+        <a href="#!" class="text-decoration-none text-white">France</a>
+        <p class="sub-location">Avenue de Maine, France</p>
+      </div>
+      <div class="loc-col-item">
+        <a href="#!" class="text-decoration-none text-white">Lebanon</a>
+        <p class="sub-location">Yaaccoub Building, 1st Floor Luis Abu Charaf Street Achrafieh Beirut, Lebanon</p>
+      </div>
+    </div>
+    <!-- Grid column -->
+    <!-- Grid column -->
+    <div class="services">
+      <!-- Links -->
+      <h6 class="fw-bold mb-4 gradient-text-small">Services</h6>
+      <p>
+        <a href="/pages/services/digital-strategy.html" class="text-decoration-none text-white">Digital Strategy</a>
+      </p>
+      <p>
+        <a href="/pages/services/advertising.html" class="text-decoration-none text-white">Advertising</a>
+      </p>
+      <p>
+        <a href="#" class="text-decoration-none text-white">Website Design &&nbsp;Development</a>
+      </p>
+      <p>
+        <a href="/pages/services/branding.html" class="text-decoration-none text-white">Brand Awareness</a>
+      </p>
+      <p>
+        <a href="/pages/services/social-media.html" class="text-decoration-none text-white">Content Creation</a>
+      </p>
+    </div>
+    <!-- Grid column -->
+    <!-- Grid column -->
     <div class="">
       <!-- Links -->
       <h6 class="fw-bold mb-4 gradient-text-small">Explore</h6>
@@ -47,41 +91,23 @@ footer.innerHTML = `
     </div>
     <!-- Grid column -->
     <!-- Grid column -->
-    <div class="services">
-      <!-- Links -->
-      <h6 class="fw-bold mb-4 gradient-text-small">Services</h6>
-      <p>
-        <a href="/pages/services/digital-strategy.html" class="text-decoration-none text-white">Digital Strategy</a>
-      </p>
-      <p>
-        <a href="#" class="text-decoration-none text-white">Website Design &&nbsp;Development</a>
-      </p>
-      <p>
-        <a href="/pages/services/advertising.html" class="text-decoration-none text-white">Advertising</a>
-      </p>
-      <p>
-        <a href="/pages/services/branding.html" class="text-decoration-none text-white">Brand Awareness</a>
-      </p>
-      <p>
-        <a href="/pages/services/social-media.html" class="text-decoration-none text-white">Content Creation</a>
-      </p>
-    </div>
-    <!-- Grid column -->
-    <!-- Grid column -->
     <div class="">
       <!-- Links -->
       <h6 class="fw-bold mb-4 gradient-text-small">Industries</h6>
       <p>
-        <a href="#!" class="text-decoration-none text-white">B2B Marketing</a>
+      <a href="#!" class="text-decoration-none text-white">Luxury & Fashion</a>
+      </p>
+      <p>
+      <a href="#!" class="text-decoration-none text-white">Food & Beverages</a>
+      </p>
+      <p>
+        <a href="#!" class="text-decoration-none text-white">Hospitality & Healthcare</a>
       </p>
       <p>
         <a href="#!" class="text-decoration-none text-white">Automotive</a>
       </p>
       <p>
-        <a href="#!" class="text-decoration-none text-white">Healthcare</a>
-      </p>
-      <p>
-        <a href="#!" class="text-decoration-none text-white">Hospitality</a>
+        <a href="#!" class="text-decoration-none text-white">B2B Marketing</a>
       </p>
       <p>
         <a href="#!" class="text-decoration-none text-white">E-Commerce</a>
@@ -109,29 +135,7 @@ footer.innerHTML = `
       </p>
     </div>
     <!-- Grid column -->
-    <!-- Grid column -->
-    <div>
-      <!-- Links -->
-      <h6 class="fw-bold mb-4 gradient-text-small">Locations</h6>
-      <div class="loc-col-item">
-        <a href="#!" class="text-decoration-none text-white">United Arab Emirates</a>
-        <p class="sub-location">Unit 403, Makateb 2 Building Dubai Media Production City PO Box 503417 Dubai, UAE
-        </p>
-      </div>
-      <div class="loc-col-item">
-        <a href="#!" class="text-decoration-none text-white">Saudi Arabia</a>
-        <p class="sub-location">3784 street no 288 Alyasmin, Riyadh PO Box 13325 Riyadh, KSA</p>
-      </div>
-      <div class="loc-col-item">
-        <a href="#!" class="text-decoration-none text-white">France</a>
-        <p class="sub-location">Avenue de Maine, France</p>
-      </div>
-      <div class="loc-col-item">
-        <a href="#!" class="text-decoration-none text-white">Lebanon</a>
-        <p class="sub-location">Yaaccoub Building, 1st Floor Luis Abu Charaf Street Achrafieh Beirut, Lebanon</p>
-      </div>
-    </div>
-    <!-- Grid column -->
+
   </div>
   <!-- Grid row -->
   <div class="footer-bottom-wrap">
