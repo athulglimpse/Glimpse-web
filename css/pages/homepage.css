@@ -17,6 +17,7 @@
   object-fit: contain;
   object-position: center;
   mix-blend-mode: screen;
+  z-index: 1;
 }
 
 #planet-horizon-bkg {
@@ -36,6 +37,7 @@
   display: grid;
   align-items: center;
   grid-template: "a a a";
+  z-index: 2;
 }
 
 .left_side, .mid_side, .right_side{
@@ -96,7 +98,7 @@
 
 /* orbit stuff */
 #orbit-wrap {
-  position: static;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,6 +123,7 @@
 #orbit-button {
   animation: turnonlights 6.0s forwards;
   -webkit-animation: turnonlights 6.0s forwards;
+  z-index: 10;
 }
 
 #orbit-button:hover {

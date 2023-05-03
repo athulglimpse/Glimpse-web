@@ -114,7 +114,7 @@ blog_collection.innerHTML = Object.keys(blog)
       </a>
       <img
         src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/blog/blog-dedicated/menu.svg"
-        alt="menu"
+        alt="menu icon"
         class="menu-icon"
       />
     </div>
