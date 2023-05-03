@@ -30,10 +30,16 @@ footer.innerHTML = `
         <a href="/#about" class="text-decoration-none text-white">About Us</a>
       </p>
       <p>
-        <a href="/#trigger" class="text-decoration-none text-white">Portfolio</a>
+        <a href="/services.html" class="text-decoration-none text-white">Services</a>
       </p>
       <p>
-        <a href="/services.html" class="text-decoration-none text-white">Services</a>
+        <a href="/awards.html" class="text-decoration-none text-white">Awards</a>
+      </p>
+      <p>
+        <a href="/portfolio.html" class="text-decoration-none text-white">Portfolio</a>
+      </p>
+      <p>
+        <a href="/clients.html" class="text-decoration-none text-white">Clients</a>
       </p>
       <p>
         <a href="/blog.html" class="text-decoration-none text-white">Blog</a>
@@ -48,19 +54,19 @@ footer.innerHTML = `
       <!-- Links -->
       <h6 class="fw-bold mb-4 gradient-text-small">Services</h6>
       <p>
-        <a href="/#about" class="text-decoration-none text-white">About Us</a>
+        <a href="/pages/services/digital-strategy.html" class="text-decoration-none text-white">Digital Strategy</a>
       </p>
       <p>
-        <a href="/#trigger" class="text-decoration-none text-white">Portfolio</a>
+        <a href="#" class="text-decoration-none text-white">Website Development</a>
       </p>
       <p>
-        <a href="/services.html" class="text-decoration-none text-white">Services</a>
+        <a href="/pages/services/social-media.html" class="text-decoration-none text-white">Social Media</a>
       </p>
       <p>
-        <a href="/blog.html" class="text-decoration-none text-white">Blog</a>
+        <a href="/pages/services/branding.html" class="text-decoration-none text-white">Branding</a>
       </p>
       <p>
-        <a href="/contactus.html" class="text-decoration-none text-white">Contact Us</a>
+        <a href="/pages/services/video-production.html" class="text-decoration-none text-white">Video Production</a>
       </p>
     </div>
     <!-- Grid column -->
@@ -69,81 +75,72 @@ footer.innerHTML = `
       <!-- Links -->
       <h6 class="fw-bold mb-4 gradient-text-small">Industries</h6>
       <p>
-        <a href="#!" class="text-decoration-none text-white">Enquiry</a>
+        <a href="#!" class="text-decoration-none text-white">B2B Marketing</a>
       </p>
       <p>
-        <a href="#!" class="text-decoration-none text-white">Careers</a>
+        <a href="#!" class="text-decoration-none text-white">Automotive</a>
       </p>
       <p>
-        <a href="/privacy-policy.html" class="text-decoration-none text-white">Privacy Policy</a>
+        <a href="#!" class="text-decoration-none text-white">Healthcare</a>
       </p>
       <p>
-        <a href="#!" class="text-decoration-none text-white">Terms of Use</a>
+        <a href="#!" class="text-decoration-none text-white">Hospitality</a>
       </p>
       <p>
-        <a href="https://www.worxbyglimpse.com/" target="_blank" class="text-decoration-none text-white">Worx by
-          Glimpse</a>
+        <a href="#!" target="_blank" class="text-decoration-none text-white">E-Commerce</a>
       </p>
     </div>
     <!-- Grid column -->
-
     <!-- Grid column -->
     <div class="">
       <!-- Links -->
       <h6 class="fw-bold mb-4 gradient-text-small">Support</h6>
       <p>
-        <a target="_blank" href="https://www.facebook.com/TheGlimpseProject/"
-          class="text-decoration-none text-white">Facebook</a>
+        <a href="#" class="text-decoration-none text-white">Enquiry</a>
       </p>
       <p>
-        <a target="_blank" href="https://www.instagram.com/theglimpseproject/"
-          class="text-decoration-none text-white">Instagram</a>
+        <a href="#" class="text-decoration-none text-white">Careers</a>
       </p>
       <p>
-        <a target="_blank" href="https://twitter.com/glimpseproject/"
-          class="text-decoration-none text-white">Twitter</a>
+        <a href="#" class="text-decoration-none text-white">Privacy Policy</a>
       </p>
       <p>
-        <a target="_blank" href="https://www.linkedin.com/company/glimpse-digital-agency"
-          class="text-decoration-none text-white">LinkedIn</a>
+        <a href="#" class="text-decoration-none text-white">Terms of Use</a>
       </p>
       <p>
-        <a target="_blank" href="https://www.tiktok.com/@theglimpseproject/"
-          class="text-decoration-none text-white">Tiktok</a>
+        <a href="#" class="text-decoration-none text-white">Worx By Glimpse</a>
       </p>
     </div>
     <!-- Grid column -->
-
     <!-- Grid column -->
-    <div class="">
+    <div>
       <!-- Links -->
       <h6 class="fw-bold mb-4 gradient-text-small">Locations</h6>
-      <p>
+      <div class="loc-col-item">
         <a href="#!" class="text-decoration-none text-white">United Arab Emirates</a>
-      </p>
-      <p>
+        <p class="sub-location">Unit 403/404/503 Makateb 2, Dubai Production City, Dubai, UAE.</p>
+      </div>
+      <div class="loc-col-item">
         <a href="#!" class="text-decoration-none text-white">Saudi Arabia</a>
-      </p>
-      <p>
+        <p class="sub-location">Unit 403/404/503 Makateb 2, Dubai Production City, Dubai, UAE.</p>
+      </div>
+      <div class="loc-col-item">
         <a href="#!" class="text-decoration-none text-white">France</a>
-      </p>
-      <p>
+        <p class="sub-location">Unit 403/404/503 Makateb 2, Dubai Production City, Dubai, UAE.</p>
+      </div>
+      <div class="loc-col-item">
         <a href="#!" class="text-decoration-none text-white">Lebanon</a>
-      </p>
+        <p class="sub-location">Unit 403/404/503 Makateb 2, Dubai Production City, Dubai, UAE.</p>
+      </div>
     </div>
     <!-- Grid column -->
   </div>
   <!-- Grid row -->
-  </div>
   <div class="footer-bottom-wrap">
     <div class="footer__input-wrapper">
-      <h4 class="gradient-text-small fw-bold text-nowrap">
-        Stay in touch:
-      </h4>
+      <h4 class="gradient-text-small fw-bold text-nowrap">Stay in touch:</h4>
       <div class="footer__gradient-box__input-rev rounded input-group d-flex align-items-center justify-content-evenly">
-        <a href="https://chat.whatsapp.com/B5wXiR1rAJEHMDoXJMnyTs" class="btn text-white px-4">
-          Join Now
-        </a>
+        <a href="https://chat.whatsapp.com/B5wXiR1rAJEHMDoXJMnyTs" class="btn text-white px-4">Join Now</a>
         <hr />
         <a>
           SM News by Myndful Social
@@ -165,12 +162,9 @@ footer.innerHTML = `
       </div>
     </div>
   </div>
-  <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mt-5 gap-4 px-4 text-white"
-    style="font-size: 0.8rem">
+  <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mt-5 gap-4 px-4 text-white" style="font-size: 0.8rem">
     <p>All rights reserved 2022 © Glimpse Digital Agency</p>
-    <p>
-      Unit 403/404/503 Makateb 2, Dubai Production City, Dubai, UAE.
-    </p>
+    <p>Unit 403/404/503 Makateb 2, Dubai Production City, Dubai, UAE.</p>
   </div>
 </footer>
     `;
