@@ -38,6 +38,12 @@
   width: 100%;
 }
 
+/* -----------------SERVICES-------------- */
+.services > p > a {
+  text-align: center;
+  display: inline-block;
+}
+
 /* -----------------SUB LOCATIONS-------------- */
 .loc-col-item {
   display: flex;

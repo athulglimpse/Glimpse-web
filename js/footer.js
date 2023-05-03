@@ -27,9 +27,6 @@ footer.innerHTML = `
       <!-- Links -->
       <h6 class="fw-bold mb-4 gradient-text-small">Explore</h6>
       <p>
-        <a href="/#about" class="text-decoration-none text-white">About Us</a>
-      </p>
-      <p>
         <a href="/services.html" class="text-decoration-none text-white">Services</a>
       </p>
       <p>
@@ -50,23 +47,23 @@ footer.innerHTML = `
     </div>
     <!-- Grid column -->
     <!-- Grid column -->
-    <div class="">
+    <div class="services">
       <!-- Links -->
       <h6 class="fw-bold mb-4 gradient-text-small">Services</h6>
       <p>
         <a href="/pages/services/digital-strategy.html" class="text-decoration-none text-white">Digital Strategy</a>
       </p>
       <p>
-        <a href="#" class="text-decoration-none text-white">Website Development</a>
+        <a href="#" class="text-decoration-none text-white">Website Design &&nbsp;Development</a>
       </p>
       <p>
-        <a href="/pages/services/social-media.html" class="text-decoration-none text-white">Social Media</a>
+        <a href="/pages/services/advertising.html" class="text-decoration-none text-white">Advertising</a>
       </p>
       <p>
-        <a href="/pages/services/branding.html" class="text-decoration-none text-white">Branding</a>
+        <a href="/pages/services/branding.html" class="text-decoration-none text-white">Brand Awareness</a>
       </p>
       <p>
-        <a href="/pages/services/video-production.html" class="text-decoration-none text-white">Video Production</a>
+        <a href="/pages/services/social-media.html" class="text-decoration-none text-white">Content Creation</a>
       </p>
     </div>
     <!-- Grid column -->
@@ -87,7 +84,7 @@ footer.innerHTML = `
         <a href="#!" class="text-decoration-none text-white">Hospitality</a>
       </p>
       <p>
-        <a href="#!" target="_blank" class="text-decoration-none text-white">E-Commerce</a>
+        <a href="#!" class="text-decoration-none text-white">E-Commerce</a>
       </p>
     </div>
     <!-- Grid column -->
@@ -118,19 +115,20 @@ footer.innerHTML = `
       <h6 class="fw-bold mb-4 gradient-text-small">Locations</h6>
       <div class="loc-col-item">
         <a href="#!" class="text-decoration-none text-white">United Arab Emirates</a>
-        <p class="sub-location">Unit 403/404/503 Makateb 2, Dubai Production City, Dubai, UAE.</p>
+        <p class="sub-location">Unit 403, Makateb 2 Building Dubai Media Production City PO Box 503417 Dubai, UAE
+        </p>
       </div>
       <div class="loc-col-item">
         <a href="#!" class="text-decoration-none text-white">Saudi Arabia</a>
-        <p class="sub-location">Unit 403/404/503 Makateb 2, Dubai Production City, Dubai, UAE.</p>
+        <p class="sub-location">3784 street no 288 Alyasmin, Riyadh PO Box 13325 Riyadh, KSA</p>
       </div>
       <div class="loc-col-item">
         <a href="#!" class="text-decoration-none text-white">France</a>
-        <p class="sub-location">Unit 403/404/503 Makateb 2, Dubai Production City, Dubai, UAE.</p>
+        <p class="sub-location">Avenue de Maine, France</p>
       </div>
       <div class="loc-col-item">
         <a href="#!" class="text-decoration-none text-white">Lebanon</a>
-        <p class="sub-location">Unit 403/404/503 Makateb 2, Dubai Production City, Dubai, UAE.</p>
+        <p class="sub-location">Yaaccoub Building, 1st Floor Luis Abu Charaf Street Achrafieh Beirut, Lebanon</p>
       </div>
     </div>
     <!-- Grid column -->
