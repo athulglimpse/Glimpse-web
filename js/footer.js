@@ -56,7 +56,7 @@ footer.innerHTML = `
         <a href="/pages/services/advertising.html" class="text-decoration-none text-white">Advertising</a>
       </p>
       <p>
-        <a href="#" class="text-decoration-none text-white">Website Design &&nbsp;Development</a>
+        <a href="#" class="text-decoration-none text-white">Website Design<br>& Development</a>
       </p>
       <p>
         <a href="/pages/services/branding.html" class="text-decoration-none text-white">Brand Awareness</a>
@@ -101,7 +101,7 @@ footer.innerHTML = `
       <a href="#!" class="text-decoration-none text-white">Food & Beverages</a>
       </p>
       <p>
-        <a href="#!" class="text-decoration-none text-white">Hospitality & Healthcare</a>
+        <a href="#!" class="text-decoration-none text-white">Hospitality&nbsp;&&nbsp;Healthcare</a>
       </p>
       <p>
         <a href="#!" class="text-decoration-none text-white">Automotive</a>
