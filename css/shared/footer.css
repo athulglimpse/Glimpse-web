@@ -211,14 +211,13 @@
     font-size: 40px;
   }
 
-  #footer p {
+  #footer p, #footer a {
     font-size: 34px;
   }
 
   .footer-socials>a>i {
     font-size: 4vmin;
   }
-
 
   .gradient-text-small,
   .gradient-text-small-rev {
@@ -228,15 +227,11 @@
   .footer__gradient-box__input>input,
   .footer__gradient-box__input-rev>input,
   .footer__gradient-box__input,
-  .footer__gradient-box__input-rev {
-    height: 4.5rem;
-  }
-
-  .footer__gradient-box__input>input,
-  .footer__gradient-box__input-rev>input,
-  .footer__gradient-box__input,
-  .footer__gradient-box__input-rev {
+  .footer__gradient-box__input-rev,
+  .footer__gradient-box__input-rev>a {
     font-size: 30px;
+    height: 4.5rem;
+    border: 1px solid green;
   }
 
   .footer__gradient-box__input button {
