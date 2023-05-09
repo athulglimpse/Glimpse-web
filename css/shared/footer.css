@@ -250,7 +250,7 @@
 
   .footer-links__grid {
     grid-template-columns: 1fr 1fr;
-    gap: 1.5rem 0rem;
+    gap: 3rem 0rem;
   }
 
   /* Explore */
@@ -300,15 +300,24 @@
     margin-top: 0rem;
   }
 
+  .footer__input-wrapper {
+    align-items: center;
+  }
+
   .footer__input-wrapper h4 {
     text-align: start !important;
   }
 
   .footer__gradient-box__input-rev {
-    /* width: 10%; */
+    width: 70%;
     display: flex;
     flex-direction: column;
     height: 5rem;
+  }
+
+  .footer__gradient-box__input-rev a {
+    padding-bottom: 0;
+    padding-top: 0;
   }
 
   .footer__gradient-box__input-rev input {
@@ -322,7 +331,7 @@
 
   .footer__gradient-box__input-rev hr {
     transform: rotate(0deg);
-    width: 80%;
+    width: 60%;
     margin: 0;
   }
 }
