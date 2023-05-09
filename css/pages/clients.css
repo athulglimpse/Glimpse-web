@@ -25,7 +25,7 @@
   margin-left: var(--r30);
 }
 
-.clients_wrapper {
+.clients_wrapper, .clients_wrapper_mob {
   width: 100%;
   height: 100%;
   display: flex;
@@ -33,10 +33,14 @@
   justify-content: center;
 }
 
+.clients_wrapper_mob {
+  display: none;
+}
+
 .clients__wrap {
   width: 85%;
   padding-top: var(--r48);
-  padding-bottom: var(--r200);
+  padding-bottom: var(--r40);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -96,6 +100,16 @@
     font-size: 34px;
   }
 
+}
+
+@media screen and (max-width: 1000px) {
+  .clients_wrapper {
+    display: none;
+  }
+  
+  .clients_wrapper_mob {
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 860px) {
