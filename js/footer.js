@@ -125,13 +125,13 @@ footer.innerHTML = `
         <a href="#" class="text-decoration-none text-white">Careers</a>
       </p>
       <p>
-        <a href="#" class="text-decoration-none text-white">Privacy Policy</a>
+        <a href="/privacy-policy.html" class="text-decoration-none text-white">Privacy Policy</a>
       </p>
       <p>
-        <a href="#" class="text-decoration-none text-white">Terms of Use</a>
+        <a href="/terms-of-use.html" class="text-decoration-none text-white">Terms of Use</a>
       </p>
       <p>
-        <a href="#" class="text-decoration-none text-white">Worx By Glimpse</a>
+        <a href="https://www.worxbyglimpse.com/" target="_blank" class="text-decoration-none text-white">Worx By Glimpse</a>
       </p>
     </div>
     <!-- Grid column -->
