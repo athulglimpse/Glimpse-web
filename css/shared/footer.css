@@ -1,3 +1,57 @@
+#extra-btns {
+  position: fixed;
+  right: 20px;
+  bottom: 90px;
+  z-index: 999;
+}
+
+.woot-widget-bubble:first-of-type {
+  height: 50px !important;
+  width: 50px !important;
+  right: -180px !important;
+  z-index: 2147483000 !important;
+  display: none;
+  animation: flyIn 1s ease-out forwards;
+  -webkit-animation: flyIn 1s ease-out forwards;
+}
+
+.woot-widget-bubble svg {
+  position: absolute !important;
+  top: -15% !important;
+  left: -17% !important;
+  width: 50% !important;
+}
+
+#call-btn a {
+  display: none;
+  animation: flyIn 1s 0.2s ease-out forwards;
+  -webkit-animation: flyIn 1s 0.2s ease-out forwards;
+  border-radius: 100px;
+  height: 50px;
+  width: 50px;
+  position: relative;
+  right: -200px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+
+#wtsp-btn a {
+  display: none;
+  animation: flyIn 1s 0.4s ease-out forwards;
+  -webkit-animation: flyIn 1s 0.4s ease-out forwards;
+  position: relative;
+  border-radius: 100px;
+  height: 50px;
+  width: 50px;
+  right: -200px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+
 .contact-tagline {
   font-size: 1.2rem;
   letter-spacing: 0.01rem;
@@ -211,7 +265,8 @@
     font-size: 40px;
   }
 
-  #footer p, #footer a {
+  #footer p,
+  #footer a {
     font-size: 34px;
   }
 
@@ -276,7 +331,7 @@
     grid-row: 3 / 3;
     grid-column: 1 / 1
   }
-  
+
   /* Locations */
   .footer-links__grid div:nth-child(1) {
     grid-row: 3 / 3;
@@ -333,5 +388,23 @@
     transform: rotate(0deg);
     width: 60%;
     margin: 0;
+  }
+}
+
+@keyframes flyIn {
+  from {
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+  }
+
+  to {
+    transform: translateX(-200px);
+    -webkit-transform: translateX(-200px);
+    -moz-transform: translateX(-200px);
+    -ms-transform: translateX(-200px);
+    -o-transform: translateX(-200px);
   }
 }
