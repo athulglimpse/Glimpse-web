@@ -5,10 +5,14 @@
   z-index: 999;
 }
 
-.woot-widget-bubble {
+.woot-widget-bubble:first-of-type {
   height: 50px !important;
   width: 50px !important;
   right: -180px !important;
+  z-index: 2147483000 !important;
+  display: none;
+  animation: flyIn 1s ease-out forwards;
+  -webkit-animation: flyIn 1s ease-out forwards;
 }
 
 .woot-widget-bubble svg {
@@ -18,21 +22,35 @@
   width: 50% !important;
 }
 
-.woot-widget-bubble {
-  animation: flyIn 1s ease-out forwards;
-  -webkit-animation: flyIn 1s ease-out forwards;
-}
-
 #call-btn a {
+  display: none;
   animation: flyIn 1s 0.2s ease-out forwards;
   -webkit-animation: flyIn 1s 0.2s ease-out forwards;
+  border-radius: 100px;
+  height: 50px;
+  width: 50px;
+  position: relative;
+  right: -200px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
 }
 
 #wtsp-btn a {
+  display: none;
   animation: flyIn 1s 0.4s ease-out forwards;
   -webkit-animation: flyIn 1s 0.4s ease-out forwards;
+  position: relative;
+  border-radius: 100px;
+  height: 50px;
+  width: 50px;
+  right: -200px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
 }
-
 
 .contact-tagline {
   font-size: 1.2rem;
@@ -375,7 +393,6 @@
 
 @keyframes flyIn {
   from {
-    opacity: 0;
     transform: translateX(0px);
     -webkit-transform: translateX(0px);
     -moz-transform: translateX(0px);
@@ -384,7 +401,6 @@
   }
 
   to {
-    opacity: 1;
     transform: translateX(-200px);
     -webkit-transform: translateX(-200px);
     -moz-transform: translateX(-200px);
