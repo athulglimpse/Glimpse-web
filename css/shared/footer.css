@@ -1,3 +1,32 @@
+.woot-widget-bubble {
+  height: 50px !important;
+  width: 50px !important;
+  right: -180px !important;
+}
+
+.woot-widget-bubble svg {
+  position: absolute !important;
+  top: -15% !important;
+  left: -17% !important;
+  width: 50% !important;
+}
+
+.woot-widget-bubble {
+  animation: flyIn 1s ease-out forwards;
+  -webkit-animation: flyIn 1s ease-out forwards;
+}
+
+#call-btn a {
+  animation: flyIn 1s 0.2s ease-out forwards;
+  -webkit-animation: flyIn 1s 0.2s ease-out forwards;
+}
+
+#wtsp-btn a {
+  animation: flyIn 1s 0.4s ease-out forwards;
+  -webkit-animation: flyIn 1s 0.4s ease-out forwards;
+}
+
+
 .contact-tagline {
   font-size: 1.2rem;
   letter-spacing: 0.01rem;
@@ -211,7 +240,8 @@
     font-size: 40px;
   }
 
-  #footer p, #footer a {
+  #footer p,
+  #footer a {
     font-size: 34px;
   }
 
@@ -276,7 +306,7 @@
     grid-row: 3 / 3;
     grid-column: 1 / 1
   }
-  
+
   /* Locations */
   .footer-links__grid div:nth-child(1) {
     grid-row: 3 / 3;
@@ -334,4 +364,24 @@
     width: 60%;
     margin: 0;
   }
+}
+
+@keyframes flyIn {
+  from {
+    opacity: 0;
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+}
+
+  to {
+    opacity: 1;
+    transform: translateX(-200px);
+    -webkit-transform: translateX(-200px);
+    -moz-transform: translateX(-200px);
+    -ms-transform: translateX(-200px);
+    -o-transform: translateX(-200px);
+}
 }
