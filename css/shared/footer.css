@@ -1,3 +1,10 @@
+#extra-btns {
+  position: fixed;
+  right: 20px;
+  bottom: 90px;
+  z-index: 999;
+}
+
 .woot-widget-bubble {
   height: 50px !important;
   width: 50px !important;
@@ -374,7 +381,7 @@
     -moz-transform: translateX(0px);
     -ms-transform: translateX(0px);
     -o-transform: translateX(0px);
-}
+  }
 
   to {
     opacity: 1;
@@ -383,5 +390,5 @@
     -moz-transform: translateX(-200px);
     -ms-transform: translateX(-200px);
     -o-transform: translateX(-200px);
-}
+  }
 }

@@ -174,7 +174,7 @@ footer.innerHTML = `
 // Adding extra floating buttons
 window.onload = () => {
   var extraButtons = document.createElement("div");
-  extraButtons.style = "position: fixed; right: 20px; bottom: 90px;"
+  extraButtons.setAttribute("id", "extra-btns");
   extraButtons.innerHTML = `
   <div id="wtsp-btn">
     <a target="_blank" href="https://wa.me/971524553543?text=Hey!%20I%20would%20like%20to%20enquire%20about%20ma%20ass%20%3A)" style="position: relative; border-radius: 100px; height: 50px; width: 50px; display: block; right: -200px;">
