@@ -6,7 +6,7 @@ container.innerHTML = `
     }" target="_blank">
     <img
         class="share_link-x"
-        src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/share/fb.svg"
+        src="https://d3i7ke5fj3tp7c.cloudfront.net/images/share/fb.svg"
         alt="Facebook icon"
     />
     </a>
@@ -15,7 +15,7 @@ container.innerHTML = `
     )}" target="_blank">
     <img
         class="share_link"
-        src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/share/Twitter.svg"
+        src="https://d3i7ke5fj3tp7c.cloudfront.net/images/share/Twitter.svg"
         alt="Twitter icon"
     />
     </a>
@@ -24,14 +24,14 @@ container.innerHTML = `
     }" target="_blank">
     <img
         class="share_link"
-        src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/share/linkedin.svg"
+        src="https://d3i7ke5fj3tp7c.cloudfront.net/images/share/linkedin.svg"
         alt="LinkedIn icon"
     />
     </a>
     <a onclick="copyToClipboard()" href="javascript:void(0)">
     <img
         class="share_link"
-        src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/share/links.svg"
+        src="https://d3i7ke5fj3tp7c.cloudfront.net/images/share/links.svg"
         alt="links icon"
     />
     </a>
