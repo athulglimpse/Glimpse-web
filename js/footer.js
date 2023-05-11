@@ -151,7 +151,7 @@ footer.innerHTML = `
         </div>
       </div>
     </div>
-    <img src="https://d3i7ke5fj3tp7c.cloudfront.net/images/footer/divider.svg" class="divider"
+    <img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/footer/divider.svg" class="divider"
       alt="divider" />
     <div class="footer__input-wrapper">
       <h4 class="gradient-text-small-rev fw-bold text-end">Get in touch:</h4>
