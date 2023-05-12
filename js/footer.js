@@ -144,11 +144,7 @@ footer.innerHTML = `
       <div class="footer__gradient-box__input-rev rounded input-group d-flex align-items-center justify-content-evenly">
         <a href="https://chat.whatsapp.com/B5wXiR1rAJEHMDoXJMnyTs" class="btn text-white px-4">Join Now</a>
         <hr />
-        <a>
-          SM News by Myndful Social
-        </a>
-        <div class="input-group-append d-flex">
-        </div>
+        <p>SM News by Myndful Social</p>
       </div>
     </div>
     <img src="https://d3i7ke5fj3tp7c.cloudfront.net/images/footer/divider.svg" class="divider"

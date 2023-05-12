@@ -177,6 +177,10 @@
   color: #fff;
 }
 
+.footer__gradient-box__input-rev p {
+  margin: 0;
+}
+
 .footer__gradient-box__input-rev hr {
   height: 0.5px;
   width: 18px;
