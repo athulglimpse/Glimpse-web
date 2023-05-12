@@ -1,31 +1,31 @@
 @font-face {
     font-family: 'Cera Pro Black';
     src: url('/static/fonts/Cera\ Pro\ Black.otf') format('opentype');
-    /* src: url('https://glimpse-web.s3.ap-northeast-1.amazonaws.com/fonts/cera-pro/Cera+Pro+Black.otf') format('opentype'); */
+    /* src: url('https://d3i7ke5fj3tp7c.cloudfront.net/fonts/cera-pro/Cera+Pro+Black.otf') format('opentype'); */
 }
 
 @font-face {
     font-family: 'Cera Pro Medium';
     src: url('/static/fonts/Cera\ Pro\ Medium.otf') format('opentype');
-    /* src: url('https://glimpse-web.s3.ap-northeast-1.amazonaws.com/fonts/cera-pro/Cera+Pro+Medium.otf') format('opentype'); */
+    /* src: url('https://d3i7ke5fj3tp7c.cloudfront.net/fonts/cera-pro/Cera+Pro+Medium.otf') format('opentype'); */
 }
 
 @font-face {
     font-family: 'Cera Pro Bold';
     src: url('/static/fonts/Cera\ Pro\ Bold.otf') format('opentype');
-    /* src: url('https://glimpse-web.s3.ap-northeast-1.amazonaws.com/fonts/cera-pro/Cera+Pro+Bold.otf') format('opentype'); */
+    /* src: url('https://d3i7ke5fj3tp7c.cloudfront.net/fonts/cera-pro/Cera+Pro+Bold.otf') format('opentype'); */
 }
 
 @font-face {
     font-family: 'Cera Pro Regular';
     src: url('/static/fonts/Cera\ Pro\ Regular.otf') format('opentype');
-    /* src: url('https://glimpse-web.s3.ap-northeast-1.amazonaws.com/fonts/cera-pro/Cera+Pro+Regular.otf') format('opentype'); */
+    /* src: url('https://d3i7ke5fj3tp7c.cloudfront.net/fonts/cera-pro/Cera+Pro+Regular.otf') format('opentype'); */
 }
 
 @font-face {
     font-family: 'Cera Pro Thin';
     src: url('/static/fonts/Cera\ Pro\ Thin.otf') format('opentype');
-    /* src: url('https://glimpse-web.s3.ap-northeast-1.amazonaws.com/fonts/cera-pro/Cera+Pro+Light.otf') format('opentype'); */
+    /* src: url('https://d3i7ke5fj3tp7c.cloudfront.net/fonts/cera-pro/Cera+Pro+Light.otf') format('opentype'); */
 }
 
 

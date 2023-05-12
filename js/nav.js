@@ -3,7 +3,7 @@ const nav = document.querySelector("nav");
 nav.innerHTML = `
 <div class="nav-wrap">
           <a class="navbar-brand" ondrop="drop(event)" ondragover="allowDrop(event)" href="/"
-            ><img src="https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/logo.svg" alt="Glimpse Logo"
+            ><img src="https://d3i7ke5fj3tp7c.cloudfront.net/images/logo.svg" alt="Glimpse Logo"
           /></a>
           <div class="navbar-toggler">
             <span class="nav__toggle"></span>
