@@ -237,7 +237,6 @@ function createContactButtons() {
       wtspBtn.style.display = "block";
       callBtn.style.display = "block";
       chatBtn.style.display = "block";
-      console.log(wtspBtn, callBtn, chatBtn)
     })
   }
 };
