@@ -55,7 +55,7 @@ const portfolioswiper = new Swiper(".portfolio-swiper", {
 let sliderImage = document.querySelectorAll(".portfolio-swiper-slide");
 sliderImage.forEach(
   (image, i) =>
-    (image.style.backgroundImage = `url(https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/portfolio/${
+    (image.style.backgroundImage = `url(https://d3i7ke5fj3tp7c.cloudfront.net/images/portfolio/${
       i + 1
     }.webp)`)
 );

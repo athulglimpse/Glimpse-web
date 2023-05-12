@@ -68,7 +68,7 @@ gsap.to(sections, {
 
 images.forEach(
   (image, i) =>
-  (image.style.backgroundImage = `url(https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/portfolio/${i + 1
+  (image.style.backgroundImage = `url(https://d3i7ke5fj3tp7c.cloudfront.net/images/portfolio/${i + 1
     }.webp)`)
 );
 
@@ -131,7 +131,7 @@ function slideClick(id) {
     stagger: 0.1,
     delay: 0.2,
   });
-  overlay_bg.style.backgroundImage = `url(https://glimpse-web.s3.ap-northeast-1.amazonaws.com/images/portfolio/${id}.webp)`;
+  overlay_bg.style.backgroundImage = `url(https://d3i7ke5fj3tp7c.cloudfront.net/images/portfolio/${id}.webp)`;
 }
 
 window.addEventListener("scroll", () => {
