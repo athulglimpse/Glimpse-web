@@ -212,27 +212,33 @@ extraButtons.innerHTML = `
 document.getElementsByTagName("body")[0].appendChild(extraButtons);
 
 // CHATWOOT
-(function (d, t) {
+function createContactButtons() {
   var BASE_URL = "https://app.chatwoot.com";
-  var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
-  g.src = BASE_URL + "/packs/js/sdk.js";
-  g.defer = true;
-  g.async = true;
-  s.parentNode.insertBefore(g, s);
-  g.onload = function () {
+  var onPageScriptEl = document.getElementsByTagName("script")[0];
+  //Create script tag
+  var scriptElement = document.createElement("script");
+  scriptElement.src = BASE_URL + "/packs/js/sdk.js";
+  scriptElement.defer = true;
+  scriptElement.async = false;
+  //Place script tag with other scripts
+  onPageScriptEl.parentNode.insertBefore(scriptElement, onPageScriptEl);
+  //Connect chatwoot
+  scriptElement.onload = function () {
     window.chatwootSDK.run({
       websiteToken: 'HcF3HQKWcxGTtNbvf9XBRyrn',
       baseUrl: BASE_URL
     })
+    //Wait for chatwoot to load
+    window.addEventListener("chatwoot:ready", function () {
+      //Fly In for all buttons
+      var wtspBtn = document.querySelector("#wtsp-btn > a");
+      var callBtn = document.querySelector("#call-btn > a");
+      var chatBtn = document.querySelector(".woot--bubble-holder .woot-widget-bubble");
+      wtspBtn.style.display = "block";
+      callBtn.style.display = "block";
+      chatBtn.style.display = "block";
+      console.log(wtspBtn, callBtn, chatBtn)
+    })
   }
-})(document, "script");
-
-window.onload = () => {
-  var wtspBtn = document.querySelector("#wtsp-btn > a");
-  var callBtn = document.querySelector("#call-btn > a");
-  var chatBtn = document.getElementsByClassName("woot-widget-bubble")[0];
-
-  wtspBtn.style.display = "block";
-  callBtn.style.display = "block";
-  chatBtn.style.display = "block";
-}
+};
+createContactButtons();
