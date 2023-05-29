@@ -37,7 +37,7 @@ footer.innerHTML = `
       </div>
       <div class="loc-col-item">
         <a href="#!" class="text-decoration-none text-white">France</a>
-        <p class="sub-location">Avenue de Maine, France</p>
+        <p class="sub-location">Avenue de Maine, France<br><a href="tel:+33647951108">+33 6 47 95 11 08</a></p>
       </div>
       <div class="loc-col-item">
         <a href="#!" class="text-decoration-none text-white">Lebanon</a>
