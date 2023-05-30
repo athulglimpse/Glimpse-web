@@ -122,7 +122,7 @@ footer.innerHTML = `
         <a href="#" class="text-decoration-none text-white">Enquiry</a>
       </p>
       <p>
-        <a href="#" class="text-decoration-none text-white">Careers</a>
+        <a href="/careers.html" class="text-decoration-none text-white">Careers</a>
       </p>
       <p>
         <a href="/privacy-policy.html" class="text-decoration-none text-white">Privacy Policy</a>
