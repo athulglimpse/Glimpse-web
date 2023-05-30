@@ -1,5 +1,5 @@
 window.onload = () => {
-// List of portfolio details to dynamically change the page
+    // List of portfolio details to dynamically change the page
     const portfolioDetails = {
         1: {
             title: "Chaumet",
@@ -38,10 +38,16 @@ window.onload = () => {
             paragraph: "Al-Ain stuff and all dat cool jazz. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, repellendus est architecto omnis eos iusto cupiditate magnam voluptatibus et porro, ullam voluptas! Excepturi voluptas esse cum atque quibusdam aut corporis!",
         },
         10: {
+            // 
+            // 
+            // 
             title: "Genesis",
             paragraph: "Al-Ain stuff and all dat cool jazz. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, repellendus est architecto omnis eos iusto cupiditate magnam voluptatibus et porro, ullam voluptas! Excepturi voluptas esse cum atque quibusdam aut corporis!",
         },
         11: {
+            // 
+            // 
+            // 
             title: "Genesis",
             paragraph: "Al-Ain stuff and all dat cool jazz. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, repellendus est architecto omnis eos iusto cupiditate magnam voluptatibus et porro, ullam voluptas! Excepturi voluptas esse cum atque quibusdam aut corporis!",
         },
@@ -57,16 +63,49 @@ window.onload = () => {
             title: "MOTN",
             paragraph: "Al-Ain stuff and all dat cool jazz. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, repellendus est architecto omnis eos iusto cupiditate magnam voluptatibus et porro, ullam voluptas! Excepturi voluptas esse cum atque quibusdam aut corporis!",
         },
+        15: {
+            // 
+            // 
+            // 
+        },
+        16: {
+            title: "Aseel",
+            paragraph: "Al-Ain stuff and all dat cool jazz. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, repellendus est architecto omnis eos iusto cupiditate magnam voluptatibus et porro, ullam voluptas! Excepturi voluptas esse cum atque quibusdam aut corporis!",
+        },
+        17: {
+            title: "Yakult",
+            paragraph: "Al-Ain stuff and all dat cool jazz. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, repellendus est architecto omnis eos iusto cupiditate magnam voluptatibus et porro, ullam voluptas! Excepturi voluptas esse cum atque quibusdam aut corporis!",
+        },
+        18: {
+            title: "Sombrero",
+            paragraph: "Al-Ain stuff and all dat cool jazz. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, repellendus est architecto omnis eos iusto cupiditate magnam voluptatibus et porro, ullam voluptas! Excepturi voluptas esse cum atque quibusdam aut corporis!",
+        },
+        19: {
+            title: "Al-Ain-Foods",
+            paragraph: "Al-Ain stuff and all dat cool jazz. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, repellendus est architecto omnis eos iusto cupiditate magnam voluptatibus et porro, ullam voluptas! Excepturi voluptas esse cum atque quibusdam aut corporis!",
+        },
+        20: {
+            title: "Gorenje",
+            paragraph: "Al-Ain stuff and all dat cool jazz. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, repellendus est architecto omnis eos iusto cupiditate magnam voluptatibus et porro, ullam voluptas! Excepturi voluptas esse cum atque quibusdam aut corporis!",
+        },
+        21: {
+            title: "United-Foods",
+            paragraph: "Al-Ain stuff and all dat cool jazz. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, repellendus est architecto omnis eos iusto cupiditate magnam voluptatibus et porro, ullam voluptas! Excepturi voluptas esse cum atque quibusdam aut corporis!",
+        },
+        22: {
+            title: "IBA",
+            paragraph: "Al-Ain stuff and all dat cool jazz. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, repellendus est architecto omnis eos iusto cupiditate magnam voluptatibus et porro, ullam voluptas! Excepturi voluptas esse cum atque quibusdam aut corporis!",
+        },
     }
 
-// Retrieve Existing document elements
+    // Retrieve Existing document elements
     let pageId = document.querySelector("meta[portfId]").getAttribute("portfId");
     let dedicatedPortfolioContent = document.querySelector("#dedicated-portfolio-content");
 
-// Write page content
+    // Write page content
     dedicatedPortfolioContent.innerHTML = `
         <div class="title__wrap">
-            <p class="title">${portfolioDetails[pageId].title.replace("-"," ")}</p>
+            <p class="title">${portfolioDetails[pageId].title.replace("-", " ")}</p>
             <img src="https://d3i7ke5fj3tp7c.cloudfront.net/images/particle.svg" alt="particle" height="8px"
                 class="ms-1" />
             <div class="subtitle__wrap">
@@ -103,16 +142,13 @@ window.onload = () => {
                 </div>
                 </div>
                 `
-    // <img draggable="false" class="previews"
-    //     src="https://d3i7ke5fj3tp7c.cloudfront.net/images/portfolio_dedicated_pages/${portfolioDetails[pageId].title}_Image_006.jpg"
-    //     alt="" height="400" width="400">
-                
-//Retrieve dynamically written document elements
+
+    //Retrieve dynamically written document elements
     let artworks = document.querySelector("#artworks");
     let previews = document.querySelectorAll(".previews");
     let showcase = document.querySelector("#showcase>img");
 
-// Add Click function to preview images
+    // Add Click function to preview images
     previews.forEach(preview => {
         preview.addEventListener("mouseenter", function () {
             preview.scrollIntoView(true)
