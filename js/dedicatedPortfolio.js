@@ -58,7 +58,7 @@ window.onload = () => {
             paragraph: "placeholderholderplacer",
         },
         15: {
-            title: "Front-Row",
+            title: "Frontrow-Films",
             paragraph: "placeholderholderplacer",
         },
         16: {

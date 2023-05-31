@@ -107,7 +107,7 @@ footer.innerHTML = `
         <a href="#!" class="text-decoration-none text-white">Automotive</a>
       </p>
       <p>
-        <a href="#!" class="text-decoration-none text-white">Electronics&nbsp;&&nbsp;Home Appliances</a>
+        <a href="#!" class="text-decoration-none text-white">Electronics&nbsp;&&nbsp;Appliances</a>
       </p>
       <p>
         <a href="#!" class="text-decoration-none text-white">E-Commerce</a>
