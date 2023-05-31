@@ -98,7 +98,7 @@ window.onload = () => {
     // Write page content
     dedicatedPortfolioContent.innerHTML = `
         <div class="title__wrap">
-            <p class="title">${portfolioDetails[pageId].title.replace("-", " ")}</p>
+            <p class="title">${portfolioDetails[pageId].title.replaceAll("-", " ")}</p>
             <img src="https://d3i7ke5fj3tp7c.cloudfront.net/images/particle.svg" alt="particle" height="8px"
                 class="ms-1" />
             <div class="subtitle__wrap">

@@ -101,13 +101,13 @@ footer.innerHTML = `
       <a href="#!" class="text-decoration-none text-white">Food & Beverages</a>
       </p>
       <p>
-        <a href="#!" class="text-decoration-none text-white">Hospitality&nbsp;&&nbsp;Healthcare</a>
+        <a href="#!" class="text-decoration-none text-white">Entertainment</a>
       </p>
       <p>
         <a href="#!" class="text-decoration-none text-white">Automotive</a>
       </p>
       <p>
-        <a href="#!" class="text-decoration-none text-white">B2B Marketing</a>
+        <a href="#!" class="text-decoration-none text-white">Electronics&nbsp;&&nbsp;Home Appliances</a>
       </p>
       <p>
         <a href="#!" class="text-decoration-none text-white">E-Commerce</a>
