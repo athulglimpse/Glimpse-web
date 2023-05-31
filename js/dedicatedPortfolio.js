@@ -7,7 +7,7 @@ window.onload = () => {
         },
         2: {
             title: "UAE-Pavilion",
-            paragraph: "placeholderholderplacer",
+            paragraph: "The UAE Pavilion at Expo 2020 is a magnificent showcase of the United Arab Emirates' rich culture, innovation, and aspirations. It offers a captivating journey through immersive exhibits, interactive displays, and captivating storytelling, highlighting the nation's achievements, heritage, and vision for the future. From awe-inspiring architecture to thought-provoking exhibits, the UAE Pavilion at Expo 2020 provides visitors with a unique opportunity to explore the UAE's contributions to various sectors and experience the essence of Emirati hospitality.",
         },
         3: {
             title: "Hisense",
@@ -27,7 +27,7 @@ window.onload = () => {
         },
         7: {
             title: "Roxy-Cinemas",
-            paragraph: "placeholderholderplacer",
+            paragraph: "Roxy Cinemas is a premium cinema chain that provides a luxurious movie-watching experience. With state-of-the-art theaters, comfortable seating, and cutting-edge audiovisual technology, Roxy Cinemas offers a perfect setting for film enthusiasts. Whether it's the latest Hollywood blockbusters or independent films, Roxy Cinemas presents a wide range of movies across different genres, accompanied by gourmet snacks and refreshments, ensuring an unforgettable cinematic experience.",
         },
         8: {
             title: "LG",
@@ -39,15 +39,15 @@ window.onload = () => {
         },
         10: {
             title: "Novo-Cinemas",
-            paragraph: "placeholderholderplacer",
+            paragraph: "Novo Cinemas is a leading cinema brand that offers immersive movie experiences. With modern theaters equipped with advanced audiovisual technology, comfortable seating, and a diverse selection of movies, Novo Cinemas creates an enchanting environment for film lovers. A mountain of movie selections and limitless fun is guaranteed at Novo Cienmas,  supreme cinematic experience that caters to a huge segment of the UAE population.",
         },
         11: {
             title: "Yash-Raj-Films",
-            paragraph: "placeholderholderplacer",
+            paragraph: "Yash Raj Films is one of India's most esteemed and influential film production companies. Known for producing high-quality Bollywood films, Yash Raj Films has a rich legacy of creating engaging and entertaining movies that have captivated audiences for decades. From blockbuster hits to critically acclaimed films, Yash Raj Films has contributed significantly to the Indian film industry and continues to be a prominent player in shaping the cinematic landscape.",
         },
         12: {
             title: "Balade",
-            paragraph: "placeholderholderplacer",
+            paragraph: "Balade is a brand that offers a range of authentic Mediterranean dairy products. With a focus on quality and tradition, Balade produces delicious and wholesome products such as labneh, feta cheese, and halloumi. Made from the finest ingredients and using traditional methods, Balade products capture the rich flavors and culinary heritage of the Mediterranean region, providing a delightful experience for cheese and dairy lovers.",
         },
         13: {
             title: "Jaeger-LeCoultre",
@@ -55,11 +55,11 @@ window.onload = () => {
         },
         14: {
             title: "MOTN",
-            paragraph: "placeholderholderplacer",
+            paragraph: "MOTN(Mother of the Nation Festival) is an exciting festival that celebrates UAE culture, authorized by the Department of Tourism and Culture. It offers a vibrant experience with a fusion of food experiences, media showcases, cinema screenings, thrilling amusements, and an overall festive atmosphere. MOTN invites visitors to immerse themselves in the rich traditions and delights of the UAE while enjoying a diverse range of activities and entertainment options.",
         },
         15: {
             title: "Frontrow-Films",
-            paragraph: "placeholderholderplacer",
+            paragraph: "Front Row is a prestigious filmed entertainment company that has established itself as a leader in the industry. With a focus on delivering high-quality content, Front Row brings audiences a diverse range of captivating films, television shows, and digital media experiences. Known for its commitment to excellence, Front Row collaborates with acclaimed filmmakers, talented actors, and visionary creators to produce compelling and thought-provoking entertainment. Whether through gripping dramas, exciting action films, or innovative storytelling, Front Row consistently strives to provide audiences with a premier cinematic experience that leaves a lasting impression.",
         },
         16: {
             title: "Aseel",
@@ -75,7 +75,7 @@ window.onload = () => {
         },
         19: {
             title: "Al-Ain-Foods",
-            paragraph: "placeholderholderplacer",
+            paragraph: "Al Ain Foods is a well-established food company that specializes in a wide range of quality food products. From fresh dairy products and juices to canned goods and frozen items, Al Ain Foods offers a diverse selection that caters to different culinary needs. With a commitment to taste, nutrition, and food safety, Al Ain Foods ensures that its products meet the highest standards of quality, providing wholesome and delicious options for consumers.",
         },
         20: {
             title: "Gorenje",
@@ -83,15 +83,15 @@ window.onload = () => {
         },
         21: {
             title: "United-Foods",
-            paragraph: "placeholderholderplacer",
+            paragraph: "United Foods is a leading food manufacturing and distribution company that offers a wide range of consumer food products. With a focus on quality and innovation, United Foods produces a variety of food items, including sauces, snacks, spreads, and beverages. The company's diverse product portfolio caters to different tastes and cultures, highlighting some of the most nutritious, tasty food and beverages in the world .",
         },
         22: {
             title: "IBA",
-            paragraph: "placeholderholderplacer",
+            paragraph: "The International Boxing Association in Abu Dhabi 22 is an electrifying fighting event that showcases the strength and skills of the world's top boxers. This highly anticipated competition brings together elite fighters from around the globe to compete in a thrilling display of athleticism, strategy, and determination. Held in Abu Dhabi, this event offers spectators an unforgettable experience as they witness intense boxing matches featuring some of the most formidable fighters in the world. With a passionate audience and a pulsating atmosphere, the International Boxing Association in Abu Dhabi 22 is a must-see event for boxing enthusiasts and sports fans alike.",
         },
         23: {
             title: "Alpin",
-            paragraph: "placeholderholderplacer",
+            paragraph: "Alpin is a naturally-alkaline spring water brand that is well-known as one of the leading water brands in freshness, taste and healthy benefits. The story of Alpin begins amidst the rain and snow that graciously descend upon the untouched peaks of the majestic Taurus Mountains in Turkey, gracing the land year-round. These divine elements nourish a thriving network of humble streams, whose collective journey feeds an aquifer hidden deep beneath the earth's surface. As this water embarks on its unhurried passage through layers of time-worn rocks, it undergoes a natural purification process, all the while absorbing precious minerals and vital elements bestowed by nature itself.",
         }
     }
 
