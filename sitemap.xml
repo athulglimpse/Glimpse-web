@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://www.theglimpseproject.com</loc>
-		<lastmod>2023-05-30</lastmod>
+		<lastmod>2023-06-02</lastmod>
 	</url>
 	<url>
 		<loc>https://www.theglimpseproject.com/terms-of-use.html</loc>
@@ -181,8 +181,28 @@
 		<lastmod>2023-05-30</lastmod>
 	</url>
 	<url>
-		<loc>https://www.theglimpseproject.com/pages/industries/f&amp;b.html</loc>
-		<lastmod>2023-05-31</lastmod>
+		<loc>https://www.theglimpseproject.com/pages/industries/luxury-and-fashion.html</loc>
+		<lastmod>2023-06-02</lastmod>
+	</url>
+	<url>
+		<loc>https://www.theglimpseproject.com/pages/industries/government.html</loc>
+		<lastmod>2023-06-02</lastmod>
+	</url>
+	<url>
+		<loc>https://www.theglimpseproject.com/pages/industries/food-and-beverages.html</loc>
+		<lastmod>2023-06-02</lastmod>
+	</url>
+	<url>
+		<loc>https://www.theglimpseproject.com/pages/industries/entertainment.html</loc>
+		<lastmod>2023-06-02</lastmod>
+	</url>
+	<url>
+		<loc>https://www.theglimpseproject.com/pages/industries/electronics-and-appliances.html</loc>
+		<lastmod>2023-06-02</lastmod>
+	</url>
+	<url>
+		<loc>https://www.theglimpseproject.com/pages/industries/automotive.html</loc>
+		<lastmod>2023-06-02</lastmod>
 	</url>
 	<url>
 		<loc>https://www.theglimpseproject.com/pages/blog/9-how-ai-is-revolutionising-influencer-marketing.html</loc>

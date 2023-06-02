@@ -95,22 +95,22 @@ footer.innerHTML = `
       <!-- Links -->
       <h6 class="fw-bold mb-4 gradient-text-small">Industries</h6>
       <p>
-      <a href="#!" class="text-decoration-none text-white">Luxury & Fashion</a>
+      <a href="/pages/industries/luxury-and-fashion.html" class="text-decoration-none text-white">Luxury & Fashion</a>
       </p>
       <p>
-      <a href="#!" class="text-decoration-none text-white">Food & Beverages</a>
+      <a href="/pages/industries/food-and-beverages.html" class="text-decoration-none text-white">Food & Beverages</a>
       </p>
       <p>
-        <a href="#!" class="text-decoration-none text-white">Entertainment</a>
+        <a href="/pages/industries/entertainment.html" class="text-decoration-none text-white">Entertainment</a>
       </p>
       <p>
-        <a href="#!" class="text-decoration-none text-white">Automotive</a>
+        <a href="/pages/industries/automotive.html" class="text-decoration-none text-white">Automotive</a>
       </p>
       <p>
-        <a href="#!" class="text-decoration-none text-white">Electronics&nbsp;&&nbsp;Appliances</a>
+        <a href="/pages/industries/electronics-and-appliances.html" class="text-decoration-none text-white">Electronics&nbsp;&&nbsp;Appliances</a>
       </p>
       <p>
-        <a href="#!" class="text-decoration-none text-white">E-Commerce</a>
+        <a href="/pages/industries/government.html" class="text-decoration-none text-white">Government</a>
       </p>
     </div>
     <!-- Grid column -->
