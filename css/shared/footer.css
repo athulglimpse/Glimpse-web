@@ -144,6 +144,11 @@
   -o-transition: max-height 0.1s linear;
 }
 
+.sub-location a {
+  text-decoration: none;
+  color: white;
+}
+
 /* -----------------BOTTOM PART OF FOOTER-------------- */
 
 .footer-bottom-wrap {

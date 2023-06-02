@@ -214,6 +214,13 @@
   text-align: center;
 }
 
+.careers-cta-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* MEDIA QUERY */
 @media screen and (min-width: 2560px) {
   .form_desc {

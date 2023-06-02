@@ -37,7 +37,7 @@ footer.innerHTML = `
       </div>
       <div class="loc-col-item">
         <a href="#!" class="text-decoration-none text-white">France</a>
-        <p class="sub-location">Avenue de Maine, France</p>
+        <p class="sub-location">Avenue de Maine, France<br><a href="tel:+33647951108">+33 6 47 95 11 08</a></p>
       </div>
       <div class="loc-col-item">
         <a href="#!" class="text-decoration-none text-white">Lebanon</a>
@@ -95,22 +95,22 @@ footer.innerHTML = `
       <!-- Links -->
       <h6 class="fw-bold mb-4 gradient-text-small">Industries</h6>
       <p>
-      <a href="#!" class="text-decoration-none text-white">Luxury & Fashion</a>
+      <a href="/pages/industries/luxury-and-fashion.html" class="text-decoration-none text-white">Luxury & Fashion</a>
       </p>
       <p>
-      <a href="#!" class="text-decoration-none text-white">Food & Beverages</a>
+      <a href="/pages/industries/food-and-beverages.html" class="text-decoration-none text-white">Food & Beverages</a>
       </p>
       <p>
-        <a href="#!" class="text-decoration-none text-white">Hospitality&nbsp;&&nbsp;Healthcare</a>
+        <a href="/pages/industries/entertainment.html" class="text-decoration-none text-white">Entertainment</a>
       </p>
       <p>
-        <a href="#!" class="text-decoration-none text-white">Automotive</a>
+        <a href="/pages/industries/automotive.html" class="text-decoration-none text-white">Automotive</a>
       </p>
       <p>
-        <a href="#!" class="text-decoration-none text-white">B2B Marketing</a>
+        <a href="/pages/industries/electronics-and-appliances.html" class="text-decoration-none text-white">Electronics&nbsp;&&nbsp;Appliances</a>
       </p>
       <p>
-        <a href="#!" class="text-decoration-none text-white">E-Commerce</a>
+        <a href="/pages/industries/government.html" class="text-decoration-none text-white">Government</a>
       </p>
     </div>
     <!-- Grid column -->
@@ -119,10 +119,10 @@ footer.innerHTML = `
       <!-- Links -->
       <h6 class="fw-bold mb-4 gradient-text-small">Support</h6>
       <p>
-        <a href="#" class="text-decoration-none text-white">Enquiry</a>
+        <a href="/contactus.html" class="text-decoration-none text-white">Contact Us</a>
       </p>
       <p>
-        <a href="#" class="text-decoration-none text-white">Careers</a>
+        <a href="/careers.html" class="text-decoration-none text-white">Careers</a>
       </p>
       <p>
         <a href="/privacy-policy.html" class="text-decoration-none text-white">Privacy Policy</a>
