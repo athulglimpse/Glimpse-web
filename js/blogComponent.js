@@ -63,14 +63,22 @@ const blog = {
     author: "Fiana Carlos",
     authorImg: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/FIA.png",
   },
-  // 9: {
-  //   para: "One of the most notable ways in which AI is changing influencer marketing is through the use of machine learning algorithms",
-  //   title: "How AI is revolutionising influencer marketing",
-  //   img: "",
-  //   date: "January 22, 2023",
-  //   author: "Hashim Riyan",
-  //   authorImg: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/Ariane.png",
-  // },
+  9: {
+    para: "One of the most notable ways in which AI is changing influencer marketing is through the use of machine learning algorithms",
+    title: "How AI is revolutionising influencer marketing",
+    img: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/09_topic.webp",
+    date: "January 22, 2023",
+    author: "Ariane Magante",
+    authorImg: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/Ariane.png",
+  },
+  10: {
+    para: "ChatGPT is a revolutionary natural language processing tool that has been developed by OpenAI...",
+    title: "How to use ChatGPT efficiently",
+    img: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/10_topic.jpg",
+    date: "January 27, 2023",
+    author: "Ariane Magante",
+    authorImg: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/Ariane.png",
+  },
 };
 // BLOG CARD
 console.log(Object.keys(blog));
