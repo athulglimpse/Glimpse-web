@@ -1,5 +1,7 @@
 RewriteEngine on
 
+RewriteCond %{HTTP_HOST} ^theglimpseproject.com [NC]
+RewriteRule ^(.*)$ http://www.theglimpseproject.com/$1 [L,R=301]
 
 RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
 RewriteRule ^ /%1 [NC,L,R]
