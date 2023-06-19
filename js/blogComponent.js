@@ -3,7 +3,7 @@ const blog = {
     para: "The popularity of TikTok spread like wildfire with 1 billion monthly active users to date. ",
     title: "Why You Should Do TikTok For Your Business Right Here Right Now",
     img: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/01_topic.webp",
-    date: "April 18, 2022",
+    date: "March 21, 2021",
     author: "Hashim Riyan",
     authorImg: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/HASHIM.png",
   },
@@ -11,7 +11,7 @@ const blog = {
     para: "Social media is constantly evolving and producing new opportunities to build a deeper connection with the audience.",
     title: "Social Media Trends To Watch Out For In 2022",
     img: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/02_topic.webp",
-    date: "April 18, 2022",
+    date: "April 14, 2021",
     author: "Ariane Magante",
     authorImg: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/Ariane.png",
   },
@@ -43,7 +43,7 @@ const blog = {
     para: "Here’s an answer I sent to one of my students in Massachusetts: – If you want to verify a brand on Facebook",
     title: "How to verify your Facebook and Instagram page",
     img: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/06_topic.webp",
-    date: "April 18, 2022",
+    date: "April 6, 2022",
     author: "Ariane Magante",
     authorImg: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/Ariane.png",
   },
@@ -51,7 +51,7 @@ const blog = {
     para: "In an attempt to stave off and even put a stop to spam, hate speech, threats, abuse, and other unwelcome remarks",
     title: "Twitter has finally launched its reply-limiting feature",
     img: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/07_topic.webp",
-    date: "March 10, 2023",
+    date: "April 18, 2022",
     author: "Fiana Carlos",
     authorImg: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/FIA.png",
   },
@@ -66,7 +66,7 @@ const blog = {
   9: {
     para: "One of the most notable ways in which AI is changing influencer marketing is through the use of machine learning algorithms",
     title: "How AI is revolutionising influencer marketing",
-    img: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/09_topic.webp",
+    img: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/09_topic.png",
     date: "January 22, 2023",
     author: "Ariane Magante",
     authorImg: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/Ariane.png",
@@ -74,10 +74,58 @@ const blog = {
   10: {
     para: "ChatGPT is a revolutionary natural language processing tool that has been developed by OpenAI...",
     title: "How to use ChatGPT efficiently",
-    img: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/10_topic.jpg",
+    img: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/10_topic.png",
     date: "January 27, 2023",
     author: "Ariane Magante",
     authorImg: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/Ariane.png",
+  },
+  11: {
+    para: "In today's digital age, the importance of quality content cannot be overstated...",
+    title: "How to Optimise your content with AI copywriting tools",
+    img: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/11_topic.png",
+    date: "February 14, 2023",
+    author: "Hashim Riyan",
+    authorImg: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/HASHIM.png",
+  },
+  12: {
+    para: "Twitter, a leading social media platform with over 330 million active users, has been instrumental in...",
+    title: "Twitter advertisers have to pay for verification to launch ads",
+    img: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/12_topic.png",
+    date: "February 20, 2023",
+    author: "Hashim Riyan",
+    authorImg: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/HASHIM.png",
+  },
+  13: {
+    para: "Instagram, the popular photo-sharing app, rolled out a major change to their bio feature, allowing users...",
+    title: "Instagram now lets you add a total of 5 links in your bio",
+    img: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/13_topic.png",
+    date: "February 27, 2023",
+    author: "Simone Bangera",
+    authorImg: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/SIMONE.png",
+  },
+  14: {
+    para: "TikTok, the popular video-sharing app, is always on the lookout for innovative ways to improve user...",
+    title: "TikTok tests generative AI with a new profile image",
+    img: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/14_topic.png",
+    date: "March 14, 2023",
+    author: "Simone Bangera",
+    authorImg: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/SIMONE.png",
+  },
+  15: {
+    para: "The popular video-sharing platform, YouTube, has recently launched an innovative feature called YouTube...",
+    title: "What is YouTube's live shopping feature?",
+    img: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/15_topic.png",
+    date: "March 29, 2023",
+    author: "Fiana Carlos",
+    authorImg: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/FIA.png",
+  },
+  16: {
+    para: "Meta, the company formerly known as Facebook, is gearing up to launch its highly anticipated Horizon...",
+    title: "Meta will be launching its Horizon Worlds VR experience",
+    img: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/16_topic.png",
+    date: "April 3, 2023",
+    author: "Fiana Carlos",
+    authorImg: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/FIA.png",
   },
 };
 // BLOG CARD
@@ -110,7 +158,9 @@ blog_collection.innerHTML = Object.keys(blog)
       <hr />
       <a href="/pages/blog/${id}-${blog[id].title
         .replace(/\s+/g, "-")
-        .toLowerCase()}.html" class="topic-info_wrap">
+        .toLowerCase()
+        .replace(/['?!]+/g,"")
+      }.html" class="topic-info_wrap">
       
         <h2 class="topic_title gradient-text">
             ${blog[id].title}        
