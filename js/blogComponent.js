@@ -127,6 +127,94 @@ const blog = {
     author: "Fiana Carlos",
     authorImg: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/FIA.png",
   },
+  17: {
+    para: "Meta has announced its plans to expand the Reels monetization program to more creators...",
+    title: "Meta is looking into expanding its Reels monetisation program to a wide array of creators",
+    img: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/17_topic.png",
+    date: "April 8, 2023",
+    author: "Rayan Tarraf",
+    authorImg: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/Rayan.png",
+  },
+  18: {
+    para: "As the digital landscape rapidly evolves, businesses face new challenges, and one of the most important...",
+    title: "How can brands thrive despite Google ending third-party cookies in Chrome?",
+    img: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/18_topic.png",
+    date: "April 16, 2023",
+    author: "Rayan Tarraf",
+    authorImg: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/Rayan.png",
+  },
+  19: {
+    para: "In today's digital age, social media influencers have the power to shape consumer behavior and purchasing decisions...",
+    title: "The Power of Influencer Marketing",
+    img: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/19_topic.png",
+    date: "April 22, 2023",
+    author: "Hashim Riyan",
+    authorImg: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/HASHIM.png",
+  },
+  20: {
+    para: "TikTok has quickly become one of the most popular social media platforms worldwide, and businesses have...",
+    title: "TikTok Marketing Strategies",
+    img: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/20_topic.png",
+    date: "April 30, 2023",
+    author: "Hashim Riyan",
+    authorImg: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/HASHIM.png",
+  },
+  21: {
+    para: "So, what are the top social media marketing trends to keep an eye on in 2023? Let's dive in and explore...",
+    title: "Social media has become an integral part of our lives",
+    img: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/21_topic.png",
+    date: "May 4, 2023",
+    author: "Ariane Magante",
+    authorImg: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/Ariane.png",
+  },
+  22: {
+    para: "Search Engine Optimization (SEO) and Social Media Marketing (SMM) are two critical components of digital...",
+    title: "The Importance of SEO in Social Media Marketing",
+    img: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/22_topic.png",
+    date: "May 9, 2023",
+    author: "Ariane Magante",
+    authorImg: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/Ariane.png",
+  },
+  23: {
+    para: "Social media advertising is an indispensable component of any modern marketing strategy, and maximizing...",
+    title: "Social Media Advertising: How to Maximize Your Ad Spend and Reach Your Target Audience",
+    img: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/23_topic.png",
+    date: "May 16, 2023",
+    author: "Simone Bangera",
+    authorImg: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/SIMONE.png",
+  },
+  24: {
+    para: "In contemporary digital marketing, the implementation of content marketing has emerged as an...",
+    title: "Content Marketing in 2023: Top Trends and Best Practices for Creating Engaging Content",
+    img: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/24_topic.png",
+    date: "May 26, 2023",
+    author: "Simone Bangera",
+    authorImg: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/SIMONE.png",
+  },
+  25: {
+    para: "Social Media is the undisputed leading tool to build an audience base that is vital for a business to...",
+    title: "Maximizing Your Instagram Strategy: Tips and Tactics for Growing Your Following and Engagement",
+    img: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/25_topic.png",
+    date: "May 29, 2023",
+    author: "Hashim Riyan",
+    authorImg: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/HASHIM.png",
+  },
+  26: {
+    para: "The potential of video marketing is unquestionable in our current age. The videos with 9-figure views...",
+    title: "The Power of Video Marketing: How to Create Compelling Video Content for Your Social Media Channels",
+    img: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/26_topic.png",
+    date: "June 1, 2023",
+    author: "Hashim Riyan",
+    authorImg: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/HASHIM.png",
+  },
+  27: {
+    para: "Facebook is the time-tested tool that continues to help business lead their industry and grow towards a state of abundance...",
+    title: "Facebook Advertising Strategies: How to Target Your Ideal Audience and Maximize Your ROI",
+    img: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/27_topic.png",
+    date: "June 12, 2023",
+    author: "Rayan Tarraf",
+    authorImg: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/Rayan.png",
+  },
 };
 // BLOG CARD
 console.log(Object.keys(blog));
@@ -159,7 +247,7 @@ blog_collection.innerHTML = Object.keys(blog)
       <a href="/pages/blog/${id}-${blog[id].title
         .replace(/\s+/g, "-")
         .toLowerCase()
-        .replace(/['?!]+/g,"")
+        .replace(/['?!:]+/g,"")
       }.html" class="topic-info_wrap">
       
         <h2 class="topic_title gradient-text">
