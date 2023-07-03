@@ -2,5 +2,38 @@
   "redirects": [
     { "source": "/index.html", "destination": "/" }
   ],
-  "cleanUrls": true
+  "cleanUrls": true,
+
+  "headers": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "glimpseserver.com"
+        }
+      ],
+      "headers" : [
+        {
+          "key" : "X-Robots-Tag",
+          "value" : "noindex"
+        }
+      ]
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.glimpseserver.com"
+        }
+      ],
+      "headers" : [
+        {
+          "key" : "X-Robots-Tag",
+          "value" : "noindex"
+        }
+      ]
+    }
+  ]
 }
