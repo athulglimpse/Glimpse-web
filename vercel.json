@@ -11,10 +11,6 @@
         {
           "type": "host",
           "value": "glimpseserver.com"
-        },
-        {
-          "type": "host",
-          "value": "www.glimpseserver.com"
         }
       ],
       "headers" : [
