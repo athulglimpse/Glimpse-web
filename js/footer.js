@@ -147,7 +147,7 @@ footer.innerHTML = `
         <p>SM News by Myndful Social</p>
       </div>
     </div>
-    <img src="https://d3i7ke5fj3tp7c.cloudfront.net/images/footer/divider.svg" class="divider"
+    <img width="19" height="20" src="https://d3i7ke5fj3tp7c.cloudfront.net/images/footer/divider.svg" class="divider"
       alt="divider" />
     <div class="footer__input-wrapper">
       <h4 class="gradient-text-small-rev fw-bold text-end">Get in touch:</h4>
