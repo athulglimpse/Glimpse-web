@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="canonical" href="https://www.theglimpseproject.com/careers.html">
+    <link rel="canonical" href="https://www.theglimpseproject.com/careers.html">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
@@ -72,7 +72,8 @@
         <!-- navbar ends -->
         <!-- BANNER SECTION -->
         <section class="page__container banner_section">
-            <img width="749" height="421" src="https://d3i7ke5fj3tp7c.cloudfront.net/images/careers/glimpse-team.jpeg" alt="The Glimpse Team" style="border-radius: 3vmin;">
+            <img width="749" height="421" src="https://d3i7ke5fj3tp7c.cloudfront.net/images/careers/glimpse-team.jpeg"
+                alt="The Glimpse Team" style="border-radius: 3vmin;">
         </section>
 
         <!-- Section -->
@@ -85,12 +86,14 @@
                     <hr style="width: 12%" />
                 </div>
             </div>
-            <img src="https://d3i7ke5fj3tp7c.cloudfront.net/images/contact_us/strokes.svg" alt="strokes" width="153" height="230"
-                class="double__stroke" />
+            <img src="https://d3i7ke5fj3tp7c.cloudfront.net/images/contact_us/strokes.svg" alt="strokes" width="153"
+                height="230" class="double__stroke" />
             <div class="form__desc-wrap">
                 <p class="form_desc">
-                    Ignite your potential and shape the future with us. Browse our job openings and apply today!
-                </p>
+                    Join our team of unicorns and be one of us!<br>
+                    We’re always looking for the best talent with the right skillset. If you are a creative whizz, a
+                    go-getter, a problem-solver, we want you right here right now.
+                    Shoot us an email with your kickass CV and cover letter today. </p>
             </div>
             <div class="row pb-md-5 align-items-center mt-5 justify-content-center">
                 <!--------------------------------- FORM START --------------------------------->
@@ -258,7 +261,7 @@
             // Check for LinkedIn URL
             if (linkedinValue === "") {
                 setErrorFor(linkedin, "LinkedIn cannot be empty")
-            } else if(linkedinValue.startsWith("https://www.linkedin.com") || linkedinValue.startsWith("https://linkedin.com") || linkedinValue.startsWith("linkedin.com")) {
+            } else if (linkedinValue.startsWith("https://www.linkedin.com") || linkedinValue.startsWith("https://linkedin.com") || linkedinValue.startsWith("linkedin.com")) {
                 setSuccessFor(linkedin)
             } else {
                 setErrorFor(linkedin, "Link should start with https://www.linkedin.com")
