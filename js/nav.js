@@ -2,8 +2,8 @@ const nav = document.querySelector("nav");
 
 nav.innerHTML = `
 <div class="nav-wrap">
-          <a class="navbar-brand" ondrop="drop(event)" ondragover="allowDrop(event)" href="/"
-            ><img src="https://d3i7ke5fj3tp7c.cloudfront.net/images/logo.svg" alt="Glimpse Logo"
+          <a class="navbar-brand" href="/"
+            ><img draggable="true" id="main-logo" src="https://d3i7ke5fj3tp7c.cloudfront.net/images/logo.svg" alt="Glimpse Logo"
           /></a>
           <div class="navbar-toggler">
             <span class="nav__toggle"></span>

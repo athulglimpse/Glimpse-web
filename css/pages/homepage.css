@@ -25,8 +25,9 @@
   position: absolute;
   width: 100%;
   z-index: 1;
-  left: 0%;
-  object-fit: contain;
+  left: -2vw;
+  width: 105%;
+  /* object-fit: contain; */
   top: 45vmin;
 }
 
@@ -257,6 +258,7 @@
   border-radius: 25px !important;
   width: 98%;
   height: auto;
+  z-index: 1;
 }
 
 /* FAME */
@@ -1020,6 +1022,11 @@ figure img {
 #contact .contact-img {
   width: 100%;
   max-height: 70vh;
+  z-index: 1;
+}
+
+#contact .col-12 {
+  z-index: 1;
 }
 
 #contact .col-12 p {
