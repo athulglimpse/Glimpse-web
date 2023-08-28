@@ -18,8 +18,9 @@
   <link rel="shortcut icon" href="/static/images/favicon.png" type="image/png" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/shared/blob.css">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89800270-1"></script>
   <script>
@@ -37,6 +38,11 @@
   <!-- MOBILE MENU ENDS -->
 
   <main>
+    <div class="blob-wrap">
+      <div id="main-blob"></div>
+    </div>
+    <div id="blur"></div>
+
     <!-- NAV -->
     <nav class="navbar navbar-expand-lg navbar-dark w-100"></nav>
     <!-- navbar ends -->
@@ -93,7 +99,7 @@
             <div id="orbit-wrap">
               <div id="orbit-sun" class="hero__text d-flex flex-column align-items-start">
                 <span class="we-are">WE ARE</span>
-                <h1 class="digital">DIGITAL</h1>
+                <h1 class="digital">DIG<span id="drag-logo-here">I</span>TAL</h1>
                 <span class="trans">TRANSCENDENCE</span>
               </div>
             </div>
@@ -881,6 +887,7 @@
   <script src="/js/nav.js"></script>
   <script src="/js/mobile-nav.js"></script>
   <script src="/js/footer.js"></script>
+  <script src="/js/blob.js"></script>
 </body>
 
 </html>

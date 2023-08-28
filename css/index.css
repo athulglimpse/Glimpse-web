@@ -109,6 +109,7 @@ main {
     height: 100%;
     scroll-behavior: smooth;
     overflow: hidden;
+    position: relative;
 }
 
 .page__container {
