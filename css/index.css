@@ -125,6 +125,11 @@ main {
     border-radius: 10px;
 }
 
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+}
+
 button.active {
     box-shadow: 0 0 6px 0 rgb(157 96 212 / 50%) !important;
 }
