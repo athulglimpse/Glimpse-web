@@ -1,5 +1,5 @@
 #blur {
-  backdrop-filter: blur(6vmax);
+  backdrop-filter: blur(10vmax);
   height: 100%;
   width: 100%;
   position: absolute;
@@ -14,7 +14,7 @@
 }
 
 #main-blob {
-  display: none;
+  /* display: none; */
   z-index: 0;
   position: absolute;
   height: 30vmax;
