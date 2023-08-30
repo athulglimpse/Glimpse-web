@@ -5,7 +5,7 @@ let container = document.querySelector(".parallax__slider-inner");
 let slider_outer = document.querySelector(".portfolio__section");
 let sections = gsap.utils.toArray(".parallax__item");
 let images = [...document.querySelectorAll(".parallax__image")];
-let overlay = document.querySelector(".fullview__section");
+// let overlay = document.querySelector(".fullview__section");
 let titles = [
   "UAE Pavilion",
   "Chaumet",
@@ -27,9 +27,6 @@ const getMaxWidth = () => {
     maxWidth += section.offsetWidth;
     maxWidth += gsap.getProperty(section, "marginLeft");
   });
-  maxWidth += 20;
-  maxWidth += window.innerWidth;
-  maxWidth -= sections[0].offsetWidth;
   return maxWidth;
 };
 
@@ -110,24 +107,24 @@ function animateImage() {
 }
 animate();
 
-window.addEventListener("scroll", () => {
-  if (overlay.style.display === "block") {
-    // gsap
-    //   .from(".fullview__portfolio-title", {
-    //     duration: 1.5,
-    //     yPercent: -200,
-    //     ease: "power4",
-    //     stagger: 0.1,
-    //   })
-    //   .revert();
+// window.addEventListener("scroll", () => {
+//   if (overlay.style.display === "block") {
+//     // gsap
+//     //   .from(".fullview__portfolio-title", {
+//     //     duration: 1.5,
+//     //     yPercent: -200,
+//     //     ease: "power4",
+//     //     stagger: 0.1,
+//     //   })
+//     //   .revert();
 
-    gsap.to(overlay, {
-      transform: "scale(0)",
-      display: "none",
-      opacity: 0,
-      ease: "power4",
-      duration: 0.6,
-      delay: 0.6,
-    });
-  }
-});
+//     gsap.to(overlay, {
+//       transform: "scale(0)",
+//       display: "none",
+//       opacity: 0,
+//       ease: "power4",
+//       duration: 0.6,
+//       delay: 0.6,
+//     });
+//   }
+// });
