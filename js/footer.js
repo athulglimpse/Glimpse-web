@@ -4,19 +4,19 @@ footer.innerHTML = `
 <script> </script>
 <footer class="text-center text-lg-start mx-auto">
   <div class="footer-socials">
-    <a href="https://www.instagram.com/theglimpseproject/" class="text-white mx-2">
+    <a target="_blank" href="https://www.instagram.com/theglimpseproject/" class="text-white mx-2">
       <i class="fab fa-instagram fa-lg"></i>
     </a>
-    <a href="https://www.facebook.com/TheGlimpseProject/" class="text-white mx-2">
+    <a target="_blank" href="https://www.facebook.com/TheGlimpseProject/" class="text-white mx-2">
       <i class="fab fa-facebook-f fa-lg"></i>
     </a>
-    <a href="https://twitter.com/glimpseproject/" class="text-white mx-2">
+    <a target="_blank" href="https://twitter.com/glimpseproject/" class="text-white mx-2">
       <i class="fab fa-twitter fa-lg"></i>
     </a>
-    <a href="https://www.linkedin.com/company/glimpse-digital-agency" class="text-white mx-2">
+    <a target="_blank" href="https://www.linkedin.com/company/glimpse-digital-agency" class="text-white mx-2">
       <i class="fab fa-linkedin-in fa-lg"></i>
     </a>
-    <a href="https://www.tiktok.com/@theglimpseproject/" class="text-white mx-2">
+    <a target="_blank" href="https://www.tiktok.com/@theglimpseproject/" class="text-white mx-2">
       <i class="fab fa-tiktok fa-lg"></i>
     </a>
   </div>
