@@ -75,6 +75,12 @@
   height: clamp(10px, 2vw, 40px);
 }
 
+#about-anchor img {
+  height: auto;
+  width: 1vw;
+  max-width: 1rem;
+}
+
 .hero__text {
   color: #fff;
   margin: 0;
