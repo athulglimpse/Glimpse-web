@@ -1292,11 +1292,6 @@ figure img {
     gap: 1rem;
   }
 
-  .service__section .cards .service_card {
-    width: 160px;
-    height: 200px;
-  }
-
   .card_header lottie-player,
   .card-content lottie-player {
     width: 26% !important;
