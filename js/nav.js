@@ -2,9 +2,11 @@ const nav = document.querySelector("nav");
 
 nav.innerHTML = `
 <div class="nav-wrap">
-          <a class="navbar-brand" href="/"
-            ><img draggable="true" id="main-logo" src="https://d3i7ke5fj3tp7c.cloudfront.net/images/logo.svg" alt="Glimpse Logo"
-          /></a>
+          <div style="height: 50%;">
+          <a href="/"> <lottie-player style="height: 100%;"
+              src="https://d3i7ke5fj3tp7c.cloudfront.net/images/logo.json"
+              background="transparent" speed="0.7" intermission="2000" loop autoplay></lottie-player></a>
+          </div>
           <div class="navbar-toggler">
             <span class="nav__toggle"></span>
             <span class="nav__toggle"></span>
