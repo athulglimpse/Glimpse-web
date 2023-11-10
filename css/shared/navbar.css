@@ -21,6 +21,9 @@
 /* Logo */
 .nav-wrap #logo-wrap {
   height: 50%;
+}
+
+.nav-wrap #logo-wrap, .nav-wrap #logo-wrap a, .nav-wrap #logo-wrap a lottie-player {
   position: relative;
   left: 0px;
 }
