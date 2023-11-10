@@ -1,12 +1,11 @@
+// https://d3i7ke5fj3tp7c.cloudfront.net/images/logo.json
 const nav = document.querySelector("nav");
 
 nav.innerHTML = `
 <div class="nav-wrap">
-          <div id="logo-wrap">
-          <a href="/"> 
-            <lottie-player style="height: 100%;" src="https://d3i7ke5fj3tp7c.cloudfront.net/images/logo.json" background="transparent" speed="0.7" intermission="2000" renderer="svg" loop autoplay></lottie-player>
+          <a id="logo-wrap" href="/"> 
+            <lottie-player src="/static/images/logo.json" background="transparent" speed="0.7" intermission="2000" renderer="svg" loop autoplay></lottie-player>
           </a>
-          </div>
           <div class="navbar-toggler">
             <span class="nav__toggle"></span>
             <span class="nav__toggle"></span>
