@@ -4,7 +4,7 @@ nav.innerHTML = `
 <div class="nav-wrap">
           <div id="logo-wrap">
           <a href="/"> 
-            <lottie-player style="height: 100%;" src="https://d3i7ke5fj3tp7c.cloudfront.net/images/logo.json" background="transparent" speed="0.7" intermission="2000" renderer: 'canvas' loop autoplay></lottie-player>
+            <lottie-player style="height: 100%;" src="https://d3i7ke5fj3tp7c.cloudfront.net/images/logo.json" background="transparent" speed="0.7" intermission="2000" renderer="svg" loop autoplay></lottie-player>
           </a>
           </div>
           <div class="navbar-toggler">

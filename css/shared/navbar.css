@@ -21,6 +21,8 @@
 /* Logo */
 .nav-wrap #logo-wrap {
   height: 50%;
+  position: relative;
+  left: 0px;
 }
 
 /* Menu underline */
