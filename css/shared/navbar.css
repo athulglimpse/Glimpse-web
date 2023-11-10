@@ -14,6 +14,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+
+/* Logo */
+.nav-wrap #logo-wrap {
+  height: 50%;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .nav-wrap #logo-wrap lottie-player {
+    width: 45%;
+  }
 }
 
 /* Menu underline */
@@ -136,7 +148,7 @@
   overflow-y: scroll;
 }
 
-.mob-main-menu::-webkit-scrollbar{
+.mob-main-menu::-webkit-scrollbar {
   display: none;
 }
 
@@ -349,5 +361,9 @@
   .navbar-brand>img {
     width: 70%;
     height: auto;
+  }
+
+  .nav-wrap #logo-wrap {
+    height: 30%;
   }
 }

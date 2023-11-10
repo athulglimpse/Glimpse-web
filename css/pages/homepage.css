@@ -1358,10 +1358,10 @@ figure img {
     padding-top: var(--r200);
   }
 
-  lottie-player {
+  /* lottie-player {
     width: 90px !important;
     height: 90px !important;
-  }
+  } */
 
   .double__stroke-2 {
     width: 12%;
