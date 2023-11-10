@@ -16,6 +16,11 @@
   justify-content: space-between;
 }
 
+/* Logo */
+.nav-wrap #logo-wrap {
+  height: 50%;
+}
+
 /* Menu underline */
 .nav-item {
   position: relative;
@@ -349,5 +354,9 @@
   .navbar-brand>img {
     width: 70%;
     height: auto;
+  }
+
+  .nav-wrap #logo-wrap {
+    height: 30%;
   }
 }
