@@ -269,15 +269,16 @@
 
 /* FAME */
 .fame__section {
-  /* height: 100vh; */
+  height: 100%;
   width: 100%;
   position: relative;
   margin-top: var(--r80);
+  margin-bottom: var(--r30);
 }
 
 .fame_wrap {
   width: 100%;
-  height: 100%;
+  height: 50vw;
   position: relative;
   display: flex;
   align-items: center;
@@ -288,11 +289,10 @@
   content: "";
   position: absolute;
   inset: 0;
-  /* background-color: #fb0988; */
-  background-image: url(https://d3i7ke5fj3tp7c.cloudfront.net/images/AWARDSBG.svg);
+  background-image: url(https://d3i7ke5fj3tp7c.cloudfront.net/images/AWARDSBGaoty.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 85%;
+  background-size: 100% 100%;
 }
 
 #canvas-awward {
@@ -324,7 +324,7 @@
 }
 
 .fame__section .fame_wrap a img {
-  width: 30vw;
+  width: 20vw;
   height: auto;
   object-fit: contain;
   animation-name: move;
@@ -352,7 +352,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  bottom: 0;
+  bottom: -15%;
   right: var(--r-container);
   z-index: 10;
 }
@@ -1265,10 +1265,8 @@ figure img {
   }
 
   /* FAME */
-  .fame__section {
-    height: 65vw;
-    margin-bottom: 20vw;
-    overflow: hidden;
+  .fame__section{
+    margin-bottom: var(--r100);
   }
 
   #canvas-awward canvas {
@@ -1586,9 +1584,6 @@ figure img {
   /* FAME */
   .fame__section {
     height: 80vw;
-    /* height: 100%; */
-    /* height: 50vmax; */
-    overflow: hidden;
   }
 
   .fame__section .fame_wrap {
@@ -1598,19 +1593,6 @@ figure img {
   .fame_wrap::before {
     background-size: 90%;
   }
-
-  /* #canvas-awward {
-    height: 100%;
-    overflow: hidden;
-  }
-
-  #canvas-awward canvas {
-    top: -30%;
-  } */
-
-  /* .fame__section .button-wrap {
-    bottom: 10%;
-  } */
 
   /* SERVICES */
   .service__section {
