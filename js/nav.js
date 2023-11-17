@@ -1,3 +1,9 @@
+// Insert Lottie Lib Script
+const lottieLib = document.createElement("script");
+lottieLib.src = "https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"
+lottieLib.defer = true;
+document.querySelector("body").append(document.createComment(' LOTTIE '),lottieLib);
+
 const nav = document.querySelector("nav");
 
 nav.innerHTML = `
