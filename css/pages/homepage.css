@@ -261,10 +261,14 @@
 }
 
 .showreel__section video {
-  border-radius: 25px !important;
-  width: 98%;
-  height: auto;
   z-index: 1;
+  width: 98%;
+  aspect-ratio: 16/9 ;
+  border-radius: 25px !important;
+  -webkit-border-radius: 25px !important;
+  -moz-border-radius: 25px !important;
+  -ms-border-radius: 25px !important;
+  -o-border-radius: 25px !important;
 }
 
 /* FAME */
