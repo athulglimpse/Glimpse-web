@@ -56,7 +56,7 @@
 .main-ele_wrap img {
   width: 100%;
   height: auto;
-  max-width: 280px;
+  max-width: 400px;
 }
 
 .main-ele_wrap .awrd-year {
@@ -177,7 +177,7 @@
   }
 
   .main-ele_wrap img {
-    max-width: 150px;
+    max-width: 250px;
   }
 
   .title__wrap {
