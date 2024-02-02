@@ -28,8 +28,7 @@ footer.innerHTML = `
       <h6 class="fw-bold mb-4 gradient-text-small">Locations</h6>
       <div class="loc-col-item">
         <a href="#!" class="text-decoration-none text-white">United Arab Emirates</a>
-        <p class="sub-location">Unit 403, Makateb 2 Building Dubai Media Production City PO Box 503417 Dubai, UAE
-        </p>
+        <p class="sub-location">Office 709 Publishing Pavilion, Dubai Production City, Dubai, UAE</p>
       </div>
       <div class="loc-col-item">
         <a href="#!" class="text-decoration-none text-white">Saudi Arabia</a>
@@ -162,7 +161,7 @@ footer.innerHTML = `
   </div>
   <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mt-5 gap-4 px-4 text-white" style="font-size: 0.8rem">
     <p>All rights reserved 2022 © Glimpse Digital Agency</p>
-    <p>Unit 403/404/503 Makateb 2, Dubai Production City, Dubai, UAE.</p>
+    <p>Office 709 Publishing Pavilion, Dubai Production City, Dubai, UAE.</p>
   </div>
 </footer>
     `;
