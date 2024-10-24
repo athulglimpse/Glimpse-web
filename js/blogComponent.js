@@ -248,7 +248,7 @@ blog_collection.innerHTML = Object.keys(blog)
         .replace(/\s+/g, "-")
         .toLowerCase()
         .replace(/['?!:]+/g,"")
-      }.html" class="topic-info_wrap">
+      }" class="topic-info_wrap">
       
         <h2 class="topic_title gradient-text">
             ${blog[id].title}        
