@@ -27,41 +27,41 @@ nav.innerHTML = `
               </li>
               <li class="nav-item services-nav-item">
                 <div class="menu-hover-line"></div>
-                <a class="nav-link  text-uppercase" href="/services.html">Services</a>
+                <a class="nav-link  text-uppercase" href="/services">Services</a>
                 <div class="services-dropdown">
-                  <a class="sub-nav-link" href="/pages/services/seo.html">SEO</a>
-                  <a class="sub-nav-link" href="/pages/services/sem.html">SEM</a>
-                  <a class="sub-nav-link" href="/pages/services/branding.html">Branding</a>
-                  <a class="sub-nav-link" href="/pages/services/advertising.html">Advertising</a>
-                  <a class="sub-nav-link" href="/pages/services/photography.html">Photography</a>
-                  <a class="sub-nav-link" href="/pages/services/social-media.html">Social Media</a>
-                  <a class="sub-nav-link" href="/pages/services/digital-strategy.html">Digital Strategy</a>
-                  <a class="sub-nav-link" href="/pages/services/video-production.html">Video Production</a>
-                  <a class="sub-nav-link" href="/pages/services/ar.html">Augmented Reality</a>
-                  <a class="sub-nav-link" href="/pages/services/influencer-mgmt.html">Influencer Management</a>
-                  <a class="sub-nav-link" href="/pages/services/reputation-mgmt.html">Reputation Management</a>
-                  <a class="sub-nav-link" href="/pages/services/community-mgmt.html">Community Management</a>
+                  <a class="sub-nav-link" href="/pages/services/seo">SEO</a>
+                  <a class="sub-nav-link" href="/pages/services/sem">SEM</a>
+                  <a class="sub-nav-link" href="/pages/services/branding">Branding</a>
+                  <a class="sub-nav-link" href="/pages/services/advertising">Advertising</a>
+                  <a class="sub-nav-link" href="/pages/services/photography">Photography</a>
+                  <a class="sub-nav-link" href="/pages/services/social-media">Social Media</a>
+                  <a class="sub-nav-link" href="/pages/services/digital-strategy">Digital Strategy</a>
+                  <a class="sub-nav-link" href="/pages/services/video-production">Video Production</a>
+                  <a class="sub-nav-link" href="/pages/services/ar">Augmented Reality</a>
+                  <a class="sub-nav-link" href="/pages/services/influencer-mgmt">Influencer Management</a>
+                  <a class="sub-nav-link" href="/pages/services/reputation-mgmt">Reputation Management</a>
+                  <a class="sub-nav-link" href="/pages/services/community-mgmt">Community Management</a>
                 </div>
               </li>
               <li class="nav-item">
                 <div class="menu-hover-line"></div>
-                <a class="nav-link text-uppercase" href="/awards.html">Awards</a>
+                <a class="nav-link text-uppercase" href="/awards">Awards</a>
               </li>
               <li class="nav-item">
                 <div class="menu-hover-line"></div>
-                <a class="nav-link text-uppercase" href="/portfolio.html">Portfolio</a>
+                <a class="nav-link text-uppercase" href="/portfolio">Portfolio</a>
               </li>
               <li class="nav-item">
                 <div class="menu-hover-line"></div>
-                <a class="nav-link text-uppercase" href="/clients.html">Clients</a>
+                <a class="nav-link text-uppercase" href="/clients">Clients</a>
               </li>
               <li class="nav-item">
                 <div class="menu-hover-line"></div>
-                <a class="nav-link text-uppercase" href="/blog.html">Blog</a>
+                <a class="nav-link text-uppercase" href="/blog">Blog</a>
               </li>
               <li class="nav-item">
                 <div class="menu-hover-line"></div>
-                <a class="nav-link text-uppercase" href="/contactus.html">Contact us</a>
+                <a class="nav-link text-uppercase" href="/contactus">Contact us</a>
               </li>
             </ul>
           </div>
@@ -74,11 +74,11 @@ navLinks.forEach((ele) => {
   if (ele.getAttribute("href") == window.location.pathname || ele.getAttribute("href").replace(".html", "") == window.location.pathname || ele.getAttribute("href").replace("/", "/index.html") == window.location.pathname) {
     ele.classList.add("active");
   } else if (window.location.pathname.includes("/pages/services")) {
-    if (ele.getAttribute("href") === "/services.html") {
+    if (ele.getAttribute("href") === "/services") {
       ele.classList.add("active");
     }
   } else if (window.location.pathname.includes("/pages/blog")) {
-    if (ele.getAttribute("href") === "/blog.html") {
+    if (ele.getAttribute("href") === "/blog") {
       ele.classList.add("active");
     }
   }
