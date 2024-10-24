@@ -49,19 +49,19 @@ footer.innerHTML = `
       <!-- Links -->
       <h6 class="fw-bold mb-4 gradient-text-small">Services</h6>
       <p>
-        <a href="/pages/services/digital-strategy.html" class="text-decoration-none text-white">Digital Strategy</a>
+        <a href="/pages/services/digital-strategy" class="text-decoration-none text-white">Digital Strategy</a>
       </p>
       <p>
-        <a href="/pages/services/advertising.html" class="text-decoration-none text-white">Advertising</a>
+        <a href="/pages/services/advertising" class="text-decoration-none text-white">Advertising</a>
       </p>
       <p>
         <a href="#" class="text-decoration-none text-white">Website Design<br>& Development</a>
       </p>
       <p>
-        <a href="/pages/services/branding.html" class="text-decoration-none text-white">Brand Awareness</a>
+        <a href="/pages/services/branding" class="text-decoration-none text-white">Brand Awareness</a>
       </p>
       <p>
-        <a href="/pages/services/social-media.html" class="text-decoration-none text-white">Content Creation</a>
+        <a href="/pages/services/social-media" class="text-decoration-none text-white">Content Creation</a>
       </p>
     </div>
     <!-- Grid column -->
@@ -70,22 +70,22 @@ footer.innerHTML = `
       <!-- Links -->
       <h6 class="fw-bold mb-4 gradient-text-small">Explore</h6>
       <p>
-        <a href="/services.html" class="text-decoration-none text-white">Services</a>
+        <a href="/services" class="text-decoration-none text-white">Services</a>
       </p>
       <p>
-        <a href="/awards.html" class="text-decoration-none text-white">Awards</a>
+        <a href="/awards" class="text-decoration-none text-white">Awards</a>
       </p>
       <p>
-        <a href="/portfolio.html" class="text-decoration-none text-white">Portfolio</a>
+        <a href="/portfolio" class="text-decoration-none text-white">Portfolio</a>
       </p>
       <p>
-        <a href="/clients.html" class="text-decoration-none text-white">Clients</a>
+        <a href="/clients" class="text-decoration-none text-white">Clients</a>
       </p>
       <p>
-        <a href="/blog.html" class="text-decoration-none text-white">Blog</a>
+        <a href="/blog" class="text-decoration-none text-white">Blog</a>
       </p>
       <p>
-        <a href="/contactus.html" class="text-decoration-none text-white">Contact Us</a>
+        <a href="/contactus" class="text-decoration-none text-white">Contact Us</a>
       </p>
     </div>
     <!-- Grid column -->
@@ -94,22 +94,22 @@ footer.innerHTML = `
       <!-- Links -->
       <h6 class="fw-bold mb-4 gradient-text-small">Industries</h6>
       <p>
-      <a href="/pages/industries/luxury-and-fashion.html" class="text-decoration-none text-white">Luxury & Fashion</a>
+      <a href="/pages/industries/luxury-and-fashion" class="text-decoration-none text-white">Luxury & Fashion</a>
       </p>
       <p>
-      <a href="/pages/industries/food-and-beverages.html" class="text-decoration-none text-white">Food & Beverages</a>
+      <a href="/pages/industries/food-and-beverages" class="text-decoration-none text-white">Food & Beverages</a>
       </p>
       <p>
-        <a href="/pages/industries/entertainment.html" class="text-decoration-none text-white">Entertainment</a>
+        <a href="/pages/industries/entertainment" class="text-decoration-none text-white">Entertainment</a>
       </p>
       <p>
-        <a href="/pages/industries/automotive.html" class="text-decoration-none text-white">Automotive</a>
+        <a href="/pages/industries/automotive" class="text-decoration-none text-white">Automotive</a>
       </p>
       <p>
-        <a href="/pages/industries/electronics-and-appliances.html" class="text-decoration-none text-white">Electronics&nbsp;&&nbsp;Appliances</a>
+        <a href="/pages/industries/electronics-and-appliances" class="text-decoration-none text-white">Electronics&nbsp;&&nbsp;Appliances</a>
       </p>
       <p>
-        <a href="/pages/industries/government.html" class="text-decoration-none text-white">Government</a>
+        <a href="/pages/industries/government" class="text-decoration-none text-white">Government</a>
       </p>
     </div>
     <!-- Grid column -->
@@ -118,16 +118,16 @@ footer.innerHTML = `
       <!-- Links -->
       <h6 class="fw-bold mb-4 gradient-text-small">Support</h6>
       <p>
-        <a href="/contactus.html" class="text-decoration-none text-white">Contact Us</a>
+        <a href="/contactus" class="text-decoration-none text-white">Contact Us</a>
       </p>
       <p>
-        <a href="/careers.html" class="text-decoration-none text-white">Careers</a>
+        <a href="/careers" class="text-decoration-none text-white">Careers</a>
       </p>
       <p>
-        <a href="/privacy-policy.html" class="text-decoration-none text-white">Privacy Policy</a>
+        <a href="/privacy-policy" class="text-decoration-none text-white">Privacy Policy</a>
       </p>
       <p>
-        <a href="/terms-of-use.html" class="text-decoration-none text-white">Terms of Use</a>
+        <a href="/terms-of-use" class="text-decoration-none text-white">Terms of Use</a>
       </p>
       <p>
         <a href="https://www.worxbyglimpse.com/" target="_blank" class="text-decoration-none text-white">Worx By Glimpse</a>
