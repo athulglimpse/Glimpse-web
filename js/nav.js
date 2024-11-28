@@ -1,8 +1,18 @@
 // Insert Lottie Lib Script
 const lottieLib = document.createElement("script");
-lottieLib.src = "https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"
+lottieLib.src =
+  "https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js";
 lottieLib.defer = true;
-document.querySelector("body").append(document.createComment(' LOTTIE '),lottieLib);
+document
+  .querySelector("body")
+  .append(document.createComment(" LOTTIE "), lottieLib);
+
+// Insert Google Tag Manager body no script
+const gtm = document.createElement("noscript");
+gtm.innerHTML = `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W8X6X6C"
+height="0" width="0" style="display:none;visibility:hidden"></iframe>`;
+gtm.defer = true;
+document.querySelector("body").append(gtm);
 
 const nav = document.querySelector("nav");
 
@@ -71,7 +81,12 @@ nav.innerHTML = `
 const navLinks = document.querySelectorAll(".nav-link, .sub-nav-link");
 
 navLinks.forEach((ele) => {
-  if (ele.getAttribute("href") == window.location.pathname || ele.getAttribute("href").replace(".html", "") == window.location.pathname || ele.getAttribute("href").replace("/", "/index.html") == window.location.pathname) {
+  if (
+    ele.getAttribute("href") == window.location.pathname ||
+    ele.getAttribute("href").replace(".html", "") == window.location.pathname ||
+    ele.getAttribute("href").replace("/", "/index.html") ==
+      window.location.pathname
+  ) {
     ele.classList.add("active");
   } else if (window.location.pathname.includes("/pages/services")) {
     if (ele.getAttribute("href") === "/services") {
