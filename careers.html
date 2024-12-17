@@ -50,6 +50,16 @@
                 padding: 0 var(--r30);
             }
         }
+        
+        .anim-letter{
+            word-break: keep-all;
+            display: inline-block;
+            transition: transform 1.5s cubic-bezier(0,1,1,1);
+        }
+        .anim-letter:hover {
+            transform: scale(180%);
+            transition: transform 0s cubic-bezier(0,1,1,1);
+        }
     </style>
 </head>
 
@@ -63,9 +73,22 @@
         <nav class="navbar navbar-expand-lg navbar-dark w-100"></nav>
         <!-- navbar ends -->
         <!-- BANNER SECTION -->
-        <section class="page__container banner_section">
-            <img width="749" height="421" src="https://d3i7ke5fj3tp7c.cloudfront.net/images/careers/glimpse-team.jpeg"
-                alt="The Glimpse Team" style="border-radius: 3vmin;">
+        <section class="page__container banner_section" style="display: flex; justify-content: space-between; align-items: center; gap: 10px;">
+            <video muted autoplay loop 
+                src="https://d3i7ke5fj3tp7c.cloudfront.net/videos/about-extended.mp4"
+                alt="The Glimpse Team" 
+                style="width: 50%; border-radius: 3vmin;">
+            </video>
+            <h1 class="title" style="text-align: justify; width: 50%; padding: 0 5%;">
+                <span class="anim-letter">J</span><span class="anim-letter">o</span><span class="anim-letter">i</span><span class="anim-letter">n</span>
+                <span class="anim-letter">o</span><span class="anim-letter">u</span><span class="anim-letter">r</span>
+                <span class="anim-letter">t</span><span class="anim-letter">e</span><span class="anim-letter">a</span><span class="anim-letter">m</span>
+                <span class="anim-letter">a</span><span class="anim-letter">n</span><span class="anim-letter">d</span>
+                <span class="anim-letter">b</span><span class="anim-letter">e</span>
+                <span class="anim-letter">o</span><span class="anim-letter">n</span><span class="anim-letter">e</span>
+                <span class="anim-letter">o</span><span class="anim-letter">f</span>
+                <span class="anim-letter">u</span><span class="anim-letter">s</span><span class="anim-letter">!</span>
+            </h1>
         </section>
 
         <!-- Section -->
@@ -82,7 +105,6 @@
                 height="230" class="double__stroke" />
             <div class="form__desc-wrap">
                 <p class="form_desc">
-                    Join our team of unicorns and be one of us!<br>
                     We’re always looking for the best talent with the right skillset. If you are a creative whizz, a
                     go-getter, a problem-solver, we want you right here right now.
                     Shoot us an email with your kickass CV and cover letter today. </p>
