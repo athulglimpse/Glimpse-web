@@ -2,12 +2,12 @@ const header = document.getElementById("header");
 
 header.outerHTML = `
 <!-- Google tag (gtag.js) -->
-<script defer src="https://www.googletagmanager.com/gtag/js?id=UA-89800270-1"></script>
-<script defer>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'UA-89800270-1');
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M6KSJH8LWL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-M6KSJH8LWL');
 </script>
 
 <!-- Google Tag Manager -->
