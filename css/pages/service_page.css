@@ -52,6 +52,14 @@
   background-clip: content-box, border-box;
 }
 
+#service-page__carousel .carousel-inner {
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
 .innerpage__title {
   font-size: 3.8rem;
   font-family: "Cera Pro Bold";

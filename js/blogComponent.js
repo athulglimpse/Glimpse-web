@@ -215,9 +215,16 @@ const blog = {
     author: "Rayan Tarraf",
     authorImg: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/Rayan.png",
   },
+  28: {
+    para: "The AI landscape is a dynamic terrain, where new models emerge, each a unique point on the cognitive map...",
+    title: "What is DeepSeek AI How Does It Work and Why is It a Game Changer?",
+    img: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/28_topic.png",
+    date: "February 1, 2025",
+    author: "Daniel Rafearo",
+    authorImg: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/Daniel.png", 
+  }
 };
 // BLOG CARD
-console.log(Object.keys(blog));
 let blog_collection = document.querySelector(".blog-collections");
 blog_collection.innerHTML = Object.keys(blog)
   .map(
@@ -248,7 +255,7 @@ blog_collection.innerHTML = Object.keys(blog)
         .replace(/\s+/g, "-")
         .toLowerCase()
         .replace(/['?!:]+/g,"")
-      }.html" class="topic-info_wrap">
+      }" class="topic-info_wrap">
       
         <h2 class="topic_title gradient-text">
             ${blog[id].title}        
@@ -266,5 +273,4 @@ blog_collection.innerHTML = Object.keys(blog)
     </div>
   </div>
 `
-  )
-  .join(" ");
+  ).reverse().join(" ");

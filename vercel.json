@@ -2,7 +2,8 @@
   "redirects": [
     { "source": "/index.html", "destination": "/" },
     { "source": "/socialmedia", "destination": "/pages/services/social-media", "statusCode": 301},
-    { "source": "/augmentedreality", "destination": "/pages/services/ar", "statusCode": 301}
+    { "source": "/augmentedreality", "destination": "/pages/services/ar", "statusCode": 301},
+    { "source": "/:path*.html", "destination": "/:path"}
   ],
   "cleanUrls": true,
 
