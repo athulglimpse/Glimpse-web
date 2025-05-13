@@ -222,6 +222,14 @@ const blog = {
     date: "February 1, 2025",
     author: "Daniel Rafearo",
     authorImg: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/Daniel.png", 
+  },
+  29: {
+    para: "In today’s fast-paced digital economy, Pay-Per-Click (PPC) advertising isn’t just a traffic driver, it’s a full-blown growth engine...",
+    title: "How Smart PPC Strategies Drive Growth for Modern Businesses",
+    img: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/29_topic.png",
+    date: "May 13, 2025",
+    author: "Daniel Rafearo",
+    authorImg: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/Daniel.png", 
   }
 };
 // BLOG CARD
