@@ -230,7 +230,16 @@ const blog = {
     date: "May 13, 2025",
     author: "Daniel Rafearo",
     authorImg: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/Daniel.png", 
+  },
+  30: {
+    para: "For ages, SEO was our trusty roadmap, guiding us to those coveted blue links on Google...",
+    title: "Why AEO is Already the New SEO And Why Your Business Can't Afford to Miss Out",
+    img: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/30_topic.png",
+    date: "May 27, 2025",
+    author: "Hashim Riyan",
+    authorImg: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/HASHIM.png", 
   }
+
 };
 // BLOG CARD
 let blog_collection = document.querySelector(".blog-collections");
