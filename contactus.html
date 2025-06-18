@@ -73,6 +73,12 @@
               placeholder="Email" />
             <small class="error-text"></small>
           </div>
+          <div class="gradient-box__div-1"></div>
+          <div class="gradient-box__input">
+            <input type="phone" name="phone" class="form-control rounded-pill" id="phone" aria-describedby="phoneHelp"
+              placeholder="Area Code & Phone Number" />
+            <small class="error-text"></small>
+          </div>
           <div class="gradient-box__div-2">
             <div class="textbox_wrapper">
               <textarea class="form-control" name="message" id="message" rows="5" placeholder="What's up?"></textarea>
@@ -114,6 +120,7 @@
     let form = document.querySelector("#contact__form");
     let name = document.querySelector("#name");
     let email = document.querySelector("#email");
+    let phone = document.querySelector("#phone");
     let message = document.querySelector("#message");
     let status = document.querySelector(".submit-message");
     let isError = false;
@@ -161,6 +168,7 @@
       // Values from dom elements ( input )
       let nameValue = name.value.trim();
       let emailValue = email.value.trim();
+      let phoneValue = phone.value.trim();
       let messageValue = message.value.trim();
 
       //  Checking for name
@@ -180,13 +188,23 @@
       } else {
         setSuccessFor(email);
       }
+   
+      // Checking for PHONE
+      if (phoneValue === "") {
+        setErrorFor(phone, "Phone number cannot be empty");
+      } else if (!isPhone(phoneValue)) {
+        setErrorFor(phone, "Number is not valid!");
+      } else {
+        setSuccessFor(phone);
+      }
 
-      // Checking for confirm phone
+      // Checking for message
       if (messageValue === "") {
         setErrorFor(message, "Message cannot be empty");
       } else {
         setSuccessFor(message);
       }
+      
       if (isError === false) {
         return true;
       }
