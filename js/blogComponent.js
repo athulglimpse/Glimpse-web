@@ -243,8 +243,8 @@ const blog = {
     para: "Digital marketers have long known that video captures attention better than staticn...",
     title: "AI-Powered Video Ads: Boosting Click-Throughs in the Ageion",
     img: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/30_topic.png",
-    date: "May 27, 2025",
-    author: "Hashim Riyan",
+    date: "October 15, 2025",
+    author: "Fiana Carlos",
     authorImg: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/FIA.pngg",
 },
 // BLOG CARD
