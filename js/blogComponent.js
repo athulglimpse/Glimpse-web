@@ -238,9 +238,15 @@ const blog = {
     date: "May 27, 2025",
     author: "Hashim Riyan",
     authorImg: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/HASHIM.png", 
-  }
-
-};
+  },
+ 31: {
+    para: "Digital marketers have long known that video captures attention better than staticn...",
+    title: "Why AEO is Already the New SEO And Why Your Business Cant Afford to Miss Out",
+    img: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/30_topic.png",
+    date: "May 27, 2025",
+    author: "Hashim Riyan",
+    authorImg: "https://d3i7ke5fj3tp7c.cloudfront.net/images/blog/blog-dedicated/HASHIM.png",
+},
 // BLOG CARD
 let blog_collection = document.querySelector(".blog-collections");
 blog_collection.innerHTML = Object.keys(blog)
