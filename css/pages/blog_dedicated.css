@@ -1,3 +1,12 @@
+h2 {
+  padding-top: var(--r48);
+  padding-bottom: var(--r16);
+}
+
+h3 {
+  margin-top: 40px;
+}
+
 /* BANNER */
 .banner_section {
   height: 100%;
@@ -34,7 +43,7 @@
 }
 
 .main__body p {
-  padding-bottom: var(--r16);
+  /* padding-bottom: var(--r16); */
   font-size: 18px;
 }
 
@@ -182,6 +191,20 @@
   font-weight: 700;
   padding-top: 15px;
   max-width: 250px;
+}
+
+table {
+  margin: 20px 0 50px 0;
+}
+
+table, td, tr, th {
+  border: 1px solid white ;
+  padding: 15px;
+}
+
+th {
+  text-align: center;
+  font-size: 20px;
 }
 
 /* MEDIA QUERY */
