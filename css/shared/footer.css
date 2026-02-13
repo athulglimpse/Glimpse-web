@@ -5,6 +5,13 @@
   z-index: 999;
 }
 
+#extra-badges {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 999;
+}
+
 .woot-widget-bubble:first-of-type {
   height: 50px !important;
   width: 50px !important;

@@ -240,3 +240,14 @@ function createContactButtons() {
   }
 };
 createContactButtons();
+
+var extraBadges = document.createElement("div");
+extraBadges.setAttribute("id", "extra-badges");
+extraBadges.innerHTML = `
+<div id="offset-badge">
+  <a href="https://offset.org/certificate/698F0F02/" target="_blank">
+    <img src="https://static.offset.org/static/images/badges/en/vertical-black.svg" alt="badge" style="max-width: 180px !important; height: auto !important;"/>
+  </a>
+</div>
+`;
+document.getElementsByTagName("body")[0].appendChild(extraBadges);
