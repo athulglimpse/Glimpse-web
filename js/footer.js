@@ -28,7 +28,7 @@ footer.innerHTML = `
       <h6 class="fw-bold mb-4 gradient-text-small">Locations</h6>
       <div class="loc-col-item">
         <a href="#!" class="text-decoration-none text-white">United Arab Emirates</a>
-        <p class="sub-location"><a href="https://maps.app.goo.gl/hZLFWbi8gXT11pNn6">Office 709 Publishing Pavilion, Dubai Production City, Dubai, UAE</a></p>
+        <p class="sub-location"><a href="https://maps.app.goo.gl/hZLFWbi8gXT11pNn6" target="_blank" title="Address">Office 709 Publishing Pavilion, Dubai Production City, Dubai, UAE</a></p>
       </div>
       <div class="loc-col-item">
         <a href="#!" class="text-decoration-none text-white">Saudi Arabia</a>
