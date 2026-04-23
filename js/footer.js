@@ -16,8 +16,8 @@ footer.innerHTML = `
     <a target="_blank" href="https://www.linkedin.com/company/glimpse-digital-agency" class="text-white mx-2">
       <i class="fab fa-linkedin-in fa-lg"></i>
     </a>
-    <a target="_blank" href="https://www.tiktok.com/@theglimpseproject/" class="text-white mx-2">
-      <i class="fab fa-tiktok fa-lg"></i>
+    <!--<a target="_blank" href="https://www.tiktok.com/@theglimpseproject/" class="text-white mx-2">
+      <i class="fab fa-tiktok fa-lg"></i>-->
     </a>
   </div>
   <!-- Grid row -->
@@ -28,7 +28,7 @@ footer.innerHTML = `
       <h6 class="fw-bold mb-4 gradient-text-small">Locations</h6>
       <div class="loc-col-item">
         <a href="#!" class="text-decoration-none text-white">United Arab Emirates</a>
-        <p class="sub-location">Office 709 Publishing Pavilion, Dubai Production City, Dubai, UAE</p>
+        <p class="sub-location"><a href="https://maps.app.goo.gl/hZLFWbi8gXT11pNn6" target="_blank" title="Address">Office 709 Publishing Pavilion, Dubai Production City, Dubai, UAE</a></p>
       </div>
       <div class="loc-col-item">
         <a href="#!" class="text-decoration-none text-white">Saudi Arabia</a>
