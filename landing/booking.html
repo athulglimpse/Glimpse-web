@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Book Your Free Consultation | Glimpse Digital Marketing Agency Dubai</title>
+    <meta name="description"
+        content="Book a free consultation with Glimpse, award-winning digital marketing agency in Dubai. Tell us about your business and schedule a call.">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="canonical" href="https://www.theglimpseproject.com/landing/booking">
+    <link defer href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link defer rel="stylesheet" href="/css/index.css" />
+    <link defer rel="stylesheet" href="/css/pages/homepage.css" />
+    <link defer rel="stylesheet" href="/css/shared/navbar.css" />
+    <link defer rel="stylesheet" href="/css/shared/footer.css" />
+    <link defer rel="shortcut icon" href="/static/images/favicon.png" type="image/png" />
+    <link defer rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link defer rel="stylesheet" href="/css/shared/scroll-anim.css">
+    <link id="header" />
+    <style>
+        .booking__section {
+            padding-top: 2rem;
+            padding-bottom: 4rem;
+        }
+
+        .booking-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 2.5rem;
+            align-items: start;
+        }
+
+        /* ── Form ── */
+        #booking__form {
+            display: flex;
+            flex-direction: column;
+            gap: 0.85rem;
+        }
+
+        .booking-input-wrap {
+            position: relative;
+            box-sizing: border-box;
+            color: #fff;
+            background: #0D0B17;
+            background-clip: padding-box;
+            border: solid 1px transparent;
+            border-radius: 500px;
+        }
+
+        .booking-input-wrap::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            margin: -3px;
+            border-radius: inherit;
+            background: linear-gradient(90deg,
+                    #fcdc00 0%,
+                    #fbc519 10%,
+                    #fa954e 32%,
+                    #f96e79 53%,
+                    #f95397 72%,
+                    #f83cb0 100%);
+        }
+
+        .booking-input-wrap > input {
+            width: 100%;
+            border-radius: 500px;
+            outline: none !important;
+            background: transparent !important;
+            border: none !important;
+            height: 3.5rem;
+            color: #fff !important;
+            padding: 0 1.5rem;
+            font-family: inherit;
+            font-size: 0.95rem;
+        }
+
+        .booking-input-wrap > input::placeholder {
+            color: #fff !important;
+            opacity: 0.75;
+        }
+
+        .booking-input-wrap > input:focus {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+
+        .booking-input-wrap .error-text {
+            position: absolute;
+            top: 50%;
+            right: 1.2rem;
+            transform: translateY(-50%);
+            font-size: 0.75rem;
+            color: #d50119;
+            white-space: nowrap;
+        }
+
+        /* Textarea field */
+        .booking-textarea-wrap {
+            position: relative;
+            box-sizing: border-box;
+            background: #0D0B17;
+            background-clip: padding-box;
+            border: solid 1px transparent;
+            border-radius: 16px;
+        }
+
+        .booking-textarea-wrap::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            margin: -3px;
+            border-radius: inherit;
+            background: linear-gradient(90deg,
+                    #fcdc00 0%,
+                    #fbc519 10%,
+                    #fa954e 32%,
+                    #f96e79 53%,
+                    #f95397 72%,
+                    #f83cb0 100%);
+        }
+
+        .booking-textarea-wrap > textarea {
+            width: 100%;
+            background: transparent !important;
+            border: none !important;
+            outline: none !important;
+            box-shadow: none !important;
+            color: #fff !important;
+            padding: 1rem 1.5rem;
+            border-radius: 16px;
+            font-family: inherit;
+            font-size: 0.95rem;
+            resize: vertical;
+        }
+
+        .booking-textarea-wrap > textarea::placeholder {
+            color: #fff !important;
+            opacity: 0.75;
+        }
+
+        .booking-textarea-wrap .error-text {
+            display: block;
+            font-size: 0.75rem;
+            color: #d50119;
+            padding: 0.25rem 1.5rem 0.5rem;
+        }
+
+        /* Submit button */
+        .booking-submit-btn {
+            align-self: flex-start;
+            margin-top: 0.5rem;
+            padding: 0.6rem 2rem;
+            font-size: 1em;
+            border: 2px solid transparent;
+            border-radius: 20px;
+            background:
+                linear-gradient(#0D0B17, #0D0B17) padding-box,
+                linear-gradient(45deg, #FCDC00 0%, #FBC519 10%, #FA954E 32%, #F96E79 53%, #F95397 72%, #F83CB0 100%) border-box;
+            cursor: pointer;
+        }
+
+        .submit-message {
+            margin-top: 0.75rem;
+            font-size: 0.9rem;
+            color: #fff;
+            min-height: 1.5rem;
+        }
+
+        /* optional label chip */
+        .field-label {
+            font-size: 0.7rem;
+            color: rgba(255,255,255,0.45);
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            padding-left: 0.25rem;
+            margin-bottom: 0.2rem;
+        }
+
+        /* ── Calendar ── */
+        .booking-calendar-wrap {
+            position: relative;
+            border: 3px solid transparent;
+            border-radius: 16px;
+            background:
+                linear-gradient(#0D0B17, #0D0B17) padding-box,
+                linear-gradient(to right, #7237BD, #FD0988) border-box;
+            overflow: hidden;
+            min-height: 700px;
+        }
+
+        .calendly-inline-widget {
+            width: 100%;
+            height: 600px;
+        }
+
+        .calendar-placeholder {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 650px;
+            gap: 1rem;
+            color: rgba(255,255,255,0.4);
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .calendar-placeholder svg {
+            opacity: 0.3;
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 900px) {
+            .booking-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .booking-calendar-wrap,
+            .calendly-inline-widget {
+                height: 700px;
+                min-height: 700px;
+            }
+        }
+    </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M6KSJH8LWL"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-M6KSJH8LWL');</script>
+</head>
+
+<body>
+    <div id="banner-wrapper" style="overflow: hidden;"></div>
+    <div class="mob-main-menu"></div>
+
+    <main>
+        <nav class="navbar navbar-expand-lg navbar-dark w-100"></nav>
+
+        <section class="booking__section page__container">
+            <div class="title__wrap">
+                <p class="title">Book Your Free Consultation</p>
+                <img src="https://d3i7ke5fj3tp7c.cloudfront.net/images/particle.svg" alt="particle" height="8px"
+                    width="8px" class="ms-1" />
+                <div class="subtitle__wrap">
+                    <hr style="width: 14%" />
+                </div>
+            </div>
+
+            <div class="booking-layout">
+
+                <!-- Left column: Lead form -->
+                <div class="booking-form-col">
+                    <form id="booking__form" action="https://formspree.io/f/xbdwvvjj" method="POST"
+                        enctype="multipart/form-data">
+
+                        <div id="booking__form-fields" style="display:flex;flex-direction:column;gap:0.85rem;">
+
+                            <div>
+                                <div class="booking-input-wrap">
+                                    <input type="text" name="company_name" id="company_name"
+                                        placeholder="Company Name" />
+                                    <small class="error-text"></small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p class="field-label">Optional</p>
+                                <div class="booking-input-wrap">
+                                    <input type="text" name="industry" id="industry"
+                                        placeholder="Industry" />
+                                    <small class="error-text"></small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="booking-input-wrap">
+                                    <input type="text" name="name" id="name" placeholder="Your Name" />
+                                    <small class="error-text"></small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="booking-input-wrap">
+                                    <input type="tel" name="phone" id="phone"
+                                        placeholder="Phone Number (e.g. +971 50 000 0000)" />
+                                    <small class="error-text"></small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="booking-input-wrap">
+                                    <input type="email" name="email" id="email" placeholder="Email Address" />
+                                    <small class="error-text"></small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p class="field-label">Optional</p>
+                                <div class="booking-input-wrap">
+                                    <input type="text" name="position" id="position"
+                                        placeholder="Your Position / Job Title" />
+                                    <small class="error-text"></small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p class="field-label">Optional</p>
+                                <div class="booking-textarea-wrap">
+                                    <textarea name="message" id="message" rows="5"
+                                        placeholder="Tell us about your business or what you're looking for..."></textarea>
+                                    <small class="error-text"></small>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div style="margin-top:1.25rem;">
+                            <button type="submit" class="booking-submit-btn">
+                                <span class="gradient-text">Submit &amp; Book</span>
+                            </button>
+                        </div>
+
+                        <p class="submit-message"></p>
+                    </form>
+                </div>
+
+                <!-- Right column: Google Appointment Scheduling -->
+                <div class="booking-calendar-wrap">
+                    <div class="calendly-inline-widget"
+                        data-url="https://calendly.com/hello-theglimpseproject/30min?hide_gdpr_banner=1&background_color=0c0b17&text_color=ffffff&primary_color=fcdc00">
+                    </div>
+                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="footer" class="page__container mt-5 mx-auto">
+            <!-- Footer -->
+        </section>
+    </main>
+
+    <!-- BOOTSTRAP -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JQUERY -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+        integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- CUSTOM JS COMPONENTS -->
+    <script defer src="/js/nav.js"></script>
+    <script defer src="/js/mobile-nav.js"></script>
+    <script defer src="/js/footer.js"></script>
+    <script defer src="/js/header.js"></script>
+    <script defer src="/js/scroll-anim.js"></script>
+    <!-- FORM UTILITIES -->
+    <script src="/js/form.js"></script>
+    <script>
+        let isError = false;
+
+        const form = document.querySelector("#booking__form");
+        const companyName = document.querySelector("#company_name");
+        const name = document.querySelector("#name");
+        const phone = document.querySelector("#phone");
+        const email = document.querySelector("#email");
+        const message = document.querySelector("#message");
+        const status = document.querySelector(".submit-message");
+
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            isError = false;
+            const isValid = handleInput();
+            if (isValid) {
+                const data = new FormData(e.target);
+                fetch(e.target.action, {
+                    method: form.method,
+                    body: data,
+                    headers: { Accept: "application/json" },
+                }).then((response) => {
+                    if (response.ok) {
+                        status.innerHTML = "Thank you! Your enquiry has been received. We'll be in touch shortly.";
+                        setTimeout(() => {
+                            form.reset();
+                            status.innerHTML = "";
+                        }, 10000);
+                    } else {
+                        response.json().then((data) => {
+                            if (Object.hasOwn(data, "errors")) {
+                                status.innerHTML = data["errors"].map((error) => error["message"]).join(", ");
+                            } else {
+                                status.innerHTML = "Oops! There was a problem submitting your form.";
+                            }
+                            setTimeout(() => { status.innerHTML = ""; }, 10000);
+                        });
+                    }
+                });
+            }
+        });
+
+        function handleInput() {
+            const companyValue = companyName.value.trim();
+            const nameValue = name.value.trim();
+            const emailValue = email.value.trim();
+            const phoneValue = phone.value.trim();
+
+            if (companyValue === "") {
+                setErrorFor(companyName, "Company name is required");
+            } else {
+                setSuccessFor(companyName);
+            }
+
+            if (nameValue === "") {
+                setErrorFor(name, "Name cannot be empty");
+            } else if (/\d/.test(nameValue)) {
+                setErrorFor(name, "Name cannot contain numbers");
+            } else {
+                setSuccessFor(name);
+            }
+
+            if (emailValue === "") {
+                setErrorFor(email, "Email cannot be empty");
+            } else if (!isEmail(emailValue)) {
+                setErrorFor(email, "Email is not valid");
+            } else {
+                setSuccessFor(email);
+            }
+
+            if (phoneValue === "") {
+                setErrorFor(phone, "Phone number is required");
+            } else if (!isPhone(phoneValue)) {
+                setErrorFor(phone, "Number is not valid");
+            } else {
+                setSuccessFor(phone);
+            }
+
+            return isError === false;
+        }
+    </script>
+</body>
+
+</html>
