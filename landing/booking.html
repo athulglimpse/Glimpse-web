@@ -65,6 +65,43 @@
             flex: 1;
         }
 
+        /* Locked package field */
+        .package-field-wrap {
+            position: relative;
+        }
+
+        .package-field-wrap .lock-icon {
+            position: absolute;
+            right: 1.2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 0.8rem;
+            pointer-events: none;
+        }
+
+        #booking__form select {
+            width: 100%;
+            border-radius: 500px;
+            border: none !important;
+            outline: none !important;
+            box-shadow: none !important;
+            background: transparent !important;
+            height: 3.5rem;
+            color: #fff !important;
+            padding: 0 3rem 0 1.5rem;
+            font-family: inherit;
+            font-size: 1rem;
+            appearance: none;
+            cursor: not-allowed;
+            opacity: 0.85;
+        }
+
+        #booking__form select option {
+            background: #0D0B17;
+            color: #fff;
+        }
+
         /* Override contact_us.css form padding for our layout */
         #booking__form {
             padding: 0;
@@ -132,7 +169,7 @@
                 linear-gradient(to right, #7237BD, #FD0988) border-box;
             overflow: hidden;
             /* flex: 1; */
-            height: 755px;
+            height: 834px;
         }
 
         #calendly-container,
@@ -221,6 +258,23 @@
                                 placeholder="Company Name" />
                             <small class="error-text"></small>
                         </div>
+
+                        <!-- Package field — shown only when arriving from packages page -->
+                        <div id="package-field-wrap" style="display:none;">
+                            <div class="gradient-box__div-1"></div>
+                            <div class="gradient-box__input package-field-wrap">
+                                <select name="selected_package" id="selected_package" disabled>
+                                    <option value="growth">Growth Package</option>
+                                    <option value="genz">Gen Z Package</option>
+                                    <option value="advanced">Advanced Package</option>
+                                    <option value="fmcg">FMCG Package</option>
+                                    <option value="automotive">Automotive Lead Generation Package</option>
+                                </select>
+                                <input type="hidden" name="selected_package" id="selected_package_hidden" />
+                                <i class="fa-solid fa-lock lock-icon"></i>
+                            </div>
+                        </div>
+
                         <div class="gradient-box__div-1"></div>
                         <div class="gradient-box__input">
                             <input type="text" name="industry" id="industry" class="form-control rounded-pill"
@@ -316,6 +370,42 @@
     <!-- FORM UTILITIES -->
     <script src="/js/form.js"></script>
     <script>
+        const packageData = {
+            growth: {
+                name: 'Growth Package',
+                details: 'Services: Social Media Management, Paid Media Management, Content Creation (Static, Motion Graphics), Reporting, Creative Design. Platforms: Instagram, Facebook.'
+            },
+            genz: {
+                name: 'Gen Z Package',
+                details: 'Services: Social Media Management, Paid Media Management, Content Creation (Reels, Memes, Static), Reporting, Creative Direction. Platforms: Instagram, TikTok.'
+            },
+            advanced: {
+                name: 'Advanced Package',
+                details: 'Services: Social Media Management, Paid Media Management, Lead Generation, Content Creation (Reels, Memes, Static, Motion Graphics), Reporting, Creative Direction. Platforms: Instagram, Facebook, TikTok, X, Snapchat, LinkedIn.'
+            },
+            fmcg: {
+                name: 'FMCG Package',
+                details: 'Services: Creative Content Production, E-Commerce Content Optimization, Retail & Shopper Marketing Assets, Performance Marketing, Social Media Management, Reporting & Insights. Platforms: Instagram, Facebook, TikTok, X, Snapchat, LinkedIn.'
+            },
+            automotive: {
+                name: 'Automotive Lead Generation Package',
+                details: 'Services: Strategy & Campaign Planning, Creative Production, Social Media Management, Performance Marketing, Landing Pages & Conversion Optimization, Dealer & Retail Support, Influencer & PR Activation, Reporting & Insights. Platforms: Instagram, Facebook, TikTok, X, Snapchat, LinkedIn.'
+            }
+        };
+
+        // Read package from URL and pre-fill the locked field
+        const urlParams = new URLSearchParams(window.location.search);
+        const packageKey = urlParams.get('package');
+        const selectedPkg = packageKey ? packageData[packageKey] : null;
+
+        if (selectedPkg) {
+            const select = document.getElementById('selected_package');
+            const hidden = document.getElementById('selected_package_hidden');
+            select.value = packageKey;
+            hidden.value = selectedPkg.details;
+            document.getElementById('package-field-wrap').style.display = 'block';
+        }
+
         let isError = false;
 
         const form = document.querySelector("#booking__form");
@@ -348,8 +438,9 @@
                             primary_color: 'fcdc00',
                             name: name.value.trim(),
                             email: email.value.trim(),
+                            ...(selectedPkg && { a1: selectedPkg.details }),
                         });
-                        const calendlyUrl = `https://calendly.com/hello-theglimpseproject/30min?${params.toString()}`;
+                        const calendlyUrl = `https://calendly.com/hello-theglimpseproject/30min?${params.toString().replace(/\+/g, '%20')}`;
 
                         document.getElementById('calendar-step2').style.display = 'none';
                         document.getElementById('calendly-container').style.display = 'block';
