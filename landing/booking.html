@@ -15,6 +15,7 @@
     <link defer rel="stylesheet" href="/css/pages/homepage.css" />
     <link defer rel="stylesheet" href="/css/shared/navbar.css" />
     <link defer rel="stylesheet" href="/css/shared/footer.css" />
+    <link defer rel="stylesheet" href="/css/pages/contact_us.css" />
     <link defer rel="shortcut icon" href="/static/images/favicon.png" type="image/png" />
     <link defer rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
@@ -32,162 +33,93 @@
             grid-template-columns: 1fr 1fr;
             gap: 3rem;
             margin-top: 2.5rem;
-            align-items: start;
+            align-items: stretch;
         }
 
-        /* ── Form ── */
-        #booking__form {
+        .booking-layout > div {
             display: flex;
             flex-direction: column;
+        }
+
+        .step-label {
+            display: flex;
+            align-items: center;
             gap: 0.85rem;
+            margin-bottom: 1rem;
         }
 
-        .booking-input-wrap {
-            position: relative;
-            box-sizing: border-box;
-            color: #fff;
-            background: #0D0B17;
-            background-clip: padding-box;
-            border: solid 1px transparent;
-            border-radius: 500px;
-        }
-
-        .booking-input-wrap::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            z-index: -1;
-            margin: -3px;
-            border-radius: inherit;
-            background: linear-gradient(90deg,
-                    #fcdc00 0%,
-                    #fbc519 10%,
-                    #fa954e 32%,
-                    #f96e79 53%,
-                    #f95397 72%,
-                    #f83cb0 100%);
-        }
-
-        .booking-input-wrap > input {
-            width: 100%;
-            border-radius: 500px;
-            outline: none !important;
-            background: transparent !important;
-            border: none !important;
-            height: 3.5rem;
-            color: #fff !important;
-            padding: 0 1.5rem;
-            font-family: inherit;
+        .step-label-text {
             font-size: 0.95rem;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.65);
+            letter-spacing: 0.02em;
         }
 
-        .booking-input-wrap > input::placeholder {
-            color: #fff !important;
-            opacity: 0.75;
-        }
-
-        .booking-input-wrap > input:focus {
-            outline: none !important;
-            box-shadow: none !important;
-        }
-
-        .booking-input-wrap .error-text {
-            position: absolute;
-            top: 50%;
-            right: 1.2rem;
-            transform: translateY(-50%);
-            font-size: 0.75rem;
-            color: #d50119;
-            white-space: nowrap;
-        }
-
-        /* Textarea field */
-        .booking-textarea-wrap {
-            position: relative;
-            box-sizing: border-box;
-            background: #0D0B17;
-            background-clip: padding-box;
-            border: solid 1px transparent;
+        .booking-form-col {
+            border: 0px solid transparent;
             border-radius: 16px;
-        }
-
-        .booking-textarea-wrap::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            z-index: -1;
-            margin: -3px;
-            border-radius: inherit;
-            background: linear-gradient(90deg,
-                    #fcdc00 0%,
-                    #fbc519 10%,
-                    #fa954e 32%,
-                    #f96e79 53%,
-                    #f95397 72%,
-                    #f83cb0 100%);
-        }
-
-        .booking-textarea-wrap > textarea {
-            width: 100%;
-            background: transparent !important;
-            border: none !important;
-            outline: none !important;
-            box-shadow: none !important;
-            color: #fff !important;
-            padding: 1rem 1.5rem;
-            border-radius: 16px;
-            font-family: inherit;
-            font-size: 0.95rem;
-            resize: vertical;
-        }
-
-        .booking-textarea-wrap > textarea::placeholder {
-            color: #fff !important;
-            opacity: 0.75;
-        }
-
-        .booking-textarea-wrap .error-text {
-            display: block;
-            font-size: 0.75rem;
-            color: #d50119;
-            padding: 0.25rem 1.5rem 0.5rem;
-        }
-
-        /* Submit button */
-        .booking-submit-btn {
-            align-self: flex-start;
-            margin-top: 0.5rem;
-            padding: 0.6rem 2rem;
-            font-size: 1em;
-            border: 2px solid transparent;
-            border-radius: 20px;
             background:
                 linear-gradient(#0D0B17, #0D0B17) padding-box,
-                linear-gradient(45deg, #FCDC00 0%, #FBC519 10%, #FA954E 32%, #F96E79 53%, #F95397 72%, #F83CB0 100%) border-box;
-            cursor: pointer;
+                linear-gradient(to right, #7237BD, #FD0988) border-box;
+            padding: 0rem;
+            flex: 1;
         }
 
-        .submit-message {
-            margin-top: 0.75rem;
-            font-size: 0.9rem;
-            color: #fff;
-            min-height: 1.5rem;
+        /* Override contact_us.css form padding for our layout */
+        #booking__form {
+            padding: 0;
         }
 
-        /* optional label chip */
-        .field-label {
-            font-size: 0.7rem;
-            color: rgba(255,255,255,0.45);
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
-            padding-left: 0.25rem;
-            margin-bottom: 0.2rem;
+        #booking__form input:focus,
+        #booking__form textarea {
+            border: none !important;
+            outline: none !important;
+            box-shadow: none !important;
+            transition: none;
+        }
+
+        #booking__form input::placeholder,
+        #booking__form textarea::placeholder {
+            color: #fff !important;
+            opacity: 1;
+            font-size: 1rem;
+        }
+
+        #booking__form textarea {
+            line-height: 41px;
+            background-image:
+                -webkit-linear-gradient(left, var(--bg-color) 0, transparent 0),
+                -webkit-linear-gradient(right, var(--bg-color) 0, transparent 0),
+                -webkit-linear-gradient(var(--bg-color) 40px, #404040 40px, #404040 41px, var(--bg-color) 41px);
+            background-repeat: repeat-y;
+            background-size: 100% 100%, 100% 100%, 100% 41px;
+            background-attachment: local;
+            background-color: var(--bg-color) !important;
+            border: 10px solid var(--bg-color) !important;
+            color: #fff !important;
+            overflow: auto;
+        }
+
+        /* Replace the fragile z-index::before trick with the reliable padding-box/border-box technique */
+        #booking__form .gradient-box__input {
+            border: 2px solid transparent;
+            background:
+                linear-gradient(var(--bg-color), var(--bg-color)) padding-box,
+                linear-gradient(90deg, #fcdc00 0%, #fbc519 10%, #fa954e 32%, #f96e79 53%, #f95397 72%, #f83cb0 100%) border-box;
+        }
+
+        #booking__form .gradient-box__input::before {
+            display: none;
+        }
+
+        #booking__form .gradient-box__div-2 {
+            background:
+                linear-gradient(var(--bg-color), var(--bg-color)) padding-box,
+                linear-gradient(90deg, #fcdc00 0%, #fbc519 10%, #fa954e 32%, #f96e79 53%, #f95397 72%, #f83cb0 100%) border-box;
+        }
+
+        #booking__form .gradient-box__div-2::after {
+            display: none;
         }
 
         /* ── Calendar ── */
@@ -199,28 +131,43 @@
                 linear-gradient(#0D0B17, #0D0B17) padding-box,
                 linear-gradient(to right, #7237BD, #FD0988) border-box;
             overflow: hidden;
-            min-height: 700px;
+            /* flex: 1; */
+            height: 755px;
         }
 
-        .calendly-inline-widget {
-            width: 100%;
-            height: 600px;
+        #calendly-container,
+        #calendly-widget,
+        .step2-placeholder {
+            height: 100%;
         }
 
-        .calendar-placeholder {
+        #calendly-container {
+            display: none;
+        }
+
+        .step2-placeholder {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 650px;
-            gap: 1rem;
-            color: rgba(255,255,255,0.4);
+            height: 100%;
+            gap: 1.25rem;
+            color: rgba(255, 255, 255, 0.4);
             text-align: center;
-            padding: 2rem;
+            padding: 2.5rem;
         }
 
-        .calendar-placeholder svg {
-            opacity: 0.3;
+        .step2-badge {
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.35);
         }
 
         /* ── Responsive ── */
@@ -229,10 +176,8 @@
                 grid-template-columns: 1fr;
             }
 
-            .booking-calendar-wrap,
-            .calendly-inline-widget {
-                height: 700px;
-                min-height: 700px;
+            .booking-layout > div {
+                flex-direction: column;
             }
         }
     </style>
@@ -262,87 +207,88 @@
             <div class="booking-layout">
 
                 <!-- Left column: Lead form -->
-                <div class="booking-form-col">
+                <div>
+                    <div class="step-label">
+                        <div class="step2-badge">1</div>
+                        <span class="step-label-text">Fill in contact form</span>
+                    </div>
+                    <div class="booking-form-col">
                     <form id="booking__form" action="https://formspree.io/f/xbdwvvjj" method="POST"
                         enctype="multipart/form-data">
 
-                        <div id="booking__form-fields" style="display:flex;flex-direction:column;gap:0.85rem;">
-
-                            <div>
-                                <div class="booking-input-wrap">
-                                    <input type="text" name="company_name" id="company_name"
-                                        placeholder="Company Name" />
-                                    <small class="error-text"></small>
-                                </div>
+                        <div class="gradient-box__input">
+                            <input type="text" name="company_name" id="company_name" class="form-control rounded-pill"
+                                placeholder="Company Name" />
+                            <small class="error-text"></small>
+                        </div>
+                        <div class="gradient-box__div-1"></div>
+                        <div class="gradient-box__input">
+                            <input type="text" name="industry" id="industry" class="form-control rounded-pill"
+                                placeholder="Industry (Optional)" />
+                            <small class="error-text"></small>
+                        </div>
+                        <div class="gradient-box__div-1"></div>
+                        <div class="gradient-box__input">
+                            <input type="text" name="name" id="name" class="form-control rounded-pill"
+                                placeholder="Your Name" />
+                            <small class="error-text"></small>
+                        </div>
+                        <div class="gradient-box__div-1"></div>
+                        <div class="gradient-box__input">
+                            <input type="tel" name="phone" id="phone" class="form-control rounded-pill"
+                                placeholder="Phone Number (e.g. +971 50 000 0000)" />
+                            <small class="error-text"></small>
+                        </div>
+                        <div class="gradient-box__div-1"></div>
+                        <div class="gradient-box__input">
+                            <input type="email" name="email" id="email" class="form-control rounded-pill"
+                                placeholder="Email Address" />
+                            <small class="error-text"></small>
+                        </div>
+                        <div class="gradient-box__div-1"></div>
+                        <div class="gradient-box__input">
+                            <input type="text" name="position" id="position" class="form-control rounded-pill"
+                                placeholder="Position / Job Title (Optional)" />
+                            <small class="error-text"></small>
+                        </div>
+                        <div class="gradient-box__div-2">
+                            <div class="textbox_wrapper">
+                                <textarea class="form-control" name="message" id="message" rows="5"
+                                    placeholder="Tell us about your business or what you're looking for... (Optional)"></textarea>
+                                <small class="error-text"></small>
                             </div>
-
-                            <div>
-                                <p class="field-label">Optional</p>
-                                <div class="booking-input-wrap">
-                                    <input type="text" name="industry" id="industry"
-                                        placeholder="Industry" />
-                                    <small class="error-text"></small>
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="booking-input-wrap">
-                                    <input type="text" name="name" id="name" placeholder="Your Name" />
-                                    <small class="error-text"></small>
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="booking-input-wrap">
-                                    <input type="tel" name="phone" id="phone"
-                                        placeholder="Phone Number (e.g. +971 50 000 0000)" />
-                                    <small class="error-text"></small>
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="booking-input-wrap">
-                                    <input type="email" name="email" id="email" placeholder="Email Address" />
-                                    <small class="error-text"></small>
-                                </div>
-                            </div>
-
-                            <div>
-                                <p class="field-label">Optional</p>
-                                <div class="booking-input-wrap">
-                                    <input type="text" name="position" id="position"
-                                        placeholder="Your Position / Job Title" />
-                                    <small class="error-text"></small>
-                                </div>
-                            </div>
-
-                            <div>
-                                <p class="field-label">Optional</p>
-                                <div class="booking-textarea-wrap">
-                                    <textarea name="message" id="message" rows="5"
-                                        placeholder="Tell us about your business or what you're looking for..."></textarea>
-                                    <small class="error-text"></small>
-                                </div>
-                            </div>
-
                         </div>
 
-                        <div style="margin-top:1.25rem;">
-                            <button type="submit" class="booking-submit-btn">
-                                <span class="gradient-text">Submit &amp; Book</span>
+                        <div class="d-flex justify-content-center">
+                            <button type="submit" class="btn btn-outline-light gradient rounded-pill px-4 mt-4">
+                                <span class="gradient-text">Submit</span>
                             </button>
                         </div>
-
-                        <p class="submit-message"></p>
+                        <div class="submit-message__wrap">
+                            <p class="submit-message"></p>
+                        </div>
                     </form>
+                    </div>
                 </div>
 
-                <!-- Right column: Google Appointment Scheduling -->
-                <div class="booking-calendar-wrap">
-                    <div class="calendly-inline-widget"
-                        data-url="https://calendly.com/hello-theglimpseproject/30min?hide_gdpr_banner=1&background_color=0c0b17&text_color=ffffff&primary_color=fcdc00">
+                <!-- Right column: Calendly — unlocked after form submission -->
+                <div>
+                    <div class="step-label">
+                        <div class="step2-badge">2</div>
+                        <span class="step-label-text">Pick your time slot</span>
                     </div>
+                    <div class="booking-calendar-wrap">
+
+                    <div class="step2-placeholder" id="calendar-step2">
+                        <p style="font-size:0.9rem;line-height:1.8;margin:0;color:rgba(255,255,255,0.45);">Submit the form on the left first —<br>the calendar will unlock automatically.</p>
+                    </div>
+
+                    <div id="calendly-container">
+                        <div id="calendly-widget"></div>
+                    </div>
+
                     <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                    </div>
                 </div>
 
             </div>
@@ -392,11 +338,25 @@
                     headers: { Accept: "application/json" },
                 }).then((response) => {
                     if (response.ok) {
-                        status.innerHTML = "Thank you! Your enquiry has been received. We'll be in touch shortly.";
-                        setTimeout(() => {
-                            form.reset();
-                            status.innerHTML = "";
-                        }, 10000);
+                        status.innerHTML = "Details received! Now pick a time slot on the right.";
+                        form.querySelector("button[type=submit]").disabled = true;
+
+                        const params = new URLSearchParams({
+                            hide_gdpr_banner: '1',
+                            background_color: '0c0b17',
+                            text_color: 'ffffff',
+                            primary_color: 'fcdc00',
+                            name: name.value.trim(),
+                            email: email.value.trim(),
+                        });
+                        const calendlyUrl = `https://calendly.com/hello-theglimpseproject/30min?${params.toString()}`;
+
+                        document.getElementById('calendar-step2').style.display = 'none';
+                        document.getElementById('calendly-container').style.display = 'block';
+                        Calendly.initInlineWidget({
+                            url: calendlyUrl,
+                            parentElement: document.getElementById('calendly-widget'),
+                        });
                     } else {
                         response.json().then((data) => {
                             if (Object.hasOwn(data, "errors")) {
