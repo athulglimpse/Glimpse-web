@@ -5,6 +5,13 @@
   z-index: 999;
 }
 
+#extra-badges {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 999;
+}
+
 .woot-widget-bubble:first-of-type {
   height: 50px !important;
   width: 50px !important;
@@ -298,7 +305,6 @@
   .footer__gradient-box__input-rev>a {
     font-size: 30px;
     height: 4.5rem;
-    border: 1px solid green;
   }
 
   .footer__gradient-box__input button {
