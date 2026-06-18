@@ -7,16 +7,12 @@ document
   .querySelector("body")
   .append(document.createComment(" LOTTIE "), lottieLib);
 
-// Insert Google Tag Manager body no script
-const gtm = document.createElement("noscript");
-gtm.innerHTML = `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W8X6X6C"
-height="0" width="0" style="display:none;visibility:hidden"></iframe>`;
-gtm.defer = true;
-document.querySelector("body").append(gtm);
-
 const nav = document.querySelector("nav");
-
 nav.innerHTML = `
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W8X6X6C"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <div class="nav-wrap">
           <a id="logo-wrap" href="/"> 
             <lottie-player src="https://d3i7ke5fj3tp7c.cloudfront.net/images/logo.json" background="transparent" speed="0.7" intermission="2000" renderer="svg" loop autoplay></lottie-player>

@@ -1,11 +1,6 @@
 const footer = document.getElementById("footer");
 
 footer.innerHTML = `
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W8X6X6C"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
 <script> </script>
 <footer class="text-center text-lg-start mx-auto">
   <div class="footer-socials">
